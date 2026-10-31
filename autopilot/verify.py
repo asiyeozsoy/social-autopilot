@@ -4,6 +4,7 @@ python -m autopilot.verify <brand> instagram
 """
 from __future__ import annotations
 
+import re
 import sys
 
 import requests
@@ -38,11 +39,12 @@ def main(argv=None) -> int:
         print(f"{brand} {platform}: {CHECKS[platform](brand)}")
         return 0
     except NotConfigured as e:
-        print(f"{brand} {platform}: NOT SET UP - {e}")
-        return 1
+        msg = f"{brand} {platform}: NOT SET UP - {e}"
     except Exception as e:
-        print(f"{brand} {platform}: FAILED - {e}")
-        return 1
+        msg = f"{brand} {platform}: FAILED - {e}"
+    msg = re.sub(r"[A-Za-z0-9_\-]{60,}", "[hidden]", msg)  # never echo a token
+    print(f"::error::{msg}")  # shows as a run annotation
+    return 1
 
 
 if __name__ == "__main__":
