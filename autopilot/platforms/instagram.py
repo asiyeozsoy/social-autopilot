@@ -17,7 +17,7 @@ import os
 import requests
 
 from ..media import public_url
-from .base import check, creds, poll
+from .base import NotConfigured, check, creds, poll
 
 VERSION = os.environ.get("GRAPH_API_VERSION") or "v22.0"
 
@@ -27,8 +27,16 @@ def api_base(token: str) -> str:
     return f"https://{host}/{VERSION}"
 
 
+ACCESS_ERRORS = ("does not exist, cannot be loaded due to missing permissions", "Invalid OAuth access token",
+                 "Error validating access token", "has not authorized application")
+
+
 def _container(ig_id, token, **params):
     r = requests.post(f"{api_base(token)}/{ig_id}/media", data={**params, "access_token": token}, timeout=60)
+    err = (r.json().get("error") or {}) if r.headers.get("content-type", "").startswith(("application/json", "text/javascript")) else {}
+    if any(m in str(err.get("message", "")) for m in ACCESS_ERRORS):
+        # the key can't reach this account yet: wait without using up an attempt
+        raise NotConfigured(f"instagram key has no access to account {ig_id}: {err.get('message')}")
     return check(r, "instagram create container")["id"]
 
 

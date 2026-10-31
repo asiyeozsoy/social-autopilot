@@ -201,3 +201,19 @@ def test_missing_secrets_wait_without_burning_attempts(tmp_path, monkeypatch):
 def test_instagram_login_token_uses_instagram_host():
     assert instagram.api_base("IGAAabc").startswith("https://graph.instagram.com/")
     assert instagram.api_base("EAAGxyz").startswith("https://graph.facebook.com/")
+
+
+def test_instagram_access_error_waits(tmp_path, monkeypatch):
+    from autopilot.platforms.base import NotConfigured
+    monkeypatch.setenv("FACTYEAP_IG_USER_ID", "1")
+    monkeypatch.setenv("FACTYEAP_IG_TOKEN", "EAAx")
+    monkeypatch.setenv("MEDIA_BASE_URL", "https://x")
+    folder = make_post(tmp_path, "factyeap/a", platforms={"instagram": {"kind": "image", "media": ["a.png"], "caption": "c"}})
+    spec = yaml.safe_load((folder / "post.yaml").read_text()); spec["brand"] = "factyeap"
+    (folder / "post.yaml").write_text(yaml.safe_dump(spec))
+    post = load_queue(tmp_path)[0]
+    err = Resp({"error": {"message": "Unsupported post request. Object with ID '1' does not exist, cannot be loaded due to missing permissions"}}, 400,
+               {"content-type": "application/json"})
+    monkeypatch.setattr(instagram.requests, "post", lambda *a, **k: err)
+    with pytest.raises(NotConfigured):
+        instagram.publish(post, post.platforms["instagram"], tmp_path)
