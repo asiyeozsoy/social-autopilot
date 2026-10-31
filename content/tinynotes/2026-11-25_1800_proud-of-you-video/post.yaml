@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-25T18:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'you needed to hear it 🤍
+
+
+      Send it to someone who never hears it.
+
+
+      #sendthistosomeone #proudofyou #youmatter #encouragement #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'in case no one said it today
+
+
+      send this to someone who needs it
+
+
+      #sendthistosomeone #proudofyou #encouragement #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I'm Proud Of You 🤍 A Tiny Note
+    description: 'In case no one said it today. Send this to someone who needs it.
+
+
+      #tinynotes #sendthistosomeone #shorts'

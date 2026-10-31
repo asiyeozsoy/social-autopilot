@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-23T18:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'a thank you note, a few days early 🍂
+
+
+      Send it to the person you''re most thankful for.
+
+
+      #sendthistosomeone #thanksgiving #grateful #thankful #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'say thank you before thursday
+
+
+      send this to the person you''re most grateful for
+
+
+      #sendthistosomeone #thanksgiving #grateful #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: A Thanksgiving Note For Your Person 🍂
+    description: 'Thank them early. A tiny gratitude note for Thanksgiving week.
+
+
+      #tinynotes #sendthistosomeone #shorts'

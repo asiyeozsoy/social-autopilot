@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-03T18:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'the message sitting in your drafts 📩
+
+
+      Send it before you talk yourself out of it.
+
+
+      #sendthistosomeone #tellthem #lifeistooshort #reachout #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'the draft you never sent
+
+
+      send this to them. then send the real message.
+
+
+      #sendthistosomeone #tellthem #reachout #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Tell Them Before You Forget 📩
+    description: 'A tiny note about the message you keep postponing. Send it to someone
+      today.
+
+
+      #tinynotes #sendthistosomeone #shorts'

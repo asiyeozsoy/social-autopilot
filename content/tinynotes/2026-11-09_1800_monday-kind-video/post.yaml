@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-09T18:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'monday kindness starts with you 🪞
+
+
+      Share it with someone who''s hard on themselves.
+
+
+      #sendthistosomeone #mondaymotivation #selfkindness #bekindtoyourself #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'be nice to yourself this monday
+
+
+      send this to the one who apologizes too much
+
+
+      #sendthistosomeone #monday #selflove #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: A Kind Monday Reminder 🪞
+    description: 'Be gentle with yourself today. A tiny note to start the week.
+
+
+      #tinynotes #sendthistosomeone #shorts'

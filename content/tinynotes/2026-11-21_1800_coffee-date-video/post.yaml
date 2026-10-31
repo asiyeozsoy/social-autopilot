@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-21T18:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'coffee was never the point ☕
+
+
+      Tag the one you''d talk to for hours.
+
+
+      #sendthistosomeone #coffeedate #bestfriends #coffeetalks #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'the coffee always goes cold
+
+
+      tag your coffee person 👇
+
+
+      #sendthistosomeone #coffee #besties #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Coffee Was Never The Point ☕
+    description: 'For your coffee person. Send it and make plans.
+
+
+      #tinynotes #sendthistosomeone #shorts'

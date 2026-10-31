@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-07T18:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'permission to do absolutely nothing today ☁️
+
+
+      Pass it to the friend who can''t sit still.
+
+
+      #sendthistosomeone #saturdayvibes #slowliving #restday #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'saturday rules: none
+
+
+      send to the friend who works on weekends
+
+
+      #sendthistosomeone #saturday #slowliving #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: A Gentle Saturday Reminder ☁️
+    description: 'Rest is allowed. A tiny note for your slow Saturday.
+
+
+      #tinynotes #sendthistosomeone #shorts'

@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-17T18:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'the friend you still think about 🌿
+
+
+      Send this instead of "we should catch up sometime."
+
+
+      #sendthistosomeone #oldfriends #catchup #friendshipquotes #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'we didn''t drift, life got busy
+
+
+      send this to the friend you miss
+
+
+      #sendthistosomeone #oldfriends #friendship #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: To The Friend I Haven't Talked To In A While 🌿
+    description: 'Life got busy, not the friendship. Send this to an old friend.
+
+
+      #tinynotes #sendthistosomeone #shorts'

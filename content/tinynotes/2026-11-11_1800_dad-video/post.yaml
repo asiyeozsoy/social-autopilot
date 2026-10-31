@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-11T18:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'the quiet kind of love 🔧
+
+
+      Send it to your dad. He''ll reply with one emoji. It''ll mean everything.
+
+
+      #sendthistosomeone #dad #thankyoudad #fatherdaughter #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'dads say i love you differently
+
+
+      send this to your dad and screenshot his reply
+
+
+      #sendthistosomeone #dad #dadlove #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: For Dad 🔧 The Quiet Kind Of Love
+    description: 'Dads say I love you differently. Send this tiny note to yours.
+
+
+      #tinynotes #sendthistosomeone #shorts'

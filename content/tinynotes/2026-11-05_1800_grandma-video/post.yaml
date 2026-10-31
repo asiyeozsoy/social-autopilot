@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-05T18:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'grandparents just hit different 🧶
+
+
+      Share it with them, or with a cousin who''ll get it.
+
+
+      #sendthistosomeone #grandma #grandparents #familylove #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'grandma said one more cookie
+
+
+      tag the cousin who was secretly the favorite
+
+
+      #sendthistosomeone #grandma #family #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: For Grandma 🧶 A Tiny Thank You Note
+    description: 'Grandparents deserve a thank you. Send this tiny note to yours.
+
+
+      #tinynotes #sendthistosomeone #shorts'

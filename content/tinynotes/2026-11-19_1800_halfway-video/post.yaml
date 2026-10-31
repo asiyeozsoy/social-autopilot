@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-19T18:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the slow builders 🌱
+
+
+      Share it with someone chasing a big goal quietly.
+
+
+      #sendthistosomeone #keepgoing #slowprogress #dreambig #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'slow is still moving
+
+
+      send this to the friend building something
+
+
+      #sendthistosomeone #keepgoing #motivation #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Slow Is Still Moving 🌱
+    description: 'A tiny note for anyone working toward something big.
+
+
+      #tinynotes #sendthistosomeone #shorts'

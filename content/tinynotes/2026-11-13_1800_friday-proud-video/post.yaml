@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-13T18:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'a friday note for the ones who kept going 🌅
+
+
+      Send it to someone who had a long week.
+
+
+      #sendthistosomeone #friday #fridayfeeling #proudofyou #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'you made it to friday
+
+
+      send this to the coworker who carried the team
+
+
+      #sendthistosomeone #friyay #proudofyou #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: You Made It To Friday 🌅
+    description: 'A tiny note for anyone who showed up all week.
+
+
+      #tinynotes #sendthistosomeone #shorts'
