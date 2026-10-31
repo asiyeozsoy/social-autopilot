@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-15T15:00:00+01:00'
+platforms:
+  instagram:
+    kind: carousel
+    media:
+    - instagram_01.png
+    - instagram_02.png
+    - instagram_03.png
+    - instagram_04.png
+    - instagram_05.png
+    - instagram_06.png
+    caption: 'the words we think and almost never say 💬
+
+
+      Pick one slide and send it to someone tonight.
+
+
+      #sendthistosomeone #sayitmore #friendshipquotes #gratitude #kindwords'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok_01.png
+    - tiktok_02.png
+    - tiktok_03.png
+    - tiktok_04.png
+    - tiktok_05.png
+    - tiktok_06.png
+    caption: 'swipe → pick one and send it 💬
+
+
+      comment which slide you''re sending and to who 👇
+
+
+      #sendthistosomeone #kindwords #friendship #love #fyp'

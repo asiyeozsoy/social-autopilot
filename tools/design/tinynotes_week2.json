@@ -1,0 +1,33 @@
+[
+ {"id":"01_pazartesi_9kasim","type":"single","date":"2026-11-09","time":"1500","slug":"fresh-start",
+  "hook":"a small note for a brand new week","note":"New week, clean page. Nobody expects you to have it all figured out by Friday. Start messy. Start anyway.","sign":"cheering quietly",
+  "ig":["starting the week with zero plan? same 📝","Pass this to the friend who always says \"next week i'll get it together.\"","#sendthistosomeone #newweek #mondaynotes #startanyway #gentleproductivity"],
+  "tt":["permission to start messy 📝","drop this in your group chat before the alarms go off","#sendthistosomeone #mondaymood #newweek #reminder #fyp"]},
+ {"id":"02_sali_10kasim_kardes","type":"single","date":"2026-11-10","time":"1500","slug":"sibling",
+  "hook":"for your brother or sister","note":"We fought over the remote, the front seat, the last cookie. And somehow you're still the first person I'd call.","sign":"your forever teammate",
+  "ig":["siblings: worst roommates, best allies 🍪","Send it to your sibling. They'll act annoyed. They won't be.","#sendthistosomeone #siblings #brotherandsister #sisterlove #siblinglove"],
+  "tt":["we fought over everything and still","tag your sibling and pretend this isn't about them","#sendthistosomeone #siblings #sisters #brothers #fyp"]},
+ {"id":"03_carsamba_11kasim_uzak","type":"single","date":"2026-11-11","time":"1500","slug":"distance",
+  "hook":"to someone living in another city","note":"Different time zones, same moon. Every good thing that happens to me, I still save to tell you first.","sign":"close, even from far",
+  "ig":["for the people who are home in another city 🌙","Share it with the one you call across time zones.","#sendthistosomeone #longdistance #distancemeansnothing #missingyou #farbutclose"],
+  "tt":["different city, same moon 🌙","send this to the person you facetime the most","#sendthistosomeone #longdistance #ldr #missyou #fyp"]},
+ {"id":"04_persembe_12kasim_yorgun","type":"single","date":"2026-11-12","time":"1500","slug":"tired",
+  "hook":"if they've been carrying a lot lately","note":"You don't owe anyone a perfect version of you today. Eat something warm. Log off early. That counts as enough.","sign":"rest is allowed",
+  "ig":["for the strong friend who never asks for help 🍵","Check on them with this instead of \"how are you?\"","#sendthistosomeone #strongfriend #checkonyourfriends #restisproductive #selfkindness"],
+  "tt":["your strong friend is tired too","send it to the one who always says \"i'm fine\"","#sendthistosomeone #strongfriend #selfcare #tired #fyp"]},
+ {"id":"05_cuma_13kasim_kanka","type":"single","date":"2026-11-13","time":"1500","slug":"friday-plans",
+  "hook":"the friday plan we never actually follow","note":"Plan: early night, healthy dinner, quiet weekend. Reality: snacks at 1am and laughing until we can't breathe.","sign":"worth it every time",
+  "ig":["friday plans vs friday reality 😅","Tag the friend who ruins every early night (lovingly).","#sendthistosomeone #fridaynight #friyay #bestfriendgoals #weekendmode"],
+  "tt":["the plan was to sleep early 😅","send this to your 1am snack partner","#sendthistosomeone #friyay #besties #weekend #fyp"]},
+ {"id":"06_pazar_15kasim_kaydirmali","type":"carousel","date":"2026-11-15","time":"1500","slug":"say-it-more",
+  "slides":[
+   {"cover":["for your people","things worth saying out loud more often","swipe and pick one to send"]},
+   {"note":"I'm really glad I met you."},
+   {"note":"You make ordinary days feel lighter."},
+   {"note":"I'm on your side. Even when you're wrong."},
+   {"note":"Thank you for staying."},
+   {"cover":["your turn","which one will you send today?","screenshot it, send it, mean it"]}
+  ],
+  "ig":["the words we think and almost never say 💬","Pick one slide and send it to someone tonight.","#sendthistosomeone #sayitmore #friendshipquotes #gratitude #kindwords"],
+  "tt":["swipe → pick one and send it 💬","comment which slide you're sending and to who 👇","#sendthistosomeone #kindwords #friendship #love #fyp"]}
+]
