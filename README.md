@@ -53,13 +53,14 @@ Gizli anahtarları (token) **sadece sen** GitHub'a girersin; kimseyle, Claude da
    - `MEDIA_BASE_URL` = `https://<kullanıcı-adın>.github.io/social-autopilot`
    - `ENABLED_PLATFORMS` = `instagram` (ilk test için; diğerleri hazır oldukça `instagram,tiktok,youtube`)
 
-### 2. Instagram (her marka için)
-1. Instagram uygulaması → Ayarlar → Hesap türü → **Profesyonel hesaba geç** (Creator).
-2. Bir Facebook sayfası aç (Factyeap, TinyNotesForU) ve Instagram hesabını sayfaya bağla.
-3. developers.facebook.com → My Apps → **Create App** (tür: Business) → "Instagram" ürününü ekle.
-4. Graph API Explorer'da sayfan için izin ver: `instagram_basic`, `instagram_content_publish`, `pages_show_list`, `pages_read_engagement`.
-5. Uzun ömürlü **sayfa** token'ını ve Instagram işletme hesap ID'sini al.
-6. GitHub **Secrets**: `TINYNOTES_IG_TOKEN`, `TINYNOTES_IG_USER_ID` (Factyeap için `FACTYEAP_...`).
+### 2. Instagram (her marka ayrı, Facebook sayfası gerekmez)
+1. Hesap Profesyonel (Creator) olmalı. Değilse izin ekranı çevirmeyi önerir.
+2. developers.facebook.com → Create App → **Instagram API with Instagram Login** ürününü ekle; izinler: `instagram_business_basic`, `instagram_business_content_publish`.
+3. Her Instagram hesabıyla bir kez "İzin ver" ekranından giriş yap; uzun ömürlü token ve hesap ID'si alınır.
+4. GitHub **Secrets**: `TINYNOTES_IG_TOKEN`, `TINYNOTES_IG_USER_ID` (Factyeap için `FACTYEAP_...`).
+5. Token 60 gün geçerli; süresi dolmadan yenilenmeli.
+
+Facebook sayfası olan hesaplar için eski yöntem (sayfa token'ı) de çalışır; program token'a bakıp doğru adresi kendisi seçer.
 
 ### 3. YouTube
 1. console.cloud.google.com → yeni proje → **YouTube Data API v3**'ü etkinleştir.

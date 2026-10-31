@@ -196,3 +196,8 @@ def test_missing_secrets_wait_without_burning_attempts(tmp_path, monkeypatch):
     for _ in range(4):
         assert cli.main(args) == 0
     assert not state.exists() or json.loads(state.read_text()) == {}
+
+
+def test_instagram_login_token_uses_instagram_host():
+    assert instagram.api_base("IGAAabc").startswith("https://graph.instagram.com/")
+    assert instagram.api_base("EAAGxyz").startswith("https://graph.facebook.com/")
