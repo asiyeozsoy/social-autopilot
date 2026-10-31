@@ -20,7 +20,9 @@ def instagram(brand: str) -> str:
     r = requests.get(f"{base}/{ig_id}", params={"fields": "username", "access_token": token}, timeout=30)
     body = r.json()
     if "error" in body:
-        raise RuntimeError(f"account lookup failed: {body['error'].get('message', body['error'])}")
+        me = requests.get(f"{base}/me", params={"fields": "id,name,username", "access_token": token}, timeout=30).json()
+        who = me.get("username") or me.get("name") or me.get("error", {}).get("message", "?")
+        raise RuntimeError(f"this key belongs to '{who}' (type {token[:3]}), which cannot open account {ig_id}")
     r = requests.get(f"{base}/{ig_id}/content_publishing_limit", params={"fields": "quota_usage,config", "access_token": token}, timeout=30)
     lim = r.json()
     if "error" in lim:
