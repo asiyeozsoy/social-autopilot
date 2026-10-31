@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-08T15:00:00+01:00'
+platforms:
+  instagram:
+    kind: carousel
+    media:
+    - instagram_01.png
+    - instagram_02.png
+    - instagram_03.png
+    - instagram_04.png
+    - instagram_05.png
+    - instagram_06.png
+    caption: 'read them slowly, keep the one you needed most 📌
+
+
+      Save this for Wednesday. Share it with whoever''s had a long week.
+
+
+      #sendthistosomeone #selfcarereminder #weeklyreset #mentalhealthmatters #sundayreset'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok_01.png
+    - tiktok_02.png
+    - tiktok_03.png
+    - tiktok_04.png
+    - tiktok_05.png
+    - tiktok_06.png
+    caption: 'swipe → which one hit hardest?
+
+
+      comment the number, then pass it to a friend
+
+
+      #sendthistosomeone #sundayreset #selfcare #reminder #fyp'
