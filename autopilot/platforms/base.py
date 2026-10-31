@@ -10,12 +10,16 @@ class PublishError(RuntimeError):
     pass
 
 
+class NotConfigured(PublishError):
+    """A secret or setting is missing: wait quietly, don't count it as a failed attempt."""
+
+
 def creds(brand: str, name: str) -> str:
     """Read a per-brand secret, e.g. creds('tinynotes', 'IG_TOKEN') -> $TINYNOTES_IG_TOKEN."""
     key = f"{brand.upper()}_{name}"
     value = os.environ.get(key, "")
     if not value:
-        raise PublishError(f"secret {key} is not set")
+        raise NotConfigured(f"secret {key} is not set")
     return value
 
 

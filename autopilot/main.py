@@ -14,6 +14,7 @@ import sys
 from pathlib import Path
 
 from .platforms import PUBLISHERS
+from .platforms.base import NotConfigured
 from .queue import QueueError, load_queue
 from .state import MAX_ATTEMPTS, State
 
@@ -77,6 +78,9 @@ def main(argv=None) -> int:
                 remote_id, url = PUBLISHERS[name](post, pp, content)
                 state.mark_published(post.id, name, remote_id, url)
                 print(f"OK   {label} {url}")
+            except NotConfigured as e:
+                print(f"WAIT {label}: {e}")
+                continue
             except Exception as e:  # keep going with the other posts
                 state.mark_failed(post.id, name, f"{type(e).__name__}: {e}")
                 attempts = state.entry(post.id, name)["attempts"]

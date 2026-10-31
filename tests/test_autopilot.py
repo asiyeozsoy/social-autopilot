@@ -185,3 +185,14 @@ def test_youtube_upload_flow(tmp_path, monkeypatch):
     assert url == "https://youtube.com/shorts/abc"
     assert meta["snippet"]["title"] == "Honey thief #shorts"
     assert meta["status"]["containsSyntheticMedia"] is True
+
+
+def test_missing_secrets_wait_without_burning_attempts(tmp_path, monkeypatch):
+    for k in ("TINYNOTES_IG_TOKEN", "TINYNOTES_IG_USER_ID", "TINYNOTES_TT_REFRESH_TOKEN"):
+        monkeypatch.delenv(k, raising=False)
+    content, state = tmp_path / "c", tmp_path / "s.json"
+    make_post(content)
+    args = ["--content", str(content), "--state", str(state), "--now", "2026-11-02T15:30:00+01:00"]
+    for _ in range(4):
+        assert cli.main(args) == 0
+    assert not state.exists() or json.loads(state.read_text()) == {}
