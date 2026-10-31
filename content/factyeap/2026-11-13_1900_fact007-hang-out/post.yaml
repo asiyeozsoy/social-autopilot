@@ -1,0 +1,25 @@
+brand: factyeap
+publish_at: '2026-11-13T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: image
+    media:
+    - instagram.png
+    caption: 'save the date: never 📅
+
+
+      Tag the friend you''ve been saying this to for a year. Then actually make plans.
+
+
+      #factyeap #relatable #friendship #weshouldhangout #yeap'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok.png
+    caption: 'this is your sign to actually text them
+
+
+      Tag the friend you''ve been saying this to for a year. Then actually make plans.
+
+
+      #factyeap #friends #relatable #fyp'

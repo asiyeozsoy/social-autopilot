@@ -1,0 +1,37 @@
+brand: factyeap
+publish_at: '2026-11-18T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'then pretend you were fixing your hair 👋
+
+
+      Send this to the friend who''s done it twice this week.
+
+
+      #factyeap #relatable #awkward #cringe #yeap'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'the hand goes straight to the hair
+
+
+      Send this to the friend who''s done it twice this week.
+
+
+      #factyeap #awkward #relatable #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'Fact #010: The Wrong Wave 👋'
+    description: 'You wave back at someone who was waving at the person behind you.
+
+
+      Send this to the friend who''s done it twice this week.
+
+
+      #factyeap #relatable #yeap #shorts'

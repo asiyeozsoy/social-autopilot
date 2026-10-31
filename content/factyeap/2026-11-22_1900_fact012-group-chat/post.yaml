@@ -1,0 +1,38 @@
+brand: factyeap
+publish_at: '2026-11-22T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: '"wait what are we talking about" 💬
+
+
+      Tag them. You know exactly who it is.
+
+
+      #factyeap #relatable #groupchat #bestfriends #yeap'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'replying to 214 unread messages
+
+
+      Tag them. You know exactly who it is.
+
+
+      #factyeap #groupchat #relatable #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'Fact #012: That One Person In The Group Chat 💬'
+    description: 'Every group chat has one person who replies to messages from three
+      days ago.
+
+
+      Tag them. You know exactly who it is.
+
+
+      #factyeap #relatable #yeap #shorts'

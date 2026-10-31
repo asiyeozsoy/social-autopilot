@@ -1,0 +1,25 @@
+brand: factyeap
+publish_at: '2026-11-09T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: image
+    media:
+    - instagram.png
+    caption: 'battery has trust issues 🔋
+
+
+      Tag the friend who''s always at 3%.
+
+
+      #factyeap #relatable #phonebattery #mondaymood #yeap'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok.png
+    caption: '1% and a map to read
+
+
+      Tag the friend who''s always at 3%.
+
+
+      #factyeap #phone #relatable #fyp'

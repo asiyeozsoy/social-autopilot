@@ -1,0 +1,25 @@
+brand: factyeap
+publish_at: '2026-11-23T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: image
+    media:
+    - instagram.png
+    caption: '"I''m fine" (has a 40-minute story ready) 🙂
+
+
+      Send this to the friend who always asks twice.
+
+
+      #factyeap #relatable #imfine #bestfriends #yeap'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok.png
+    caption: 'ask me again and i''ll tell you everything
+
+
+      Send this to the friend who always asks twice.
+
+
+      #factyeap #imfine #relatable #fyp'

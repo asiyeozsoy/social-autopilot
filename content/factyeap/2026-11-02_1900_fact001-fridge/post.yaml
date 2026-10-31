@@ -1,0 +1,25 @@
+brand: factyeap
+publish_at: '2026-11-02T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: image
+    media:
+    - instagram.png
+    caption: 'the fridge restocks itself, right? 🧊
+
+
+      Send this to your midnight snack partner.
+
+
+      #factyeap #relatable #fridge #midnightsnack #yeap'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok.png
+    caption: 'checking again just in case
+
+
+      Send this to your midnight snack partner.
+
+
+      #factyeap #relatable #fridge #fyp'

@@ -1,0 +1,25 @@
+brand: factyeap
+publish_at: '2026-11-20T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: image
+    media:
+    - instagram.png
+    caption: 'snooze button: best invention ever ⏰
+
+
+      Tag the friend who sets nine alarms.
+
+
+      #factyeap #relatable #snooze #morningmood #yeap'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok.png
+    caption: '5 more minutes x9
+
+
+      Tag the friend who sets nine alarms.
+
+
+      #factyeap #snooze #relatable #fyp'

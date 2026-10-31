@@ -1,0 +1,25 @@
+brand: factyeap
+publish_at: '2026-11-16T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: image
+    media:
+    - instagram.png
+    caption: 'what time is it? no idea, I just looked ⌚
+
+
+      Tag someone who does this every 30 seconds.
+
+
+      #factyeap #relatable #brainfog #mondaymood #yeap'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok.png
+    caption: 'looked, forgot, looked again
+
+
+      Tag someone who does this every 30 seconds.
+
+
+      #factyeap #relatable #brain #fyp'

@@ -1,0 +1,37 @@
+brand: factyeap
+publish_at: '2026-11-04T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: '5 more minutes (40 minutes) 🚗
+
+
+      Tag the friend who''s "almost there" right now.
+
+
+      #factyeap #relatable #alwayslate #friends #yeap'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'we all know where you really are
+
+
+      Tag the friend who''s "almost there" right now.
+
+
+      #factyeap #alwayslate #relatable #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'Fact #002: "I''m Almost There" 🚗'
+    description: '"I''m almost there" means you haven''t left the house yet.
+
+
+      Tag the friend who''s "almost there" right now.
+
+
+      #factyeap #relatable #yeap #shorts'

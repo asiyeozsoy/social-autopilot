@@ -1,0 +1,25 @@
+brand: factyeap
+publish_at: '2026-11-06T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: image
+    media:
+    - instagram.png
+    caption: 'speedrun: any% 🧹
+
+
+      Share it with the one who hides everything in the closet.
+
+
+      #factyeap #relatable #cleaning #guests #yeap'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok.png
+    caption: 'the closet knows everything
+
+
+      Share it with the one who hides everything in the closet.
+
+
+      #factyeap #cleaning #relatable #fyp'
