@@ -29,8 +29,8 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Publish
         env:
-          MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL }}
-          ENABLED_PLATFORMS: ${{ vars.ENABLED_PLATFORMS }}
+          MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL || 'https://asiyeozsoy.github.io/social-autopilot' }}
+          ENABLED_PLATFORMS: ${{ vars.ENABLED_PLATFORMS || 'instagram' }}
           TIKTOK_PRIVACY: ${{ vars.TIKTOK_PRIVACY }}
           GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
