@@ -1,0 +1,37 @@
+brand: factyeap
+publish_at: '2026-11-14T12:00:00+01:00'
+platforms:
+  instagram:
+    kind: carousel
+    media:
+    - instagram_01.png
+    - instagram_02.png
+    - instagram_03.png
+    - instagram_04.png
+    - instagram_05.png
+    - instagram_06.png
+    - instagram_07.png
+    caption: '2am has five kinds of people 🌙
+
+
+      Comment your number. Tag your 2am twin.
+
+
+      #factyeap #typesofpeople #2am #nightowl #yeap'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok_01.png
+    - tiktok_02.png
+    - tiktok_03.png
+    - tiktok_04.png
+    - tiktok_05.png
+    - tiktok_06.png
+    - tiktok_07.png
+    caption: 'which 2am person are you?
+
+
+      comment the number + tag your twin 👇
+
+
+      #factyeap #nightowl #relatable #fyp'

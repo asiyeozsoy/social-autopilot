@@ -1,0 +1,25 @@
+brand: factyeap
+publish_at: '2026-11-07T12:00:00+01:00'
+platforms:
+  instagram:
+    kind: image
+    media:
+    - instagram.png
+    caption: 'be honest. which owl are you today? 🦉
+
+
+      Comment your number and tag the friend who''s a 9.
+
+
+      #factyeap #whichoneareyou #relatable #mood #yeap'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok.png
+    caption: 'which owl are you today?
+
+
+      comment your number 👇 tag your twin
+
+
+      #factyeap #mood #relatable #fyp'

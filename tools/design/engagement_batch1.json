@@ -1,0 +1,39 @@
+{
+ "tinynotes": [
+  {"date": "2026-11-07", "slug": "pick-a-number-today",
+   "cover": ["pick a number", "which note is for you today?", "swipe slowly, then comment it"],
+   "notes": ["You're doing better than you think. Really.", "Someone is grateful you exist. Today, too.", "It's okay to rest before you're exhausted.", "The thing you're worried about will work out.", "You deserve the love you keep giving away."],
+   "end": ["comment your number", "then send this to someone who needs theirs"],
+   "ig": ["which one found you today? 🤍", "Comment your number, then send this to someone who needs theirs.", "#sendthistosomeone #pickanumber #gentlereminder #selflove #tinynotes"],
+   "tt": ["pick a number before you swipe", "comment yours 👇 then send it to your person", "#sendthistosomeone #pickanumber #reminder #fyp"]},
+  {"date": "2026-11-14", "slug": "pick-a-number-person",
+   "cover": ["pick a number", "which note would you send to your person?", "swipe, choose one, send it"],
+   "notes": ["I still get excited when your name lights up my phone.", "You're my favorite part of ordinary days.", "Thank you for staying when it wasn't easy.", "I'm proud of who you are becoming.", "Home is wherever you're laughing."],
+   "end": ["comment your number", "then send that note to them. tonight."],
+   "ig": ["one of these belongs in their DMs 💌", "Comment your number, then send it to your person tonight.", "#sendthistosomeone #lovenotes #couplegoals #pickanumber #tinynotes"],
+   "tt": ["which one are you sending?", "comment the number and send it 👀", "#sendthistosomeone #lovenotes #couples #fyp"]},
+  {"date": "2026-11-21", "slug": "pick-a-number-friend",
+   "cover": ["pick a number", "which note fits your best friend?", "swipe, then tag them"],
+   "notes": ["You make every bad day 50% funnier.", "I'd pick you in every lifetime. Even the chaotic ones.", "Thank you for knowing when to call and when to just show up.", "You're the reason my camera roll is mostly screenshots.", "Same table, same jokes, forever."],
+   "end": ["comment your number", "then tag the friend it belongs to"],
+   "ig": ["for the friend who's basically family 🫶", "Comment your number and tag the friend it belongs to.", "#sendthistosomeone #bestfriends #friendshipquotes #pickanumber #tinynotes"],
+   "tt": ["your bestie is one of these", "comment the number + tag them 👇", "#sendthistosomeone #bestie #friendship #fyp"]}
+ ],
+ "factyeap": [
+  {"date": "2026-11-07", "slug": "which-owl", "kind": "owl_grid",
+   "ig": ["be honest. which owl are you today? 🦉", "Comment your number and tag the friend who's a 9.", "#factyeap #whichoneareyou #relatable #mood #yeap"],
+   "tt": ["which owl are you today?", "comment your number 👇 tag your twin", "#factyeap #mood #relatable #fyp"]},
+  {"date": "2026-11-14", "slug": "types-2am", "kind": "types",
+   "cover": "TYPES OF PEOPLE AT 2AM|Which one are you? Swipe and be honest.",
+   "types": ["The fridge visitor. Not hungry, just checking.", "The \"one more video\" scroller. It's been 3 hours.", "The overthinker replaying a conversation from 2019.", "The sudden life planner. New job, new city, new me.", "The sleeper. Asleep at 10. Lives a peaceful life."],
+   "end": ["Comment your number.", "Tag your 2am twin."],
+   "ig": ["2am has five kinds of people 🌙", "Comment your number. Tag your 2am twin.", "#factyeap #typesofpeople #2am #nightowl #yeap"],
+   "tt": ["which 2am person are you?", "comment the number + tag your twin 👇", "#factyeap #nightowl #relatable #fyp"]},
+  {"date": "2026-11-21", "slug": "types-group-chat", "kind": "types",
+   "cover": "TYPES OF PEOPLE IN A GROUP CHAT|Every chat has all five. Find yours.",
+   "types": ["The voice note sender. 4 minutes. Every time.", "The \"lol\" replier. Has never laughed out loud.", "The ghost. Reads everything. Says nothing.", "The 3-days-late responder. \"wait what\"", "The planner. Already made a poll."],
+   "end": ["Comment your number.", "Tag the ghost in your chat."],
+   "ig": ["every group chat has all five 💬", "Comment your number. Tag the ghost in your chat.", "#factyeap #groupchat #typesofpeople #bestfriends #yeap"],
+   "tt": ["which one are you in the group chat?", "comment your number + tag the ghost 👀", "#factyeap #groupchat #relatable #fyp"]}
+ ]
+}

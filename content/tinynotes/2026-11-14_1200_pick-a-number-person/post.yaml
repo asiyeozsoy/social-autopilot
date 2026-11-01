@@ -1,0 +1,37 @@
+brand: tinynotes
+publish_at: '2026-11-14T12:00:00+01:00'
+platforms:
+  instagram:
+    kind: carousel
+    media:
+    - instagram_01.png
+    - instagram_02.png
+    - instagram_03.png
+    - instagram_04.png
+    - instagram_05.png
+    - instagram_06.png
+    - instagram_07.png
+    caption: 'one of these belongs in their DMs 💌
+
+
+      Comment your number, then send it to your person tonight.
+
+
+      #sendthistosomeone #lovenotes #couplegoals #pickanumber #tinynotes'
+  tiktok:
+    kind: photo
+    media:
+    - tiktok_01.png
+    - tiktok_02.png
+    - tiktok_03.png
+    - tiktok_04.png
+    - tiktok_05.png
+    - tiktok_06.png
+    - tiktok_07.png
+    caption: 'which one are you sending?
+
+
+      comment the number and send it 👀
+
+
+      #sendthistosomeone #lovenotes #couples #fyp'
