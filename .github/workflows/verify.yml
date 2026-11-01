@@ -30,3 +30,19 @@ jobs:
           TINYNOTES_IG_USER_ID: ${{ secrets.TINYNOTES_IG_USER_ID || '17841453440786843' }}
           TINYNOTES_IG_TOKEN: ${{ secrets.TINYNOTES_IG_TOKEN }}
         run: python -m autopilot.verify tinynotes instagram
+      - name: Instagram upload test factyeap
+        if: always()
+        env:
+          MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+          FACTYEAP_IG_USER_ID: ${{ secrets.FACTYEAP_IG_USER_ID || '17841474070047497' }}
+          FACTYEAP_IG_TOKEN: ${{ secrets.FACTYEAP_IG_TOKEN }}
+        run: python -m autopilot.verify factyeap instagram-upload
+      - name: Instagram upload test tinynotes
+        if: always()
+        env:
+          MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+          TINYNOTES_IG_USER_ID: ${{ secrets.TINYNOTES_IG_USER_ID || '17841453440786843' }}
+          TINYNOTES_IG_TOKEN: ${{ secrets.TINYNOTES_IG_TOKEN }}
+        run: python -m autopilot.verify tinynotes instagram-upload

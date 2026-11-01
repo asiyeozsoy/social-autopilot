@@ -38,13 +38,34 @@ def instagram(brand: str) -> str:
     return f"@{body.get('username')} OK - can publish (used {data.get('quota_usage', 0)}/{total} posts in the last 24h)"
 
 
-CHECKS = {"instagram": instagram}
+def instagram_upload(brand: str) -> str:
+    """Create (but never publish) a media container from the brand's next queued image.
+    Proves Instagram can download our hosted JPEG and accepts it. Unused containers expire in 24h."""
+    import datetime as dt
+    from pathlib import Path
+
+    from .media import public_url
+    from .platforms.instagram import _container, _wait
+    from .queue import load_queue
+
+    root = Path(__file__).resolve().parent.parent / "content"
+    now = dt.datetime.now(dt.timezone.utc)
+    post = next(p for p in load_queue(root) if p.brand == brand and p.publish_at > now
+                and "instagram" in p.platforms and p.platforms["instagram"].kind in ("image", "carousel"))
+    img = post.platforms["instagram"].media[0]
+    ig_id, token = creds(brand, "IG_USER_ID"), creds(brand, "IG_TOKEN")
+    cid = _container(ig_id, token, image_url=public_url(img, root), is_carousel_item="true")
+    _wait(cid, token)
+    return f"image from {post.id} accepted by Instagram (container {cid}, NOT published)"
+
+
+CHECKS = {"instagram": instagram, "instagram-upload": instagram_upload}
 
 
 def main(argv=None) -> int:
     brand, platform = (argv or sys.argv[1:])[:2]
     try:
-        print(f"{brand} {platform}: {CHECKS[platform](brand)}")
+        print(f"::notice::{brand} {platform}: {CHECKS[platform](brand)}")
         return 0
     except NotConfigured as e:
         msg = f"{brand} {platform}: NOT SET UP - {e}"
