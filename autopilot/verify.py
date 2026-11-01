@@ -59,7 +59,27 @@ def instagram_upload(brand: str) -> str:
     return f"image from {post.id} accepted by Instagram (container {cid}, NOT published)"
 
 
-CHECKS = {"instagram": instagram, "instagram-upload": instagram_upload}
+def instagram_reel(brand: str) -> str:
+    """Create (never publish) a Reels container from the brand's next queued video."""
+    import datetime as dt
+    from pathlib import Path
+
+    from .media import public_url
+    from .platforms.instagram import _container, _wait
+    from .queue import load_queue
+
+    root = Path(__file__).resolve().parent.parent / "content"
+    now = dt.datetime.now(dt.timezone.utc)
+    post = next(p for p in load_queue(root) if p.brand == brand and p.publish_at > now
+                and p.platforms.get("instagram") and p.platforms["instagram"].kind == "reel")
+    vid = post.platforms["instagram"].media[0]
+    ig_id, token = creds(brand, "IG_USER_ID"), creds(brand, "IG_TOKEN")
+    cid = _container(ig_id, token, media_type="REELS", video_url=public_url(vid, root), share_to_feed="true")
+    _wait(cid, token)
+    return f"video from {post.id} accepted by Instagram Reels (container {cid}, NOT published)"
+
+
+CHECKS = {"instagram": instagram, "instagram-upload": instagram_upload, "instagram-reel": instagram_reel}
 
 
 def main(argv=None) -> int:
