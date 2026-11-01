@@ -16,5 +16,8 @@ def public_url(file: Path, content_root: Path) -> str:
     if not base:
         from .platforms.base import NotConfigured
         raise NotConfigured("MEDIA_BASE_URL is not set")
+    if file.suffix.lower() == ".png":
+        # Instagram and TikTok only accept JPEG photos; the Pages build writes a .jpg next to each .png
+        file = file.with_suffix(".jpg")
     rel = file.relative_to(content_root).as_posix()
     return f"{base}/{quote(rel)}"

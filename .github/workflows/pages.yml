@@ -30,6 +30,8 @@ jobs:
           python-version: "3.12"
       - name: Check queue before publishing media
         run: pip install -r requirements.txt && python -m autopilot.main --check
+      - name: Make JPEG copies (Instagram/TikTok accept JPEG only)
+        run: pip install pillow && python tools/make_jpegs.py content
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

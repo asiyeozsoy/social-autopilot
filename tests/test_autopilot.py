@@ -98,7 +98,7 @@ def test_instagram_carousel_flow(tmp_path, monkeypatch):
     monkeypatch.setattr(instagram.requests, "get", fake_get)
     media_id, link = instagram.publish(post, post.platforms["instagram"], tmp_path)
     assert media_id == "pub" and link.endswith("/p/x")
-    assert posts[0][1]["image_url"] == "https://me.github.io/repo/tinynotes/2026-11-02_1500_a/a.png"
+    assert posts[0][1]["image_url"] == "https://me.github.io/repo/tinynotes/2026-11-02_1500_a/a.jpg"
     assert posts[0][1]["is_carousel_item"] == "true"
     assert posts[2][1]["media_type"] == "CAROUSEL" and posts[2][1]["children"] == "c1,c2"
     assert posts[3][0].endswith("/17841/media_publish")
@@ -130,7 +130,7 @@ def test_tiktok_photo_flow(tmp_path, monkeypatch):
     assert pid == "p1"
     assert sent["post_info"]["privacy_level"] == "SELF_ONLY"   # private until the app is audited
     assert sent["post_info"]["title"] == "title line"
-    assert sent["source_info"]["photo_images"][0].endswith("/a.png")
+    assert sent["source_info"]["photo_images"][0].endswith("/a.jpg")
 
 
 def test_tiktok_video_chunking(tmp_path, monkeypatch):
