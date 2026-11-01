@@ -79,7 +79,21 @@ def instagram_reel(brand: str) -> str:
     return f"video from {post.id} accepted by Instagram Reels (container {cid}, NOT published)"
 
 
-CHECKS = {"instagram": instagram, "instagram-upload": instagram_upload, "instagram-reel": instagram_reel}
+def facebook(brand: str) -> str:
+    from .platforms.facebook import API, page_token
+    page_id = creds(brand, "FB_PAGE_ID")
+    tok = page_token(page_id)
+    me = requests.get(f"{API}/{page_id}", params={"fields": "name", "access_token": tok}, timeout=30).json()
+    perms = requests.get(f"{API}/me/permissions", params={"access_token": __import__("os").environ["META_SYSTEM_TOKEN"]}, timeout=30).json()
+    granted = sorted(p["permission"] for p in perms.get("data", []) if p.get("status") == "granted")
+    need = {"pages_manage_posts", "pages_read_engagement", "pages_show_list"}
+    missing = need - set(granted)
+    if missing:
+        raise RuntimeError(f"page '{me.get('name')}' reachable but token lacks {sorted(missing)}")
+    return f"page '{me.get('name')}' OK - can publish"
+
+
+CHECKS = {"instagram": instagram, "facebook": facebook, "instagram-upload": instagram_upload, "instagram-reel": instagram_reel}
 
 
 def main(argv=None) -> int:
