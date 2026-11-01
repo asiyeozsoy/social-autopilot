@@ -1,0 +1,17 @@
+name: Diagnose Instagram
+on:
+  push:
+    branches: [main]
+    paths: [".github/diagnose-request"]
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - env:
+          FACTYEAP_IG_USER_ID: ${{ secrets.FACTYEAP_IG_USER_ID || '17841474070047497' }}
+          FACTYEAP_IG_TOKEN: ${{ secrets.FACTYEAP_IG_TOKEN }}
+        run: python -m autopilot.diagnose_ig factyeap
