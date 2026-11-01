@@ -47,7 +47,7 @@ jobs:
           FACTYEAP_TT_REFRESH_TOKEN: ${{ secrets.FACTYEAP_TT_REFRESH_TOKEN }}
           META_SYSTEM_TOKEN: ${{ secrets.META_SYSTEM_TOKEN }}
           FACTYEAP_FB_PAGE_ID: ${{ secrets.FACTYEAP_FB_PAGE_ID || '633502523179601' }}
-          TINYNOTES_FB_PAGE_ID: ${{ secrets.TINYNOTES_FB_PAGE_ID }}
+          TINYNOTES_FB_PAGE_ID: ${{ secrets.TINYNOTES_FB_PAGE_ID || '1465888266604099' }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then
             python -m autopilot.main --dry-run
