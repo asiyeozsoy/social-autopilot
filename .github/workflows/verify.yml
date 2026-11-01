@@ -74,3 +74,15 @@ jobs:
           META_SYSTEM_TOKEN: ${{ secrets.META_SYSTEM_TOKEN }}
           TINYNOTES_FB_PAGE_ID: ${{ secrets.TINYNOTES_FB_PAGE_ID || '1465888266604099' }}
         run: python -m autopilot.verify tinynotes facebook
+      - name: YouTube factyeap
+        if: always()
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+        run: python -m autopilot.verify factyeap youtube
+      - name: YouTube tinynotes
+        if: always()
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+        run: python -m autopilot.verify tinynotes youtube

@@ -14,17 +14,27 @@ import os
 
 import requests
 
-from .base import PublishError, check, creds
+from .base import NotConfigured, PublishError, check, creds
 
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 UPLOAD_URL = "https://www.googleapis.com/upload/youtube/v3/videos"
+
+
+def _refresh_token(brand):
+    if os.environ.get(f"{brand.upper()}_YT_REFRESH_TOKEN"):
+        return creds(brand, "YT_REFRESH_TOKEN")
+    from ..ytstore import load
+    tok = load(brand)
+    if not tok:
+        raise NotConfigured(f"{brand} YouTube channel not connected yet")
+    return tok
 
 
 def _access_token(brand):
     r = requests.post(TOKEN_URL, data={
         "client_id": os.environ.get("YOUTUBE_CLIENT_ID", ""),
         "client_secret": os.environ.get("YOUTUBE_CLIENT_SECRET", ""),
-        "refresh_token": creds(brand, "YT_REFRESH_TOKEN"),
+        "refresh_token": _refresh_token(brand),
         "grant_type": "refresh_token",
     }, timeout=30)
     return check(r, "youtube token refresh")["access_token"]

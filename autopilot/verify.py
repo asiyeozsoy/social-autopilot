@@ -93,7 +93,16 @@ def facebook(brand: str) -> str:
     return f"page '{me.get('name')}' OK - can publish"
 
 
-CHECKS = {"instagram": instagram, "facebook": facebook, "instagram-upload": instagram_upload, "instagram-reel": instagram_reel}
+def youtube(brand: str) -> str:
+    from .platforms.youtube import _access_token
+    tok = _access_token(brand)
+    ch = requests.get("https://www.googleapis.com/youtube/v3/channels", params={"part": "snippet", "mine": "true"},
+                      headers={"Authorization": f"Bearer {tok}"}, timeout=30).json()
+    title = (ch.get("items") or [{}])[0].get("snippet", {}).get("title", "?")
+    return f"channel '{title}' OK - can upload"
+
+
+CHECKS = {"youtube": youtube, "instagram": instagram, "facebook": facebook, "instagram-upload": instagram_upload, "instagram-reel": instagram_reel}
 
 
 def main(argv=None) -> int:
