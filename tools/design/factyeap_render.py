@@ -168,7 +168,7 @@ def video(out, number, statement, fps=30, dur=9.0):
     beat(tmp / "a.wav", dur, yeap_at)
     subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-framerate", str(fps), "-i", str(tmp / "f%04d.jpg"),
                     "-i", str(tmp / "a.wav"), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
-                    "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart", str(out)], check=True)
+                    "-g", "60", "-keyint_min", "60", "-sc_threshold", "0", "-c:a", "aac", "-ac", "2", "-ar", "48000", "-b:a", "128k", "-shortest", "-movflags", "+faststart", str(out)], check=True)
 
 
 if __name__ == "__main__":

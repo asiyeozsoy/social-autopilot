@@ -8,7 +8,7 @@ import pytest
 import yaml
 
 from autopilot import main as cli
-from autopilot.platforms import instagram, tiktok, youtube
+from autopilot.platforms import facebook, instagram, tiktok, youtube
 from autopilot.queue import QueueError, load_queue
 
 
@@ -217,3 +217,68 @@ def test_instagram_access_error_waits(tmp_path, monkeypatch):
     monkeypatch.setattr(instagram.requests, "post", lambda *a, **k: err)
     with pytest.raises(NotConfigured):
         instagram.publish(post, post.platforms["instagram"], tmp_path)
+
+
+def test_facebook_mirrors_instagram(tmp_path):
+    make_post(tmp_path)
+    post = load_queue(tmp_path)[0]
+    fb = post.platforms["facebook"]
+    assert fb.kind == "carousel" and [m.name for m in fb.media] == ["a.png", "b.png"]
+
+
+def test_facebook_carousel_flow(tmp_path, monkeypatch):
+    monkeypatch.setenv("META_SYSTEM_TOKEN", "sys")
+    monkeypatch.setenv("TINYNOTES_FB_PAGE_ID", "55")
+    monkeypatch.setenv("MEDIA_BASE_URL", "https://me.github.io/repo")
+    make_post(tmp_path)
+    post = load_queue(tmp_path)[0]
+    calls = []
+
+    def fake_get(url, params=None, **kw):
+        return Resp({"access_token": "pagetok", "name": "TinyNotes"})
+
+    ids = iter(["p1", "p2", "55_999"])
+
+    def fake_post(url, data=None, **kw):
+        calls.append((url, data))
+        return Resp({"id": next(ids)})
+
+    monkeypatch.setattr(facebook.requests, "get", fake_get)
+    monkeypatch.setattr(facebook.requests, "post", fake_post)
+    pid, link = facebook.publish(post, post.platforms["facebook"], tmp_path)
+    assert pid == "55_999"
+    assert calls[0][1]["published"] == "false" and calls[0][1]["url"].endswith("/a.jpg")
+    assert json.loads(calls[2][1]["attached_media"]) == [{"media_fbid": "p1"}, {"media_fbid": "p2"}]
+    assert calls[2][1]["access_token"] == "pagetok"
+
+
+def test_facebook_reel_flow(tmp_path, monkeypatch):
+    monkeypatch.setenv("META_SYSTEM_TOKEN", "sys")
+    monkeypatch.setenv("FACTYEAP_FB_PAGE_ID", "77")
+    monkeypatch.setenv("MEDIA_BASE_URL", "https://me.github.io/repo")
+    folder = make_post(tmp_path, "factyeap/r", platforms={"instagram": {"kind": "reel", "media": ["v.mp4"], "caption": "cap"}})
+    spec = yaml.safe_load((folder / "post.yaml").read_text()); spec["brand"] = "factyeap"
+    (folder / "post.yaml").write_text(yaml.safe_dump(spec))
+    post = load_queue(tmp_path)[0]
+    seen = {}
+
+    def fake_get(url, params=None, **kw):
+        if params and params.get("fields") == "access_token,name":
+            return Resp({"access_token": "pt"})
+        return Resp({"status": {"uploading_phase": {"status": "complete"}}})
+
+    def fake_post(url, data=None, headers=None, **kw):
+        if "rupload" in url:
+            seen["upload"] = headers
+            return Resp({"success": True})
+        if data["upload_phase"] == "start":
+            return Resp({"video_id": "v9", "upload_url": "https://rupload.facebook.com/video-upload/v22.0/v9"})
+        seen["finish"] = data
+        return Resp({"success": True})
+
+    monkeypatch.setattr(facebook.requests, "get", fake_get)
+    monkeypatch.setattr(facebook.requests, "post", fake_post)
+    vid, _ = facebook.publish(post, post.platforms["facebook"], tmp_path)
+    assert vid == "v9"
+    assert seen["upload"]["file_url"].endswith("/v.mp4") and seen["upload"]["Authorization"] == "OAuth pt"
+    assert seen["finish"]["video_state"] == "PUBLISHED" and seen["finish"]["description"] == "cap"

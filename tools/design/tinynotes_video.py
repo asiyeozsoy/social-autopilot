@@ -161,7 +161,7 @@ def render(out, hook, note, sign, seed="tn"):
     music(tmp / "m.wav", DUR, seed)
     subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-framerate", str(FPS), "-i", str(tmp / "f%04d.jpg"),
                     "-i", str(tmp / "m.wav"), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
-                    "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart", str(out)], check=True)
+                    "-g", "60", "-keyint_min", "60", "-sc_threshold", "0", "-c:a", "aac", "-ac", "2", "-ar", "48000", "-b:a", "128k", "-shortest", "-movflags", "+faststart", str(out)], check=True)
 
 
 if __name__ == "__main__":

@@ -31,6 +31,7 @@ KINDS = {
     "instagram": {"image", "carousel", "reel"},
     "tiktok": {"photo", "video"},
     "youtube": {"short"},
+    "facebook": {"image", "carousel", "reel"},
 }
 
 
@@ -101,6 +102,10 @@ def load_post(folder: Path, root: Path) -> Post:
             title=str(p.get("title", "")).strip(),
             description=str(p.get("description", "")).strip(),
         )
+    # Facebook mirrors Instagram unless a post says otherwise
+    if "facebook" not in post.platforms and "instagram" in post.platforms:
+        ig = post.platforms["instagram"]
+        post.platforms["facebook"] = PlatformPost("facebook", ig.kind, ig.media, ig.caption)
     return post
 
 
