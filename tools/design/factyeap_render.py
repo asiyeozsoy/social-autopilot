@@ -70,12 +70,12 @@ def layout(platform, statement):
     return dict(w=w, h=h, f=f, size=size, lines=lines, y0=y0, bottom=bottom)
 
 
-def draw_frame(platform, number, statement, seed, n_words=None, yeap_scale=1.0, logo_alpha=1.0):
+def draw_frame(platform, number, statement, seed, n_words=None, yeap_scale=1.0, logo_alpha=1.0, label=None, sign="yeap."):
     L = layout(platform, statement)
     im = background(L["w"], L["h"], seed)
     d = ImageDraw.Draw(im)
     x, y = 100, L["y0"]
-    d.text((x, y), f"FACT #{number:03d}", font=font("Poppins-Medium.ttf", 36), fill=AMBER)
+    d.text((x, y), label or f"FACT #{number:03d}", font=font("Poppins-Medium.ttf", 36), fill=AMBER)
     y += 90
     shown, total = 0, sum(len(l) for l in L["lines"])
     limit = total if n_words is None else n_words
@@ -88,9 +88,9 @@ def draw_frame(platform, number, statement, seed, n_words=None, yeap_scale=1.0, 
             cx += d.textlength(wd + " ", font=L["f"])
             shown += 1
         y += int(L["size"] * 1.22)
-    if yeap_scale > 0:
+    if yeap_scale > 0 and sign:
         yf = font("Lora-Italic-Variable.ttf", max(8, int(120 * yeap_scale)), 600)
-        d.text((x - 4, y + 40 + int(60 * (1 - yeap_scale))), "yeap.", font=yf, fill=AMBER)
+        d.text((x - 4, y + 40 + int(60 * (1 - yeap_scale))), sign, font=yf, fill=AMBER)
     logo = Image.open(ROOT / "brand/factyeap_wm_white.png").convert("RGBA")
     lw = 230
     logo = logo.resize((lw, int(logo.height * lw / logo.width)), Image.LANCZOS)
@@ -174,3 +174,12 @@ def video(out, number, statement, fps=30, dur=9.0):
 if __name__ == "__main__":
     mode, target, number, statement = sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.argv[4]
     (post if mode == "post" else video)(target, number, statement)
+
+
+def carousel(out_dir, slides, seed="types"):
+    """slides: list of (label, statement, sign) -> instagram_01.png ... and tiktok_01.png ..."""
+    out = Path(out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    for i, (label, statement, sign) in enumerate(slides, 1):
+        for p in SIZES:
+            draw_frame(p, 0, statement, f"{seed}{i}", label=label, sign=sign)[0].save(out / f"{p}_{i:02d}.png")
