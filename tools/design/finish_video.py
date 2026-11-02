@@ -45,21 +45,20 @@ def wrap(d, text, f, maxw):
 
 
 def hook_layer(text):
+    """Caption in a solid rounded box (readable on any background, like TikTok captions)."""
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    f = font("Poppins-Bold.ttf", 64)
-    lines = [ln for part in text.split("\n") for ln in wrap(d, part, f, W - 160)]
-    y = 250
-    sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    sd = ImageDraw.Draw(sh)
+    f = font("Poppins-Bold.ttf", 60)
+    lines = [ln for part in text.split("\n") for ln in wrap(d, part, f, W - 240)]
+    lh, pad = 80, 30
+    y = 230
     for ln in lines:
-        x = (W - d.textlength(ln, font=f)) / 2
-        sd.text((x, y + 4), ln, font=f, fill=(0, 0, 0, 170))
-        d.text((x, y), ln, font=f, fill=(255, 255, 255, 255))
-        y += 84
-    sh = sh.filter(ImageFilter.GaussianBlur(8))
-    sh.alpha_composite(im)
-    return sh
+        tw = d.textlength(ln, font=f)
+        x = (W - tw) / 2
+        d.rounded_rectangle((x - pad, y - 12, x + tw + pad, y + lh - 2), 22, fill=(255, 255, 255, 245))
+        d.text((x, y), ln, font=f, fill=(22, 20, 19, 255))
+        y += lh + 6
+    return im
 
 
 def watermark(brand):
