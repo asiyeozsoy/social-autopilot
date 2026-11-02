@@ -93,3 +93,34 @@ Subtle cartoon sound effects and ambient room sound, comedic timing, no dialogue
 | Factyeap | FACT | **Baba-Ayı** | FACT | **Baba-Ayı** | FACT | anket | **Baba-Ayı** |
 
 Haftada 3 The Note ve 3 Baba-Ayı için sana düşen iş haftada yaklaşık 1 saat üretim. Gerisi otomatik.
+
+---
+
+# C · TinyNotes maskotu · "Tiny" (tamamen yapay zekâ, senden animasyon yok)
+
+Tiny, krem rengi tüylü, yuvarlak, minik bir tavşan. Boynunda bordo bir atkı var, her videoda küçük bir not taşıyor. Bilinen hiçbir karaktere benzemiyor, tamamen bize ait. Videolarda notu açıp kameraya gösteriyor. Notun içindeki cümleyi ben ekliyorum, böylece aynı video formatından sınırsız mesaj çıkıyor.
+
+**1 · Referans görseli (bir kez, görsel modunda):** Beğendiğini `TinyNotesForU_stok/tiny_referans.png` olarak kaydet.
+```
+Character sheet of an original cute mascot: a tiny round fluffy cream-white bunny with short ears, big soft dark eyes, small pink nose, wearing a little dark red knitted scarf, holding a small folded cream paper note with a tiny dark red heart on it. Soft 3D animated style, gentle warm lighting, plain warm cream background, front view and three-quarter view. No text.
+```
+
+**2 · Sabit video bloğu (Kling 3.0 · referans görselini ilk kare yap · 8 sn · 9:16):**
+```
+Soft 3D animated short, the same tiny cream bunny with a dark red scarf from the reference, cozy warm room with soft bokeh, gentle lighting, slow and heartfelt timing, subtle soft sound effects, no dialogue, no music, no text. The note is plain cream paper with no writing.
+```
+
+**3 · Videolar:** Hepsinin finali aynı. Tiny notu iki patisiyle kameraya doğru açıp ekranı dolduracak şekilde 2 saniye sabit tutuyor. Yazıyı oraya ben yerleştiriyorum.
+
+| # | sahne (bloğun sonuna ekle) | notta yazacak (ben eklerim) |
+|---|---|---|
+| tiny01 · özür | 0-3s: Tiny peeks shyly from behind a door, ears down, holding the note behind its back. 3-6s: Shuffles closer, looks down, slowly brings the note forward. 6-8s: Opens the note toward the camera with both paws and holds it still, eyes hopeful. | "I'm sorry. forgive me?" |
+| tiny02 · özledim | 0-3s: Tiny sits by a rainy window, looking out, hugging the note. 3-6s: Turns to the camera, sniffles, walks closer. 6-8s: Opens the note toward the camera and holds it still. | "I miss you. that's all." |
+| tiny03 · teşekkür | 0-3s: Tiny carries the note across a table, wobbling under its size. 3-6s: Stops in front of the camera, bows a little. 6-8s: Opens the note toward the camera and holds it still, tiny happy bounce. | "thank you for being you." |
+| tiny04 · gurur | 0-3s: Tiny claps excitedly, confetti falls softly. 3-6s: Runs to the camera holding the note high. 6-8s: Opens the note toward the camera and holds it still, beaming. | "I'm so proud of you." |
+| tiny05 · günaydın | 0-3s: Tiny wakes up in a tiny bed, stretches, sunlight through the window. 3-6s: Grabs the note from the nightstand, hops toward the camera. 6-8s: Opens the note toward the camera and holds it still, sleepy smile. | "good morning. today's a fresh page." |
+| tiny06 · yalnız değilsin | 0-3s: Night, Tiny walks with a tiny lantern through a quiet room. 3-6s: Finds the camera, sits down close. 6-8s: Opens the note toward the camera and holds it still, soft lantern glow. | "you're not alone. not even a little." |
+
+**En güçlü kullanım:** tiny01 (özür) "send this to someone you owe an apology" kapanışıyla en çok gönderilen video olmaya aday. Pandalı hesapta gördüğün format buydu, biz kendi karakterimizle yapıyoruz.
+
+**Dil kararı:** Sadece İngilizce. Aynı videoyu aynı hesapta farklı dillerde paylaşmak takipçiye tekrar gibi görünür ve algoritma kopya içeriği öne çıkarmıyor. Yerelleştirmeyi ileride ayrı bir hesapla deneriz, örneğin Almanca bir TinyNotes hesabı. Almanya, TikTok'un para ödediği ülkelerden biri.
