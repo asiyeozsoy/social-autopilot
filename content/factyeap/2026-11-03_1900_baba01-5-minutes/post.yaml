@@ -1,0 +1,31 @@
+brand: factyeap
+publish_at: '2026-11-03T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'dad''s "5 minutes" are not real minutes ⏰🐻
+
+
+      he lost to himself btw 😭 tag the dad who still owes you a game
+
+
+      #factyeap #dadlife #bearfamily #relatable #parenting'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'he lost to himself btw 😭 tag the dad who still owes you a game
+
+
+      #dadlife #bearfamily #relatable #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'Dad''s 5 Minutes Are Not Real Minutes ⏰🐻 #shorts'
+    description: 'Dad said 5 more minutes. Then this happened.
+
+
+      #factyeap #dadlife #bearfamily #shorts'

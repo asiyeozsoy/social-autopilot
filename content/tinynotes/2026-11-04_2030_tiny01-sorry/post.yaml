@@ -1,0 +1,32 @@
+brand: tinynotes
+publish_at: '2026-11-04T20:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the one you still owe an apology 🤍
+
+
+      send this to them. sometimes it''s easier to start with a tiny note.
+
+
+      #sendthistosomeone #imsorry #forgiveme #tinynotes #cuteanimation'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'send this to the one you owe a sorry 🥺🤍
+
+
+      #sendthistosomeone #imsorry #forgiveme #cute #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'Tiny Has Something To Say… 🥺 #shorts'
+    description: 'A tiny bunny, a tiny note, a big sorry. Send it to the one you owe
+      an apology.
+
+
+      #tinynotes #imsorry #sendthistosomeone #shorts'
