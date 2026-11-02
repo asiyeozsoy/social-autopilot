@@ -113,7 +113,7 @@ def run(cmd):
     subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", *cmd], check=True)
 
 
-def finish(src, out, brand, hook, note=None, sign=None, hook_secs=3.0, hold=3.0, beats=None, freeze=0.0):
+def finish(src, out, brand, hook, note=None, sign=None, hook_secs=3.0, hold=3.0, beats=None, freeze=0.0, live_note=False):
     """beats: [(start, end, text)] captions shown in sequence (replaces hook); freeze: hold last frame N s."""
     tmp = Path(tempfile.mkdtemp())
     dur, has_audio = probe(src)
@@ -125,7 +125,7 @@ def finish(src, out, brand, hook, note=None, sign=None, hook_secs=3.0, hold=3.0,
     hook_layer(hook).save(tmp / "hook.png")
     watermark(brand).save(tmp / "wm.png")
     parts = [base]
-    if note:
+    if note and not live_note:
         run(["-sseof", "-0.1", "-i", str(base), "-frames:v", "1", "-update", "1", str(tmp / "last.png")])
         last = Image.open(tmp / "last.png").convert("RGB").resize((W, H))
         bg = Image.blend(last.filter(ImageFilter.GaussianBlur(18)), Image.new("RGB", (W, H), (20, 14, 12)), 0.35)
@@ -164,12 +164,27 @@ def finish(src, out, brand, hook, note=None, sign=None, hook_secs=3.0, hold=3.0,
         joined = base
     beats = beats or [(0, hook_secs, hook)]
     inputs, chain, prev = [], [], "0:v"
+    if note and live_note:
+        card, shadow = note_card(note, sign)
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 90))
+        x, y = (W - card.width) // 2, (H - card.height) // 2 - 60
+        layer.alpha_composite(shadow, (x + 10, y + 24))
+        layer.alpha_composite(card, (x, y))
+        layer.save(tmp / "note.png")
+        t0 = max(0.0, dur - hold)
+        beats = [(b0, min(b1, t0), t) for b0, b1, t in beats]
     for i, (b0, b1, text) in enumerate(beats):
         hook_layer(text).save(tmp / f"beat{i}.png")
         inputs += ["-i", str(tmp / f"beat{i}.png")]
         chain.append(f"[{prev}][{i + 1}:v]overlay=0:0:enable='between(t,{b0},{b1})'[b{i}]")
         prev = f"b{i}"
-    chain.append(f"[{prev}][{len(beats) + 1}:v]overlay=0:0[v]")
+    n_in = len(beats) + 1
+    if note and live_note:
+        inputs += ["-loop", "1", "-i", str(tmp / "note.png")]
+        chain.append(f"[{n_in}:v]format=rgba,fade=t=in:st={t0}:d=0.5:alpha=1[nt]")
+        chain.append(f"[{prev}][nt]overlay=0:0:shortest=1:enable='gte(t,{t0})'[nn]")
+        prev, n_in = "nn", n_in + 1
+    chain.append(f"[{prev}][{n_in}:v]overlay=0:0[v]")
     run(["-i", str(joined), *inputs, "-i", str(tmp / "wm.png"), "-filter_complex", ";".join(chain),
          "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
          "-r", str(FPS), "-g", "60", "-keyint_min", "60", "-sc_threshold", "0",
@@ -186,6 +201,7 @@ if __name__ == "__main__":
     p.add_argument("--sign")
     p.add_argument("--beat", action="append", help="start-end:text, e.g. 0-2.5:Dad says 5 minutes")
     p.add_argument("--freeze", type=float, default=0.0)
+    p.add_argument("--live-note", action="store_true", help="show the note over the last seconds without pausing")
     a = p.parse_args()
     beats = None
     if a.beat:
@@ -194,4 +210,4 @@ if __name__ == "__main__":
             rng, text = b.split(":", 1)
             s0, s1 = rng.split("-")
             beats.append((float(s0), float(s1), text))
-    finish(a.src, a.out, a.brand, a.hook, a.note, a.sign, beats=beats, freeze=a.freeze)
+    finish(a.src, a.out, a.brand, a.hook, a.note, a.sign, beats=beats, freeze=a.freeze, live_note=a.live_note)
