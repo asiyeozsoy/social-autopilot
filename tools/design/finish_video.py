@@ -48,7 +48,7 @@ def hook_layer(text):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     f = font("Poppins-Bold.ttf", 64)
-    lines = wrap(d, text, f, W - 160)
+    lines = [ln for part in text.split("\n") for ln in wrap(d, part, f, W - 160)]
     y = 250
     sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     sd = ImageDraw.Draw(sh)
@@ -114,7 +114,8 @@ def run(cmd):
     subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", *cmd], check=True)
 
 
-def finish(src, out, brand, hook, note=None, sign=None, hook_secs=3.0, hold=3.0):
+def finish(src, out, brand, hook, note=None, sign=None, hook_secs=3.0, hold=3.0, beats=None, freeze=0.0):
+    """beats: [(start, end, text)] captions shown in sequence (replaces hook); freeze: hold last frame N s."""
     tmp = Path(tempfile.mkdtemp())
     dur, has_audio = probe(src)
     base = tmp / "base.mp4"
@@ -149,14 +150,28 @@ def finish(src, out, brand, hook, note=None, sign=None, hook_secs=3.0, hold=3.0)
              "-i", "anullsrc=r=48000:cl=stereo", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
              "-pix_fmt", "yuv420p", "-c:a", "aac", "-ac", "2", "-ar", "48000", "-shortest", str(endv)])
         parts.append(endv)
+    if freeze and not note:
+        run(["-sseof", "-0.1", "-i", str(base), "-frames:v", "1", "-update", "1", str(tmp / "last.png")])
+        fz = tmp / "freeze.mp4"
+        run(["-loop", "1", "-framerate", str(FPS), "-t", str(freeze), "-i", str(tmp / "last.png"), "-f", "lavfi", "-t", str(freeze),
+             "-i", "anullsrc=r=48000:cl=stereo", "-vf", f"scale={W}:{H}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
+             "-pix_fmt", "yuv420p", "-c:a", "aac", "-ac", "2", "-ar", "48000", "-shortest", str(fz)])
+        parts.append(fz)
     joined = tmp / "joined.mp4"
     if len(parts) > 1:
         (tmp / "list.txt").write_text("".join(f"file '{p}'\n" for p in parts))
         run(["-f", "concat", "-safe", "0", "-i", str(tmp / "list.txt"), "-c", "copy", str(joined)])
     else:
         joined = base
-    run(["-i", str(joined), "-i", str(tmp / "hook.png"), "-i", str(tmp / "wm.png"), "-filter_complex",
-         f"[0:v][1:v]overlay=0:0:enable='lt(t,{hook_secs})'[a];[a][2:v]overlay=0:0[v]",
+    beats = beats or [(0, hook_secs, hook)]
+    inputs, chain, prev = [], [], "0:v"
+    for i, (b0, b1, text) in enumerate(beats):
+        hook_layer(text).save(tmp / f"beat{i}.png")
+        inputs += ["-i", str(tmp / f"beat{i}.png")]
+        chain.append(f"[{prev}][{i + 1}:v]overlay=0:0:enable='between(t,{b0},{b1})'[b{i}]")
+        prev = f"b{i}"
+    chain.append(f"[{prev}][{len(beats) + 1}:v]overlay=0:0[v]")
+    run(["-i", str(joined), *inputs, "-i", str(tmp / "wm.png"), "-filter_complex", ";".join(chain),
          "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
          "-r", str(FPS), "-g", "60", "-keyint_min", "60", "-sc_threshold", "0",
          "-c:a", "aac", "-ac", "2", "-ar", "48000", "-b:a", "128k", "-movflags", "+faststart", str(out)])
@@ -170,5 +185,14 @@ if __name__ == "__main__":
     p.add_argument("--hook", required=True)
     p.add_argument("--note")
     p.add_argument("--sign")
+    p.add_argument("--beat", action="append", help="start-end:text, e.g. 0-2.5:Dad says 5 minutes")
+    p.add_argument("--freeze", type=float, default=0.0)
     a = p.parse_args()
-    finish(a.src, a.out, a.brand, a.hook, a.note, a.sign)
+    beats = None
+    if a.beat:
+        beats = []
+        for b in a.beat:
+            rng, text = b.split(":", 1)
+            s0, s1 = rng.split("-")
+            beats.append((float(s0), float(s1), text))
+    finish(a.src, a.out, a.brand, a.hook, a.note, a.sign, beats=beats, freeze=a.freeze)
