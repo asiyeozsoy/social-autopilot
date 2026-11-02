@@ -1,4 +1,18 @@
 {
+  "factyeap/2026-11-02_1900_fact001-fridge::facebook": {
+    "at": "2026-11-02T18:07:20+00:00",
+    "attempts": 1,
+    "remote_id": "633502523179601_122255417870854899",
+    "status": "published",
+    "url": "https://www.facebook.com/633502523179601_122255417870854899"
+  },
+  "factyeap/2026-11-02_1900_fact001-fridge::instagram": {
+    "at": "2026-11-02T18:07:14+00:00",
+    "attempts": 1,
+    "remote_id": "18167359600510310",
+    "status": "published",
+    "url": "https://www.instagram.com/p/DfP6a-Xgei5/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
