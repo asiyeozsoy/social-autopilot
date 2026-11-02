@@ -1,0 +1,67 @@
+name: Publisher loop
+
+# GitHub's hourly cron is unreliable (runs were hours apart), so this job stays
+# alive ~5h50m, publishing every 10 minutes, then re-dispatches itself.
+# The cron below only restarts the loop if it ever stops.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7,37 * * * *"
+
+concurrency:
+  group: ticker
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Publish every 10 minutes
+        env:
+          MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL || 'https://asiyeozsoy.github.io/social-autopilot' }}
+          ENABLED_PLATFORMS: ${{ vars.ENABLED_PLATFORMS || 'instagram,facebook,youtube' }}
+          TIKTOK_PRIVACY: ${{ vars.TIKTOK_PRIVACY }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TINYNOTES_IG_USER_ID: ${{ secrets.TINYNOTES_IG_USER_ID || '17841453440786843' }}
+          TINYNOTES_IG_TOKEN: ${{ secrets.TINYNOTES_IG_TOKEN }}
+          TINYNOTES_YT_REFRESH_TOKEN: ${{ secrets.TINYNOTES_YT_REFRESH_TOKEN }}
+          TINYNOTES_TT_REFRESH_TOKEN: ${{ secrets.TINYNOTES_TT_REFRESH_TOKEN }}
+          FACTYEAP_IG_USER_ID: ${{ secrets.FACTYEAP_IG_USER_ID || '17841474070047497' }}
+          FACTYEAP_IG_TOKEN: ${{ secrets.FACTYEAP_IG_TOKEN }}
+          FACTYEAP_YT_REFRESH_TOKEN: ${{ secrets.FACTYEAP_YT_REFRESH_TOKEN }}
+          FACTYEAP_TT_REFRESH_TOKEN: ${{ secrets.FACTYEAP_TT_REFRESH_TOKEN }}
+          META_SYSTEM_TOKEN: ${{ secrets.META_SYSTEM_TOKEN }}
+          FACTYEAP_FB_PAGE_ID: ${{ secrets.FACTYEAP_FB_PAGE_ID || '633502523179601' }}
+          TINYNOTES_FB_PAGE_ID: ${{ secrets.TINYNOTES_FB_PAGE_ID || '1465888266604099' }}
+        run: |
+          git config user.name "autopilot"
+          git config user.email "autopilot@users.noreply.github.com"
+          end=$(( $(date +%s) + 350*60 ))
+          while [ $(date +%s) -lt $end ]; do
+            git pull -q --rebase || true
+            python -m autopilot.main || true
+            git add state/published.json 2>/dev/null || true
+            if ! git diff --cached --quiet; then
+              git commit -qm "Publish log $(date -u +%Y-%m-%dT%H:%MZ)" && (git push -q || (git pull -q --rebase && git push -q)) || true
+            fi
+            sleep 600
+          done
+      - name: Restart loop
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST repos/${{ github.repository }}/actions/workflows/ticker.yml/dispatches -f ref=main
