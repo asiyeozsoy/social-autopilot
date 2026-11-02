@@ -1,0 +1,31 @@
+name: Discover accounts
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["research/candidates.txt"]
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Look up accounts
+        env:
+          FACTYEAP_IG_USER_ID: ${{ secrets.FACTYEAP_IG_USER_ID || '17841474070047497' }}
+          FACTYEAP_IG_TOKEN: ${{ secrets.FACTYEAP_IG_TOKEN }}
+        run: python -m autopilot.discover
+      - name: Save
+        run: |
+          git config user.name "autopilot"
+          git config user.email "autopilot@users.noreply.github.com"
+          git add research
+          git diff --cached --quiet || (git commit -m "Account research" && git pull --rebase -q && git push)
