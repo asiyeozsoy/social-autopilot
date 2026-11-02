@@ -1,0 +1,31 @@
+brand: factyeap
+publish_at: '2026-11-03T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: '"we are NOT taking in any more animals" 🦆🌧️
+
+
+      he''s a softie and he knows it. tag the dad who says no and means yes
+
+
+      #factyeap #dadlife #bearfamily #ducklings #wholesome'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'he said NO. 5 minutes later… 🦆🥹 tag the dad who''s secretly a softie
+
+
+      #dadlife #ducklings #wholesome #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'Dad Said NO More Animals… 5 Minutes Later 🦆 #shorts'
+    description: 'Grumpy on the outside, softie on the inside.
+
+
+      #factyeap #dadlife #ducklings #shorts'
