@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-06T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the one on the other side of the map 🌍
+
+
+      Send this to your long-distance person.
+
+
+      #sendthistosomeone #tinynotes #longdistance #ldr #missingyou'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'long distance hits different at night
+
+
+      send to your person far away
+
+
+      #sendthistosomeone #longdistance #ldr #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Same Moon, Different Windows 🌙
+    description: 'A tiny note to send to someone today. Send this to your long-distance
+      person.
+
+
+      #tinynotes #sendthistosomeone #shorts'

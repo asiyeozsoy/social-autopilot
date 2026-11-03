@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-27T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'cousins: the original best friends 👯
+
+
+      Tag your favorite cousin.
+
+
+      #sendthistosomeone #tinynotes #cousins #family #bestfriend'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'my cousin at every family dinner
+
+
+      tag your cousin
+
+
+      #sendthistosomeone #cousins #family #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: For My Cousin 👯
+    description: 'A tiny note to send to someone today. Tag your favorite cousin.
+
+
+      #tinynotes #sendthistosomeone #shorts'

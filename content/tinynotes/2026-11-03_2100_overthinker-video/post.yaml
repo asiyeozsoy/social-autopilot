@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-03T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the brain that won''t switch off 🌙
+
+
+      Send this to the friend who replays every conversation.
+
+
+      #sendthistosomeone #tinynotes #overthinking #goodnight #selfcare'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'overthinkers at night be like
+
+
+      send to your fellow overthinker
+
+
+      #sendthistosomeone #overthinking #goodnight #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Good Night, Overthinker 🌙
+    description: 'A tiny note to send to someone today. Send this to the friend who
+      replays every conversation.
+
+
+      #tinynotes #sendthistosomeone #shorts'

@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-18T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the husband who does the little things 💛
+
+
+      Send it to him tonight.
+
+
+      #sendthistosomeone #tinynotes #husband #marriage #love'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'send this to your husband
+
+
+      watch his reaction
+
+
+      #sendthistosomeone #husband #marriage #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: For My Husband 💛
+    description: 'A tiny note to send to someone today. Send it to him tonight.
+
+
+      #tinynotes #sendthistosomeone #shorts'

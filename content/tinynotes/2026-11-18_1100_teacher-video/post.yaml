@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-18T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the teacher you''ll never forget 📚
+
+
+      Tag a teacher who changed your life.
+
+
+      #sendthistosomeone #tinynotes #teacher #thankyouteacher #teachers'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'the teacher who changed everything
+
+
+      tag a teacher you love
+
+
+      #sendthistosomeone #teacher #thankyouteacher #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Thank You, Teacher 📚
+    description: 'A tiny note to send to someone today. Tag a teacher who changed
+      your life.
+
+
+      #tinynotes #sendthistosomeone #shorts'

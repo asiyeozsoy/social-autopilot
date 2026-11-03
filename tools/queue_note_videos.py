@@ -2,7 +2,7 @@
 
 python tools/queue_note_videos.py tools/design/tinynotes_videos_batch1.json [HHMM]
 
-Each entry: {date, slug, hook, note, sign, ig:[text,cta,tags], tt:[...], yt:[title, description]}
+Each entry: {date, [time HHMM], slug, hook, note, sign, ig:[text,cta,tags], tt:[...], yt:[title, description]}
 """
 import json
 import sys
@@ -18,7 +18,9 @@ TZ = "+01:00"
 
 
 def main(spec_file, hhmm="1800"):
+    default = hhmm
     for item in json.loads(Path(spec_file).read_text(encoding="utf-8")):
+        hhmm = item.get("time", default)
         dst = ROOT / "content" / "tinynotes" / f"{item['date']}_{hhmm}_{item['slug']}-video"
         dst.mkdir(parents=True, exist_ok=True)
         video = dst / "video.mp4"

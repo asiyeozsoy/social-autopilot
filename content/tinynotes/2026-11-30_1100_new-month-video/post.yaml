@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-30T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'new month energy ✨
+
+
+      Send this to someone who needs a fresh start.
+
+
+      #sendthistosomeone #tinynotes #newmonth #december #freshstart'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'new month, fresh start
+
+
+      send it to someone
+
+
+      #sendthistosomeone #newmonth #freshstart #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: New Month Energy ✨
+    description: 'A tiny note to send to someone today. Send this to someone who needs
+      a fresh start.
+
+
+      #tinynotes #sendthistosomeone #shorts'

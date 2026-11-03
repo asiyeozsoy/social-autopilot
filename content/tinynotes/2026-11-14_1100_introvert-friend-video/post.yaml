@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-14T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'introvert friendship is the best friendship 🛋️
+
+
+      Tag the friend who''s happy you cancelled.
+
+
+      #sendthistosomeone #tinynotes #introvert #friendship #homebody'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'introverts when plans get cancelled
+
+
+      tag your introvert friend
+
+
+      #sendthistosomeone #introvert #homebody #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: For My Introvert Friend 🛋️
+    description: 'A tiny note to send to someone today. Tag the friend who''s happy
+      you cancelled.
+
+
+      #tinynotes #sendthistosomeone #shorts'

@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-26T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'Happy Thanksgiving 🧡 send this to who you''re thankful for
+
+
+      Send it to the person you''re most thankful for.
+
+
+      #sendthistosomeone #tinynotes #thanksgiving #grateful #thankful'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'happy thanksgiving to this person
+
+
+      send it before dinner
+
+
+      #sendthistosomeone #thanksgiving #thankful #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Happy Thanksgiving 🧡
+    description: 'A tiny note to send to someone today. Send it to the person you''re
+      most thankful for.
+
+
+      #tinynotes #sendthistosomeone #shorts'

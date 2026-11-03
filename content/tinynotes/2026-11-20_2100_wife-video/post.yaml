@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-20T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the wife who makes everything lighter 💐
+
+
+      Send it to her tonight.
+
+
+      #sendthistosomeone #tinynotes #wife #marriage #love'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'send this to your wife
+
+
+      watch her smile
+
+
+      #sendthistosomeone #wife #marriage #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: For My Wife 💐
+    description: 'A tiny note to send to someone today. Send it to her tonight.
+
+
+      #tinynotes #sendthistosomeone #shorts'

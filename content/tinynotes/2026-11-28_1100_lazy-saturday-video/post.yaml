@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-28T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'the perfect saturday plan 🍿
+
+
+      Send it to your weekend person.
+
+
+      #sendthistosomeone #tinynotes #saturday #couple #cozy'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'the perfect saturday
+
+
+      send to your weekend person
+
+
+      #sendthistosomeone #saturday #cozy #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: The Perfect Saturday Plan 🍿
+    description: 'A tiny note to send to someone today. Send it to your weekend person.
+
+
+      #tinynotes #sendthistosomeone #shorts'

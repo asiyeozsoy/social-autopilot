@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-19T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'exam season survival note 📖
+
+
+      Send this to someone studying tonight.
+
+
+      #sendthistosomeone #tinynotes #exams #studentlife #studymotivation'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'exam week mood
+
+
+      send to your study buddy
+
+
+      #sendthistosomeone #exams #studentlife #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Exam Week Note 📖
+    description: 'A tiny note to send to someone today. Send this to someone studying
+      tonight.
+
+
+      #tinynotes #sendthistosomeone #shorts'

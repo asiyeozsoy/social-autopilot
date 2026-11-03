@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-22T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for every dog mom and dog dad 🐶
+
+
+      Tag the friend who talks to their dog like a person.
+
+
+      #sendthistosomeone #tinynotes #dogmom #doglover #dogsofinstagram'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'tag your favorite dog parent
+
+
+      they need this
+
+
+      #sendthistosomeone #dogmom #doglover #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: For the Dog Person 🐶
+    description: 'A tiny note to send to someone today. Tag the friend who talks to
+      their dog like a person.
+
+
+      #tinynotes #sendthistosomeone #shorts'

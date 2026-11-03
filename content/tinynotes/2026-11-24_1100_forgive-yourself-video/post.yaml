@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-24T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'you were doing your best 🤍
+
+
+      Save this for the days you''re hard on yourself.
+
+
+      #sendthistosomeone #tinynotes #selflove #healing #selfcare'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'you were doing your best
+
+
+      save this
+
+
+      #sendthistosomeone #selflove #healing #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Forgive Yourself 🤍
+    description: 'A tiny note to send to someone today. Save this for the days you''re
+      hard on yourself.
+
+
+      #tinynotes #sendthistosomeone #shorts'

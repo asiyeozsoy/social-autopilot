@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-04T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the one who made breakfast every single day ☕
+
+
+      Send it to your mom. Right now. She''ll screenshot it.
+
+
+      #sendthistosomeone #tinynotes #mom #thankyoumom #momlove'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'moms deserve this text today
+
+
+      send it before she calls you first
+
+
+      #sendthistosomeone #mom #momlove #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: A Tiny Thank You for Mom ☕
+    description: 'A tiny note to send to someone today. Send it to your mom. Right
+      now. She''ll screenshot it.
+
+
+      #tinynotes #sendthistosomeone #shorts'

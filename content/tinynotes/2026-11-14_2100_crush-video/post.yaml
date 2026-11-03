@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-14T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the one who makes you smile at your phone 🎧
+
+
+      Send it. Be brave tonight.
+
+
+      #sendthistosomeone #tinynotes #crush #love #butterflies'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'sending this to my crush
+
+
+      be brave, send it
+
+
+      #sendthistosomeone #crush #butterflies #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: For My Crush 🎧
+    description: 'A tiny note to send to someone today. Send it. Be brave tonight.
+
+
+      #tinynotes #sendthistosomeone #shorts'

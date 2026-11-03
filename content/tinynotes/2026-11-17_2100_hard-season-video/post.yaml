@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-17T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for a friend in a hard season 🤍
+
+
+      Send this to someone going through a lot.
+
+
+      #sendthistosomeone #tinynotes #friendship #youarenotalone #support'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'for your friend going through it
+
+
+      send it, it matters
+
+
+      #sendthistosomeone #youarenotalone #friendship #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I'm Here Either Way 🤍
+    description: 'A tiny note to send to someone today. Send this to someone going
+      through a lot.
+
+
+      #tinynotes #sendthistosomeone #shorts'

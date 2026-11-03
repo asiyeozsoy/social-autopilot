@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-16T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'monday mood: one hour at a time ☕
+
+
+      Send it to the friend who hates Mondays.
+
+
+      #sendthistosomeone #tinynotes #monday #mondaymotivation #motivation'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'monday motivation that actually works
+
+
+      send to your monday-hater
+
+
+      #sendthistosomeone #monday #motivation #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: One Hour at a Time ☕
+    description: 'A tiny note to send to someone today. Send it to the friend who
+      hates Mondays.
+
+
+      #tinynotes #sendthistosomeone #shorts'

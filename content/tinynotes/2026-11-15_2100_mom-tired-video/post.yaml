@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-15T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for every tired mom tonight 🤍
+
+
+      Send this to a mom who needs to hear it.
+
+
+      #sendthistosomeone #tinynotes #momlife #tiredmom #mom'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'for every tired mom
+
+
+      send to a mom you love
+
+
+      #sendthistosomeone #momlife #mom #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: For the Tired Mom 🤍
+    description: 'A tiny note to send to someone today. Send this to a mom who needs
+      to hear it.
+
+
+      #tinynotes #sendthistosomeone #shorts'

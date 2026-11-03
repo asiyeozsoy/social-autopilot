@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-06T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'sisters: built-in best friend, built-in thief 👚
+
+
+      Tag your sister. She knows what she took.
+
+
+      #sendthistosomeone #tinynotes #sister #siblings #sisterlove'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'my sister when she sees this
+
+
+      tag the sister who still has your hoodie
+
+
+      #sendthistosomeone #sister #siblings #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: To My Sister 👚
+    description: 'A tiny note to send to someone today. Tag your sister. She knows
+      what she took.
+
+
+      #tinynotes #sendthistosomeone #shorts'

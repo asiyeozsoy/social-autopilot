@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-24T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'chosen family is still family 🫶
+
+
+      Tag your chosen family.
+
+
+      #sendthistosomeone #tinynotes #chosenfamily #bestfriend #friendship'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'friends who are family
+
+
+      tag your chosen family
+
+
+      #sendthistosomeone #chosenfamily #bestfriend #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Chosen Family 🫶
+    description: 'A tiny note to send to someone today. Tag your chosen family.
+
+
+      #tinynotes #sendthistosomeone #shorts'

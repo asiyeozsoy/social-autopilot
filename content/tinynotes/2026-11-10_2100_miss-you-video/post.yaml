@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-10T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the one who crossed your mind just now 💭
+
+
+      Send it. They''re probably thinking of you too.
+
+
+      #sendthistosomeone #tinynotes #missingyou #iloveyou #thinkingofyou'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'if they crossed your mind, send this
+
+
+      send it, don''t overthink
+
+
+      #sendthistosomeone #missingyou #thinkingofyou #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I Miss You. That's All. 💭
+    description: 'A tiny note to send to someone today. Send it. They''re probably
+      thinking of you too.
+
+
+      #tinynotes #sendthistosomeone #shorts'

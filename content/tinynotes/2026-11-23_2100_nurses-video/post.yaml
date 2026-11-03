@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-23T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for nurses, doctors and caregivers 🩺
+
+
+      Tag someone who takes care of others.
+
+
+      #sendthistosomeone #tinynotes #nurse #healthcareheroes #thankyou'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'for every nurse and caregiver
+
+
+      tag one
+
+
+      #sendthistosomeone #nurse #healthcare #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Thank You, Caregivers 🩺
+    description: 'A tiny note to send to someone today. Tag someone who takes care
+      of others.
+
+
+      #tinynotes #sendthistosomeone #shorts'

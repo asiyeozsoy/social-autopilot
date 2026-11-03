@@ -1,0 +1,34 @@
+brand: tinynotes
+publish_at: '2026-11-10T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'the work bestie appreciation post 💼
+
+
+      Tag your work bestie.
+
+
+      #sendthistosomeone #tinynotes #workbestie #coworker #officelife'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'my work bestie during every meeting
+
+
+      tag your work bestie
+
+
+      #sendthistosomeone #workbestie #officelife #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: For My Work Bestie 💼
+    description: 'A tiny note to send to someone today. Tag your work bestie.
+
+
+      #tinynotes #sendthistosomeone #shorts'

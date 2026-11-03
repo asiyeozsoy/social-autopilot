@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-13T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'World Kindness Day 💛 one message is enough
+
+
+      Send this to someone who deserves kindness today.
+
+
+      #sendthistosomeone #tinynotes #worldkindnessday #kindness #bekind'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'world kindness day challenge
+
+
+      send this to 3 people
+
+
+      #sendthistosomeone #worldkindnessday #bekind #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: World Kindness Day 💛
+    description: 'A tiny note to send to someone today. Send this to someone who deserves
+      kindness today.
+
+
+      #tinynotes #sendthistosomeone #shorts'

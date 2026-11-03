@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-11T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'brothers: annoying, loyal, forever 🧢
+
+
+      Tag your brother. He won''t reply, but he''ll read it.
+
+
+      #sendthistosomeone #tinynotes #brother #siblings #brotherlove'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'my brother reading this and pretending he didn''t
+
+
+      tag your brother
+
+
+      #sendthistosomeone #brother #siblings #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: To My Brother 🧢
+    description: 'A tiny note to send to someone today. Tag your brother. He won''t
+      reply, but he''ll read it.
+
+
+      #tinynotes #sendthistosomeone #shorts'

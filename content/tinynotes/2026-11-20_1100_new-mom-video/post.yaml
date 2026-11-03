@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-20T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for every new mom 🍼
+
+
+      Send this to a new mom you know.
+
+
+      #sendthistosomeone #tinynotes #newmom #motherhood #momlife'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'for every new mom
+
+
+      send this to a new mom
+
+
+      #sendthistosomeone #newmom #motherhood #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: To a New Mom 🍼
+    description: 'A tiny note to send to someone today. Send this to a new mom you
+      know.
+
+
+      #tinynotes #sendthistosomeone #shorts'

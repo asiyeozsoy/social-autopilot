@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-28T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the dad who shows love by doing 🔧
+
+
+      Send this to your dad. He''ll pretend it''s nothing.
+
+
+      #sendthistosomeone #tinynotes #dad #fatherlove #dadlife'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'dads say i love you differently
+
+
+      send it to your dad
+
+
+      #sendthistosomeone #dad #dadlife #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Dads Say It Differently 🔧
+    description: 'A tiny note to send to someone today. Send this to your dad. He''ll
+      pretend it''s nothing.
+
+
+      #tinynotes #sendthistosomeone #shorts'

@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-16T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'to the strong friend who always asks first 🫶
+
+
+      Check on your strong friend. Send this.
+
+
+      #sendthistosomeone #tinynotes #checkonyourfriends #strongfriend #friendship'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'check on your strong friend
+
+
+      send this to them
+
+
+      #sendthistosomeone #strongfriend #friendship #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: How Are You, Really? 🫶
+    description: 'A tiny note to send to someone today. Check on your strong friend.
+      Send this.
+
+
+      #tinynotes #sendthistosomeone #shorts'

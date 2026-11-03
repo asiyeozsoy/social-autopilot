@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-08T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for the person who feels like home 🏠
+
+
+      Send it to your person. No context needed.
+
+
+      #sendthistosomeone #tinynotes #couplegoals #love #relationship'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'when someone feels like home
+
+
+      send this to your person
+
+
+      #sendthistosomeone #love #couple #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: You Feel Like Home 🏠
+    description: 'A tiny note to send to someone today. Send it to your person. No
+      context needed.
+
+
+      #tinynotes #sendthistosomeone #shorts'

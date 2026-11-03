@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-12T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'the good night text they''ll reread 🌙
+
+
+      Send it as your good night message tonight.
+
+
+      #sendthistosomeone #tinynotes #goodnight #love #couple'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'the good night text that hits
+
+
+      send it tonight
+
+
+      #sendthistosomeone #goodnight #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: A Good Night Note 🌙
+    description: 'A tiny note to send to someone today. Send it as your good night
+      message tonight.
+
+
+      #tinynotes #sendthistosomeone #shorts'

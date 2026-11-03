@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-12T11:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'for anyone with first-day nerves ✨
+
+
+      Send this to someone starting something new.
+
+
+      #sendthistosomeone #tinynotes #newjob #firstday #motivation'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'send to your friend starting a new job
+
+
+      they need this today
+
+
+      #sendthistosomeone #newjob #firstday #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: First Day Nerves ✨
+    description: 'A tiny note to send to someone today. Send this to someone starting
+      something new.
+
+
+      #tinynotes #sendthistosomeone #shorts'

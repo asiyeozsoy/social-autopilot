@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-07T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'every friend group has one 😂
+
+
+      Tag the friend you''d get arrested with.
+
+
+      #sendthistosomeone #tinynotes #bestfriend #friendship #besties'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'me and my chaos friend
+
+
+      tag them. they know.
+
+
+      #sendthistosomeone #bestfriend #besties #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: For My Partner in Crime 😂
+    description: 'A tiny note to send to someone today. Tag the friend you''d get
+      arrested with.
+
+
+      #tinynotes #sendthistosomeone #shorts'

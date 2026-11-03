@@ -1,0 +1,35 @@
+brand: tinynotes
+publish_at: '2026-11-09T21:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'an apology you can send in one tap 🤍
+
+
+      Send it. Saying sorry first is a strength.
+
+
+      #sendthistosomeone #tinynotes #apology #sorry #relationships'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'when you owe someone a sorry
+
+
+      send it now, before you overthink
+
+
+      #sendthistosomeone #sorry #apology #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: The Easiest Apology 🤍
+    description: 'A tiny note to send to someone today. Send it. Saying sorry first
+      is a strength.
+
+
+      #tinynotes #sendthistosomeone #shorts'
