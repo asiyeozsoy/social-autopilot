@@ -1,0 +1,28 @@
+brand: factyeap
+publish_at: '2026-11-04T15:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'What’s Hiding Inside That Shell? They may be slow, but snails are full of surprises!🐌
+
+
+      From sleeping for years to having thousands of teeth—these creatures are more than meets the eye.
+
+
+      Follow @factyeap for a new fact every day 🦉
+
+
+      #factyeap #snail #snails #funfacts #naturewonders #didyouknow #animalfacts #microanimals #facts'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'What’s Hiding Inside That Shell? They may be slow, but snails are full of surprises!🐌
+
+
+      From sleeping for years to having thousands of teeth—these creatures are more than meets the eye.
+
+
+      #factyeap #snail #snails #funfacts #naturewonders #didyouknow #facts #fyp'

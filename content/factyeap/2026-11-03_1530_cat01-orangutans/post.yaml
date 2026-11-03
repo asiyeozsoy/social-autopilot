@@ -1,0 +1,28 @@
+brand: factyeap
+publish_at: '2026-11-03T15:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'Orangutans: More Human Than You Think
+
+
+      Did you know orangutans share about 97% of our DNA? 🧠🦧 These intelligent forest dwellers might just be our closest wild relatives!
+
+
+      Follow @factyeap for a new fact every day 🦉
+
+
+      #factyeap #orangutan #wildlife #primates #didyouknow #animalfacts #junglelife #conservation #facts'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'Orangutans: More Human Than You Think
+
+
+      Did you know orangutans share about 97% of our DNA? 🧠🦧 These intelligent forest dwellers might just be our closest wild relatives!
+
+
+      #factyeap #orangutan #wildlife #primates #didyouknow #facts #fyp'

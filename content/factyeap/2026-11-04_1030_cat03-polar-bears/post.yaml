@@ -1,0 +1,28 @@
+brand: factyeap
+publish_at: '2026-11-04T10:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'Polar bears aren''t actually white 🐻‍❄️
+
+
+      Their fur is see-through and their skin is black. They just look white because the hollow hairs scatter light, like snow.
+
+
+      Follow @factyeap for a new fact every day 🦉
+
+
+      #factyeap #polarbear #animalfacts #arctic #wildlife #didyouknow #facts'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'Polar bears aren''t actually white 🐻‍❄️
+
+
+      Their fur is see-through and their skin is black. They just look white because the hollow hairs scatter light, like snow.
+
+
+      #factyeap #polarbear #animalfacts #arctic #wildlife #didyouknow #facts #fyp'
