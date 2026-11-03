@@ -13,6 +13,20 @@
     "status": "published",
     "url": "https://www.instagram.com/p/DfP6a-Xgei5/"
   },
+  "factyeap/2026-11-03_1530_cat01-orangutans::facebook": {
+    "at": "2026-11-03T14:41:02+00:00",
+    "attempts": 1,
+    "remote_id": "1794136071801704",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1794136071801704"
+  },
+  "factyeap/2026-11-03_1530_cat01-orangutans::instagram": {
+    "at": "2026-11-03T14:40:51+00:00",
+    "attempts": 1,
+    "remote_id": "17990938359110369",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfSHjwHhqlK/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
