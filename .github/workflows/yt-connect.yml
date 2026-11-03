@@ -1,15 +1,14 @@
 name: Connect YouTube channel
 
-# Exchanges a one-time Google code (pushed to .github/yt-code/<brand>) for an
-# encrypted refresh token in state/yt_<brand>.enc, then removes the code.
+# The one-time Google code never appears in the repo in plain text: this run makes
+# a throwaway key pair, publishes only the public key, waits for the code encrypted
+# with it, decrypts it in memory, and stores the refresh token encrypted.
 on:
-  push:
-    branches: [main]
-    paths: [".github/yt-code/**"]
-
-concurrency:
-  group: publish
-  cancel-in-progress: false
+  workflow_dispatch:
+    inputs:
+      brand:
+        description: "factyeap or tinynotes"
+        required: true
 
 permissions:
   contents: write
@@ -17,27 +16,35 @@ permissions:
 jobs:
   connect:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Exchange codes
+      - name: Exchange code
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
-        run: |
-          rc=0
-          for f in .github/yt-code/*; do
-            [ -f "$f" ] || continue
-            python -m autopilot.ytstore "$(basename "$f")" || rc=1
-          done
-          exit $rc
-      - name: Save
-        if: always()
+          BRAND: ${{ inputs.brand }}
         run: |
           git config user.name "autopilot"
           git config user.email "autopilot@users.noreply.github.com"
-          git add -A state .github/yt-code
-          git diff --cached --quiet || (git commit -m "Connect YouTube channel" && git push)
+          mkdir -p .github/yt-key
+          openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -out /tmp/k.pem 2>/dev/null
+          openssl pkey -in /tmp/k.pem -pubout -out .github/yt-key/$BRAND.pub
+          git add .github/yt-key && git commit -qm "YouTube connect: public key for $BRAND" && git push -q
+          for i in $(seq 1 120); do
+            sleep 10
+            git pull -q --rebase || true
+            if [ -f .github/yt-key/$BRAND.enc ]; then
+              export YT_CODE=$(base64 -d .github/yt-key/$BRAND.enc | openssl pkeyutl -decrypt -inkey /tmp/k.pem)
+              rc=0; python -m autopilot.ytstore "$BRAND" || rc=1
+              git rm -q .github/yt-key/$BRAND.enc .github/yt-key/$BRAND.pub
+              git add state
+              git commit -qm "Connect YouTube: $BRAND" && (git push -q || (git pull -q --rebase && git push -q))
+              exit $rc
+            fi
+          done
+          echo "::error::no code received"; git rm -q .github/yt-key/$BRAND.pub; git commit -qm "YouTube connect: timeout" && git push -q; exit 1

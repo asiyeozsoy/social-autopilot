@@ -57,11 +57,8 @@ def connect(brand: str, code: str) -> str:
 
 if __name__ == "__main__":
     brand = sys.argv[1]
-    code_file = ROOT / ".github" / "yt-code" / brand
     try:
-        print(f"::notice::{brand} youtube: connected to channel '{connect(brand, code_file.read_text())}'")
+        print(f"::notice::{brand} youtube: connected to channel '{connect(brand, os.environ['YT_CODE'])}'")
     except Exception as e:
         print(f"::error::{brand} youtube: {e}")
         sys.exit(1)
-    finally:
-        code_file.unlink(missing_ok=True)
