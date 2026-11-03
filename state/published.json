@@ -27,6 +27,27 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfSHjwHhqlK/"
   },
+  "factyeap/2026-11-03_1900_baba-ducklings::facebook": {
+    "at": "2026-11-03T18:04:08+00:00",
+    "attempts": 1,
+    "remote_id": "2211814063073490",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2211814063073490"
+  },
+  "factyeap/2026-11-03_1900_baba-ducklings::instagram": {
+    "at": "2026-11-03T18:03:54+00:00",
+    "attempts": 1,
+    "remote_id": "18454818079193200",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfSeykoI0cE/"
+  },
+  "factyeap/2026-11-03_1900_baba-ducklings::youtube": {
+    "at": "2026-11-03T18:03:56+00:00",
+    "attempts": 1,
+    "remote_id": "JwfROmuedlI",
+    "status": "published",
+    "url": "https://youtube.com/shorts/JwfROmuedlI"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
