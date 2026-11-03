@@ -19,6 +19,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 ROOT = Path(__file__).resolve().parents[2]
 G = "/usr/share/fonts/truetype/google-fonts/"
 W, H, FPS = 1080, 1920, 30
+CAP_Y, WM_BOTTOM = 230, 330
 PAPER, INK, MAROON = (255, 253, 247), (92, 40, 38), (132, 36, 38)
 
 
@@ -51,7 +52,7 @@ def hook_layer(text):
     f = font("Poppins-Bold.ttf", 60)
     lines = [ln for part in text.split("\n") for ln in wrap(d, part, f, W - 240)]
     lh, pad = 80, 30
-    y = 230
+    y = CAP_Y
     for ln in lines:
         tw = d.textlength(ln, font=f)
         x = (W - tw) / 2
@@ -68,7 +69,7 @@ def watermark(brand):
     lw = 170 if brand == "tinynotes" else 210
     logo = logo.resize((lw, int(logo.height * lw / logo.width)), Image.LANCZOS)
     logo.putalpha(logo.split()[3].point(lambda v: int(v * 0.6)))
-    im.alpha_composite(logo, ((W - lw) // 2, H - logo.height - 330))
+    im.alpha_composite(logo, ((W - lw) // 2, H - logo.height - WM_BOTTOM))
     return im
 
 
@@ -201,8 +202,11 @@ if __name__ == "__main__":
     p.add_argument("--sign")
     p.add_argument("--beat", action="append", help="start-end:text, e.g. 0-2.5:Dad says 5 minutes")
     p.add_argument("--freeze", type=float, default=0.0)
+    p.add_argument("--landscape", action="store_true", help="1920x1080 output")
     p.add_argument("--live-note", action="store_true", help="show the note over the last seconds without pausing")
     a = p.parse_args()
+    if a.landscape:
+        W, H, CAP_Y, WM_BOTTOM = 1920, 1080, 70, 60
     beats = None
     if a.beat:
         beats = []

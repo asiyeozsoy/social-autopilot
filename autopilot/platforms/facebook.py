@@ -62,6 +62,12 @@ def publish(post, pp, content_root):
         pid = check(r, "facebook multi-photo post")["id"]
         return pid, f"https://www.facebook.com/{pid}"
 
+    if pp.kind == "video":  # regular (e.g. landscape) feed video
+        r = requests.post(f"{API}/{page_id}/videos", data={"file_url": urls[0], "description": pp.caption,
+                                                           "title": pp.title or "", "access_token": tok}, timeout=600)
+        vid = check(r, "facebook video")["id"]
+        return vid, f"https://www.facebook.com/{page_id}/videos/{vid}"
+
     # reel
     r = requests.post(f"{API}/{page_id}/video_reels", data={"upload_phase": "start", "access_token": tok}, timeout=60)
     start = check(r, "facebook reel start")

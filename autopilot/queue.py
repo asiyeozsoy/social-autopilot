@@ -30,8 +30,8 @@ import yaml
 KINDS = {
     "instagram": {"image", "carousel", "reel"},
     "tiktok": {"photo", "video"},
-    "youtube": {"short"},
-    "facebook": {"image", "carousel", "reel"},
+    "youtube": {"short", "video"},
+    "facebook": {"image", "carousel", "reel", "video"},
 }
 
 

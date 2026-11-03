@@ -44,7 +44,7 @@ def publish(post, pp, content_root):
     token = _access_token(post.brand)
     video = pp.media[0]
     title = pp.title or pp.caption.split("\n")[0]
-    if "#shorts" not in title.lower():
+    if pp.kind == "short" and "#shorts" not in title.lower():
         title = f"{title} #shorts"
     meta = {
         "snippet": {"title": title[:100], "description": pp.description or pp.caption, "categoryId": "23"},
@@ -69,4 +69,4 @@ def publish(post, pp, content_root):
                           headers={"Authorization": f"Bearer {token}", "Content-Length": str(size)}, timeout=900)
     body = check(up, "youtube upload")
     vid = body["id"]
-    return vid, f"https://youtube.com/shorts/{vid}"
+    return vid, (f"https://youtube.com/shorts/{vid}" if pp.kind == "short" else f"https://youtu.be/{vid}")
