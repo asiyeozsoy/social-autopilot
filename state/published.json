@@ -104,6 +104,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfSXwmBiCIF/"
   },
+  "tinynotes/2026-11-03_1800_tell-them-video::youtube": {
+    "at": "2026-11-03T23:01:29+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-03_2100_overthinker-video::facebook": {
     "at": "2026-11-03T20:07:36+00:00",
     "attempts": 1,
