@@ -51,8 +51,9 @@ def autopilot_ig_ids():
 def fb_reel(page_id, tok, video_url, caption):
     r = requests.post(f"{API}/{page_id}/video_reels", data={"upload_phase": "start", "access_token": tok}, timeout=60)
     vid = check(r, "facebook reel start")["video_id"]
-    up = requests.post(f"https://rupload.facebook.com/video-upload/{VERSION}/{vid}",
-                       headers={"Authorization": f"OAuth {tok}", "file_url": video_url}, timeout=300)
+    data = requests.get(video_url, timeout=300).content  # Facebook can't fetch Instagram's CDN itself
+    up = requests.post(f"https://rupload.facebook.com/video-upload/{VERSION}/{vid}", data=data,
+                       headers={"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(len(data))}, timeout=600)
     if not up.ok or not up.json().get("success"):
         raise PublishError(f"facebook reel upload failed ({up.status_code}): {up.text[:200]}")
     poll(lambda: requests.get(f"{API}/{vid}", params={"fields": "status", "access_token": tok}, timeout=30).json().get("status", {}),
