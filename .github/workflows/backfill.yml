@@ -1,0 +1,41 @@
+name: Backfill older reels to Facebook
+
+# Twice a day, mirrors up to 2 older Instagram reels per brand to its Facebook Page.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 9,16 * * *"
+
+concurrency:
+  group: backfill
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Mirror reels
+        env:
+          META_SYSTEM_TOKEN: ${{ secrets.META_SYSTEM_TOKEN }}
+          FACTYEAP_FB_PAGE_ID: ${{ secrets.FACTYEAP_FB_PAGE_ID || '633502523179601' }}
+          TINYNOTES_FB_PAGE_ID: ${{ secrets.TINYNOTES_FB_PAGE_ID || '1465888266604099' }}
+          TINYNOTES_IG_USER_ID: ${{ secrets.TINYNOTES_IG_USER_ID || '17841453440786843' }}
+          TINYNOTES_IG_TOKEN: ${{ secrets.TINYNOTES_IG_TOKEN }}
+          FACTYEAP_IG_USER_ID: ${{ secrets.FACTYEAP_IG_USER_ID || '17841474070047497' }}
+          FACTYEAP_IG_TOKEN: ${{ secrets.FACTYEAP_IG_TOKEN }}
+        run: python -m autopilot.backfill 2
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "autopilot"
+          git config user.email "autopilot@users.noreply.github.com"
+          git add state/backfill.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Backfill log" && git pull --rebase -q && git push)
