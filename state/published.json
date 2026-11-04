@@ -148,5 +148,19 @@
     "remote_id": "1465888266604099_122104553655530762",
     "status": "published",
     "url": "https://www.facebook.com/1465888266604099_122104553655530762"
+  },
+  "tinynotes/2026-11-04_1100_mom-coffee-video::facebook": {
+    "at": "2026-11-04T10:04:49+00:00",
+    "attempts": 1,
+    "remote_id": "2622353308248159",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2622353308248159"
+  },
+  "tinynotes/2026-11-04_1100_mom-coffee-video::instagram": {
+    "at": "2026-11-04T10:04:36+00:00",
+    "attempts": 1,
+    "remote_id": "18169736146468668",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfUMvc2CQB4/"
   }
 }
