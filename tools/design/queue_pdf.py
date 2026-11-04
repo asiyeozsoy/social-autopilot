@@ -73,7 +73,7 @@ def main(out, start, end, globs):
         cols = {"tinynotes": [], "factyeap": []}
         for t, folder, spec in items:
             if t.date() == d:
-                kind = "video" if "youtube" in spec["platforms"] or spec["platforms"]["instagram"]["kind"] == "reel" else "post"
+                kind = "video" if "youtube" in spec["platforms"] or spec["platforms"].get("instagram", spec["platforms"].get("facebook", {})).get("kind") in ("reel", "video") else "post"
                 cols[spec["brand"]].append(f"{t:%H:%M} {kind}")
         if d.weekday() in (1, 3, 5) and d >= dt.date(2026, 11, 3) and d <= dt.date(2026, 11, 17):
             cols["factyeap"].append("<font color='#f08f8a'>ayı videosu*</font>")
@@ -88,7 +88,7 @@ def main(out, start, end, globs):
               Paragraph("* Higgsfield ayı videoları: sen ürettikçe kuyruğa girer.", small), PageBreak()]
     shown = [x for x in items if any(x[1].match(g) for g in globs)] if globs else items
     for t, folder, spec in shown:
-        kind = "Video" if spec["platforms"]["instagram"]["kind"] == "reel" else "Post"
+        kind = "Video" if spec["platforms"].get("instagram", spec["platforms"].get("facebook", {})).get("kind") in ("reel", "video") else "Post"
         path, ratio, count = thumb(folder, spec)
         story += [Paragraph(f"{NAMES[spec['brand']]} · {DAYS[t.weekday()]} {t.day} Kasım · {t:%H:%M}", h2),
                   Paragraph(kind + (" (son kare)" if kind == "Video" else ""), small), Spacer(1, 2 * mm)]
