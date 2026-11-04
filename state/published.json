@@ -225,9 +225,10 @@
     "url": "https://www.facebook.com/reel/1127095170041058"
   },
   "tinynotes/2026-11-04_2030_tiny01-sorry::instagram": {
-    "at": "2026-11-04T19:39:07+00:00",
-    "attempts": 1,
-    "error": "PublishError: instagram media processing failed: {'id': '18016753982781360', 'status': 'Error: Media upload has failed with error code 2207077', 'status_code': 'ERROR'}",
-    "status": "failed"
+    "at": "2026-11-04T19:50:04+00:00",
+    "attempts": 2,
+    "remote_id": "18034160789888829",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfVPu8eEdQK/"
   }
 }
