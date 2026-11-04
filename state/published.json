@@ -62,6 +62,20 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfSwhPZJ_p-/"
   },
+  "factyeap/2026-11-04_1030_cat03-polar-bears::facebook": {
+    "at": "2026-11-04T09:33:56+00:00",
+    "attempts": 1,
+    "remote_id": "1850926559416179",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1850926559416179"
+  },
+  "factyeap/2026-11-04_1030_cat03-polar-bears::instagram": {
+    "at": "2026-11-04T09:33:47+00:00",
+    "attempts": 1,
+    "remote_id": "18339530368272191",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfUJNsiyDpN/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
