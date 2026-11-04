@@ -216,5 +216,18 @@
     "remote_id": "17996094810025316",
     "status": "published",
     "url": "https://www.instagram.com/p/DfUoVquDm9Q/"
+  },
+  "tinynotes/2026-11-04_2030_tiny01-sorry::facebook": {
+    "at": "2026-11-04T19:39:19+00:00",
+    "attempts": 1,
+    "remote_id": "1127095170041058",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1127095170041058"
+  },
+  "tinynotes/2026-11-04_2030_tiny01-sorry::instagram": {
+    "at": "2026-11-04T19:39:07+00:00",
+    "attempts": 1,
+    "error": "PublishError: instagram media processing failed: {'id': '18016753982781360', 'status': 'Error: Media upload has failed with error code 2207077', 'status_code': 'ERROR'}",
+    "status": "failed"
   }
 }
