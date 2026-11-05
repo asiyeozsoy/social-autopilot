@@ -235,5 +235,12 @@
     "at": "2026-11-05T01:30:53+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-05_0830_fb-gm-spanish::facebook": {
+    "at": "2026-11-05T07:31:51+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122105534925530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122105534925530762"
   }
 }
