@@ -6,7 +6,9 @@
 (async () => {
   const src = new URLSearchParams(location.search).get('src');
   const b = await (await fetch(src)).blob();
-  window.opener && window.opener.postMessage({kind: 'autopilot-file', name: src.split('/').pop(), blob: b}, '*');
+  const msg = {kind: 'autopilot-file', name: src.split('/').pop(), blob: b};
+  if (window.opener) window.opener.postMessage(msg, '*');
+  if (window.parent !== window) window.parent.postMessage(msg, '*');
   document.body.textContent = 'sent ' + src + ' (' + b.size + ' bytes)';
   setTimeout(() => window.close(), 800);
 })();
