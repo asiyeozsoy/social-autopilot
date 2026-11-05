@@ -125,6 +125,20 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfWt7hWygXu/"
   },
+  "factyeap/2026-11-05_1530_cat07-comic-sans::facebook": {
+    "at": "2026-11-05T14:36:02+00:00",
+    "attempts": 1,
+    "remote_id": "1789100678810271",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1789100678810271"
+  },
+  "factyeap/2026-11-05_1530_cat07-comic-sans::instagram": {
+    "at": "2026-11-05T14:35:52+00:00",
+    "attempts": 1,
+    "remote_id": "18085775564354248",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfXQlQ3h396/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
