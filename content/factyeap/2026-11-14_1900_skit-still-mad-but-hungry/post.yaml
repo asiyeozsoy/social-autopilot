@@ -1,0 +1,40 @@
+brand: factyeap
+publish_at: '2026-11-14T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'still mad. but hungry. 🍯🐻
+
+
+      Tag the one who gets fixed with snacks 😂
+
+
+      #bearfamily #couplegoals #hangry #relatable #factyeap'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'the only way to fix his mood 🍯
+
+
+      tag someone like this
+
+
+      #hangry #couple #relatable #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Still Mad. But Hungry. 🍯🐻
+    description: 'still mad. but hungry. 🍯🐻
+
+
+      Tag the one who gets fixed with snacks 😂
+
+
+      #bearfamily #couplegoals #hangry #relatable #factyeap
+
+
+      #shorts'

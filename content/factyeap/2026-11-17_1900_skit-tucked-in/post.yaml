@@ -1,0 +1,40 @@
+brand: factyeap
+publish_at: '2026-11-17T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'who tucked in who? 😴🐻
+
+
+      Send this to a dad who falls asleep first 😂
+
+
+      #bearfamily #dadlife #bedtime #relatable #factyeap'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'bedtime with dad be like 😴
+
+
+      send to a dad who does this
+
+
+      #dadlife #bedtime #parenting #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Who Tucked In Who? 😴🐻
+    description: 'who tucked in who? 😴🐻
+
+
+      Send this to a dad who falls asleep first 😂
+
+
+      #bearfamily #dadlife #bedtime #relatable #factyeap
+
+
+      #shorts'

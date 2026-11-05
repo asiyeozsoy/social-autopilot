@@ -1,0 +1,40 @@
+brand: factyeap
+publish_at: '2026-11-12T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'mad at him. he still brought tea. 🍵🐻
+
+
+      Send this to the one who does this 🥹
+
+
+      #bearfamily #couplegoals #love #relatable #factyeap'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'even when she''s mad 🍵
+
+
+      send this to your person
+
+
+      #couple #love #relationship #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Mad At Him. He Still Brought Tea 🍵🐻
+    description: 'mad at him. he still brought tea. 🍵🐻
+
+
+      Send this to the one who does this 🥹
+
+
+      #bearfamily #couplegoals #love #relatable #factyeap
+
+
+      #shorts'

@@ -1,0 +1,40 @@
+brand: factyeap
+publish_at: '2026-11-09T21:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'nobody touches dad''s thermostat 🥶
+
+
+      Send this to whoever controls the heating in your house 😂
+
+
+      #bearfamily #dadlife #thermostat #relatable #factyeap'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'dad can feel it from 3 rooms away
+
+
+      send to the thermostat police
+
+
+      #dadlife #relatable #winter #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Dad vs The Thermostat 🥶🐻
+    description: 'nobody touches dad''s thermostat 🥶
+
+
+      Send this to whoever controls the heating in your house 😂
+
+
+      #bearfamily #dadlife #thermostat #relatable #factyeap
+
+
+      #shorts'
