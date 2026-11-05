@@ -139,6 +139,20 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfXQlQ3h396/"
   },
+  "factyeap/2026-11-05_2130_cat08-octopus::facebook": {
+    "at": "2026-11-05T20:40:13+00:00",
+    "attempts": 1,
+    "remote_id": "1436625435331639",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1436625435331639"
+  },
+  "factyeap/2026-11-05_2130_cat08-octopus::instagram": {
+    "at": "2026-11-05T20:40:03+00:00",
+    "attempts": 1,
+    "remote_id": "18155136241483220",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfX6QkVtb3N/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
