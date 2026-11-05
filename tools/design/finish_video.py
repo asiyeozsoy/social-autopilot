@@ -45,9 +45,20 @@ def wrap(d, text, f, maxw):
     return lines
 
 
+PAPER = False
+
+
 def hook_layer(text):
-    """Caption in a solid rounded box (readable on any background, like TikTok captions)."""
+    """Caption in a solid rounded box (readable on any background, like TikTok captions),
+    or on a torn paper strip with handwriting when --paper is set."""
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    if PAPER:
+        import sys as _s
+        _s.path.insert(0, str(Path(__file__).resolve().parent))
+        import paper
+        st = paper.strip(text, width_max=W - 160, size=84, seed=len(text), angle=-1.5 if len(text) % 2 else 1.2)
+        im.alpha_composite(st, ((W - st.width) // 2, CAP_Y - 40))
+        return im
     d = ImageDraw.Draw(im)
     f = font("Poppins-Bold.ttf", 60)
     lines = [ln for part in text.split("\n") for ln in wrap(d, part, f, W - 240)]
@@ -204,7 +215,9 @@ if __name__ == "__main__":
     p.add_argument("--freeze", type=float, default=0.0)
     p.add_argument("--landscape", action="store_true", help="1920x1080 output")
     p.add_argument("--live-note", action="store_true", help="show the note over the last seconds without pausing")
+    p.add_argument("--paper", action="store_true", help="torn-paper caption strips with handwriting")
     a = p.parse_args()
+    PAPER = a.paper
     if a.landscape:
         W, H, CAP_Y, WM_BOTTOM = 1920, 1080, 70, 60
     beats = None

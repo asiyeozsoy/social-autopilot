@@ -18,10 +18,11 @@ import wave
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 from scipy import ndimage
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 G = "/usr/share/fonts/truetype/google-fonts/"
 W, H, FPS, DUR = 1080, 1920, 30, 13.0
 SR = 44100
@@ -207,6 +208,12 @@ def clamp01(x):
 def place(frame, img, cx, feet, sx=1.0, sy=1.0):
     w, h = int(img.width * sx), int(img.height * sy)
     im = img.resize((w, h), Image.BILINEAR) if (sx, sy) != (1.0, 1.0) else img
+    if PAPER:  # hand-moved paper puppet: a little wobble on every step
+        r = random.Random(STEP * 7919 + img.width)
+        im = im.rotate(r.uniform(-1.2, 1.2), resample=Image.BICUBIC, expand=True)
+        cx += r.uniform(-3, 3)
+        feet += r.uniform(-2, 2) + (im.height - h) / 2
+        w, h = im.size
     frame.alpha_composite(im, (int(cx - w / 2), int(feet - h)))
 
 
@@ -283,20 +290,139 @@ def bang(frame, cx, cy, s):
     f = ImageFont.truetype(G + "Poppins-Bold.ttf", int(220 * s))
     d = ImageDraw.Draw(frame)
     d.text((cx - d.textlength("!", font=f) / 2 + 6, cy + 6), "!", font=f, fill=(60, 20, 20, 160))
-    d.text((cx - d.textlength("!", font=f) / 2, cy), "!", font=f, fill=(228, 54, 44, 255))
+    d.text((cx - d.textlength("!", font=f) / 2, cy), "!", font=f, fill=(228, 54, 44, 255),
+           stroke_width=12 if PAPER else 0, stroke_fill=P.PAPER_WHITE)
+
+
+# ---------- torn-paper look ----------
+import paper as P  # noqa: E402
+
+PAPER = True
+STEP = 0
+
+
+def L(draw_fn):
+    m = Image.new("L", (W, H), 0)
+    d = ImageDraw.Draw(m)
+    d.fill = True  # shapes drawn without an explicit fill are filled white
+    d.ink = 255
+    draw_fn(d)
+    return m
+
+
+def living_room_paper():
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 255))
+    lay = [
+        (lambda d: d.rectangle((0, 0, W, 1420)), (232, 214, 186), 0),
+        (lambda d: d.rectangle((-20, 1110, W + 20, 1420)), (204, 176, 142), 4),
+        (lambda d: d.rectangle((110, 330, 540, 900)), (138, 96, 64), 4),
+        (lambda d: d.rectangle((134, 352, 516, 878)), (50, 70, 118), 0),
+        (lambda d: d.ellipse((110, 800, 560, 940)), (238, 242, 250), 3),
+        (lambda d: [d.rectangle((318, 352, 334, 878)), d.rectangle((134, 606, 516, 620))], (138, 96, 64), 0),
+        (lambda d: d.rectangle((80, 896, 570, 930)), (156, 112, 78), 3),
+        (lambda d: d.rectangle((640, 410, 900, 650)), (156, 112, 78), 3),
+        (lambda d: d.rectangle((662, 432, 878, 628)), (226, 200, 150), 0),
+        (lambda d: d.polygon([(676, 612), (748, 500), (798, 560), (838, 520), (870, 612)]), (130, 156, 120), 0),
+        (lambda d: d.ellipse((800, 455, 842, 497)), (246, 206, 110), 0),
+        (lambda d: d.rectangle((994, 600, 1008, 1430)), (92, 74, 58), 0),
+        (lambda d: d.polygon([(930, 602), (1074, 602), (1040, 470), (962, 470)]), (246, 220, 160), 3),
+        (lambda d: d.rounded_rectangle((40, 1060, 760, 1300), 60), (90, 124, 120), 4),
+        (lambda d: d.rounded_rectangle((70, 1160, 730, 1430), 40), (104, 142, 136), 4),
+        (lambda d: [d.rounded_rectangle((16, 1120, 140, 1440), 40), d.rounded_rectangle((660, 1120, 784, 1440), 40)], (84, 116, 112), 4),
+        (lambda d: d.rectangle((-20, 1410, W + 20, H + 20)), (180, 128, 88), 5),
+        (lambda d: [d.rectangle((-20, y, W + 20, y + 8)) for y in range(1480, H, 100)], (156, 108, 72), 0),
+        (lambda d: d.ellipse((60, 1530, 1020, 1840)), (186, 88, 74), 5),
+        (lambda d: d.ellipse((150, 1580, 930, 1790)), (204, 116, 92), 3),
+    ]
+    for i, (fn, col, fr) in enumerate(lay):
+        P.paper_layer(im, L(fn), col, seed=i * 11, jag=5, fringe=fr, shadow=0.25 if fr else 0)
+    return im
+
+
+def kitchen_paper():
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 255))
+    lay = [
+        (lambda d: d.rectangle((0, 0, W, H)), (204, 216, 194), 0),
+        (lambda d: [d.rectangle((x, 220, x + 230, 620)) for x in range(30, W, 260)], (238, 232, 216), 4),
+        (lambda d: d.rectangle((-20, 1160, W + 20, 1240)), (232, 226, 210), 3),
+        (lambda d: d.rectangle((-20, 1240, W + 20, 1500)), (116, 140, 120), 4),
+        (lambda d: d.rectangle((760, 420, 1060, 1500)), (236, 238, 236), 4),
+        (lambda d: d.rectangle((150, 1050, 290, 1162)), (222, 118, 70), 3),
+        (lambda d: [d.ellipse((205 + dx, 930, 245 + dx, 1050)) for dx in (-40, 0, 40)], (108, 150, 98), 2),
+        (lambda d: d.rectangle((-20, 1500, W + 20, H + 20)), (198, 176, 146), 5),
+    ]
+    for i, (fn, col, fr) in enumerate(lay):
+        P.paper_layer(im, L(fn), col, seed=100 + i * 13, jag=5, fringe=fr, shadow=0.25 if fr else 0)
+    return im
+
+
+def thermostat_paper(temp):
+    S = 220
+    im = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+    m = Image.new("L", (S, S), 0)
+    ImageDraw.Draw(m).ellipse((20, 20, S - 20, S - 20), fill=255)
+    P.paper_layer(im, m, (248, 244, 232), seed=temp, jag=3, fringe=0, shadow=0.35, offset=(4, 7))
+    hot = temp > 21
+    col = (226, 96, 40) if hot else (56, 116, 210)
+    m2 = Image.new("L", (S, S), 0)
+    ImageDraw.Draw(m2).ellipse((40, 40, S - 40, S - 40), outline=255, width=14)
+    P.paper_layer(im, m2, col, seed=temp + 50, jag=2, fringe=0, shadow=0)
+    f = P.hand_font(72)
+    d = ImageDraw.Draw(im)
+    txt = f"{temp}°"
+    d.text((S / 2 - d.textlength(txt, font=f) / 2, S / 2 - 46), txt, font=f, fill=(40, 34, 30))
+    return im
+
+
+def paper_blanket(w, h, col, seed):
+    im = Image.new("RGBA", (w + 80, h + 80), (0, 0, 0, 0))
+    m = Image.new("L", im.size, 0)
+    ImageDraw.Draw(m).rounded_rectangle((40, 40, w + 40, h + 40), 100, fill=255)
+    P.paper_layer(im, m, col, seed=seed, jag=6, fringe=5, shadow=0.3)
+    light = tuple(min(255, c + 45) for c in col)
+    stripes = Image.new("L", im.size, 0)
+    sd = ImageDraw.Draw(stripes)
+    for x in range(70, w + 40, 110):
+        sd.rectangle((x, 40, x + 30, h + 40), fill=255)
+    for y in range(90, h + 40, 110):
+        sd.rectangle((40, y, w + 40, y + 30), fill=255)
+    stripes = ImageChops.multiply(stripes, m.filter(ImageFilter.MinFilter(9)))
+    over = Image.new("RGBA", im.size, light + (0,))
+    over.putalpha(stripes.point(lambda v: int(v * 0.45)))
+    im.alpha_composite(over)
+    return im
+
+
+def to_sticker(img, seed):
+    st = P.sticker(img, border=14, seed=seed)
+    bb = st.getbbox()
+    return st.crop((bb[0], bb[1], bb[2], bb[3] - 4))
 
 
 # ---------- the episode ----------
 def assets():
     cut = cutouts()
-    return dict(dad_front=scaled(cut[0], 860), dad_side=scaled(cut[2], 860), mom_front=scaled(cut[5], 700),
-                mom_turn=scaled(cut[6], 700), kid_front=scaled(cut[10], 430), room=living_room(), kit=kitchen())
+    A = dict(dad_front=scaled(cut[0], 860), dad_side=scaled(cut[2], 860), mom_front=scaled(cut[5], 700),
+             mom_turn=scaled(cut[6], 700), kid_front=scaled(cut[10], 430))
+    if PAPER:
+        for i, k in enumerate(list(A)):
+            A[k] = to_sticker(A[k], i)
+        A.update(room=living_room_paper(), kit=kitchen_paper(),
+                 therm={t: thermostat_paper(t) for t in range(18, 26)},
+                 blanket_mom=paper_blanket(400, 470, (176, 62, 58), 1), blanket_kid=paper_blanket(270, 270, (226, 170, 64), 2))
+    else:
+        A.update(room=living_room(), kit=kitchen())
+    return A
 
 
 def frame_at(t, A):
     dad_front, dad_side, mom_front, mom_turn, kid_front = A["dad_front"], A["dad_side"], A["mom_front"], A["mom_turn"], A["kid_front"]
     room, kit = A["room"], A["kit"]
     T_X, T_Y = 960, 830
+    global STEP
+    if PAPER:  # stop-motion: the puppets move 12 times a second
+        STEP = int(t * 12)
+        t = STEP / 12
     breathe = 1 + 0.012 * math.sin(t * 3.2)
     if 4.2 <= t < 6.35:  # ---- Dad, three rooms away
         k = (t - 4.2) / 2.15
@@ -327,7 +453,11 @@ def frame_at(t, A):
         else:
             temp = 18
         cold = 1.0 if t < 2.6 else (1 - ease((t - 2.6) / 1.0) if t < 7.6 else ease((t - 7.6) / 1.0))
-        fr.alpha_composite(thermostat(temp), (T_X - 95, T_Y - 95))
+        if PAPER:
+            th = A["therm"][int(round(temp))]
+            fr.alpha_composite(th, (T_X - th.width // 2, T_Y - th.height // 2))
+        else:
+            fr.alpha_composite(thermostat(temp), (T_X - 95, T_Y - 95))
         shiver = 5 * cold * math.sin(t * 55)
         # Mom walks to the thermostat and back (scene 1)
         if t < 4.2:
@@ -346,10 +476,18 @@ def frame_at(t, A):
         hop = abs(math.sin(t * 9)) * 10 if (1.0 < t < 1.9 or 3.4 < t < 4.1) else 0
         place(fr, mom_img, mom_x + (shiver if not (1.0 < t < 4.1) else 0), 1660 - hop, breathe, breathe)
         if wrapped:
-            blanket(fr, mom_x + shiver, 1200, 400, 470, (176, 62, 58))
+            if PAPER:
+                b = A["blanket_mom"]
+                fr.alpha_composite(b, (int(mom_x + shiver - b.width / 2), 1160))
+            else:
+                blanket(fr, mom_x + shiver, 1200, 400, 470, (176, 62, 58))
         place(fr, kid_front, kid_x - shiver, 1700, breathe, breathe)
         if wrapped:
-            blanket(fr, kid_x - shiver, 1440, 270, 270, (226, 170, 64))
+            if PAPER:
+                b = A["blanket_kid"]
+                fr.alpha_composite(b, (int(kid_x - shiver - b.width / 2), 1400))
+            else:
+                blanket(fr, kid_x - shiver, 1440, 270, 270, (226, 170, 64))
         # Dad dashes in (scene 3) and stays for the punchline (scene 4)
         if 6.35 <= t < 9.2:
             k = (t - 6.35) / 0.55
