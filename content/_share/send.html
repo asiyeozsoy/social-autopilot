@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>send</title>
+<body style="font:14px sans-serif;background:#111;color:#ddd">sending…
+<script>
+// Hands one of our own images to the page that opened this window (used to attach
+// character references in AI tools whose pages can't fetch from GitHub themselves).
+(async () => {
+  const src = new URLSearchParams(location.search).get('src');
+  const b = await (await fetch(src)).blob();
+  window.opener && window.opener.postMessage({kind: 'autopilot-file', name: src.split('/').pop(), blob: b}, '*');
+  document.body.textContent = 'sent ' + src + ' (' + b.size + ' bytes)';
+  setTimeout(() => window.close(), 800);
+})();
+</script>
