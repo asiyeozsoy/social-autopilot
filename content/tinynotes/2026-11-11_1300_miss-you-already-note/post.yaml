@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-11T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'you just left and... 🥺
+
+
+      Send this to the one you miss.
+
+
+      #missyou #longdistance #love #sendthistosomeone #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'you just left and... 🥺
+
+
+      send this to the one you miss.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: miss you already. 🤍
+    description: 'you just left and... 🥺
+
+
+      Send this to the one you miss.
+
+
+      #missyou #longdistance #love #sendthistosomeone #tinynotes
+
+
+      #shorts'

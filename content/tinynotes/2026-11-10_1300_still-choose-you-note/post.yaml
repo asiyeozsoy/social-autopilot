@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-10T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'every time. 🤍
+
+
+      Send this to the one you''d choose again.
+
+
+      #chooseyou #marriage #love #couple #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'every time. 🤍
+
+
+      send this to the one you''d choose again.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I'd still choose you. 🤍
+    description: 'every time. 🤍
+
+
+      Send this to the one you''d choose again.
+
+
+      #chooseyou #marriage #love #couple #tinynotes
+
+
+      #shorts'

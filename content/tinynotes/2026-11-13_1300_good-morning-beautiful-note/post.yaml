@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-13T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'the first text of the day ☀️
+
+
+      Send this as your good morning text.
+
+
+      #goodmorning #love #couple #sendthistosomeone #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'the first text of the day ☀️
+
+
+      send this as your good morning text.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: good morning, beautiful. 🤍
+    description: 'the first text of the day ☀️
+
+
+      Send this as your good morning text.
+
+
+      #goodmorning #love #couple #sendthistosomeone #tinynotes
+
+
+      #shorts'

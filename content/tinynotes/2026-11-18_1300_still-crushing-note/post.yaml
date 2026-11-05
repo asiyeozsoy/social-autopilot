@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-18T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'years later. still. 🥰
+
+
+      Send this to your forever crush.
+
+
+      #crush #marriedlife #love #couple #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'years later. still. 🥰
+
+
+      send this to your forever crush.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: still crushing on you. 🤍
+    description: 'years later. still. 🥰
+
+
+      Send this to your forever crush.
+
+
+      #crush #marriedlife #love #couple #tinynotes
+
+
+      #shorts'

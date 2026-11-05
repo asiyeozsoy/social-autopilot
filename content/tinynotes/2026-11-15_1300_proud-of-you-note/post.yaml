@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-15T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'even on the days you don''t see it 🤍
+
+
+      Send this to someone who needs it today.
+
+
+      #proudofyou #motivation #love #sendthistosomeone #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'even on the days you don''t see it 🤍
+
+
+      send this to someone who needs it today.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: proud of you. always. 🤍
+    description: 'even on the days you don''t see it 🤍
+
+
+      Send this to someone who needs it today.
+
+
+      #proudofyou #motivation #love #sendthistosomeone #tinynotes
+
+
+      #shorts'

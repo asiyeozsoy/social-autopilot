@@ -223,7 +223,7 @@ def frame_scrap(t, A):
         t_end = ink_words(layer, A["masks"], t, 0.75)
         # words follow the sheet's slight tilt
         fr = layer
-        draw_doodle(fr, A["doodle"], W / 2 + 60, A["text_bottom"] + 90, t, t_end + 0.15)
+        draw_doodle(fr, A["doodle"], W / 2 + 60, A["text_bottom"] + (165 if A["doodle"] == "sun" else 105), t, t_end + 0.15)
     return fr
 
 
@@ -255,7 +255,7 @@ def frame_crumple(t, A):
         t_end = ink_words(layer, A["masks"], t, 1.7)
         # creases show through the ink a little
         fr = layer
-        draw_doodle(fr, A["doodle"], W / 2 + 60, A["text_bottom"] + 90, t, t_end + 0.15)
+        draw_doodle(fr, A["doodle"], W / 2 + 60, A["text_bottom"] + (165 if A["doodle"] == "sun" else 105), t, t_end + 0.15)
     return fr
 
 

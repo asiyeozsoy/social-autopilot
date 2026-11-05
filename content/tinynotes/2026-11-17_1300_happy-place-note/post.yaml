@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-17T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'wherever you are 🤍
+
+
+      Send this to your happy place.
+
+
+      #happyplace #love #couple #sendthistosomeone #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'wherever you are 🤍
+
+
+      send this to your happy place.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: you're my happy place. 🤍
+    description: 'wherever you are 🤍
+
+
+      Send this to your happy place.
+
+
+      #happyplace #love #couple #sendthistosomeone #tinynotes
+
+
+      #shorts'

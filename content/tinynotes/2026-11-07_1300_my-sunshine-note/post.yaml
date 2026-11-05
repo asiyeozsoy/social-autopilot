@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-07T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'my favorite kind of light ☀️
+
+
+      Send this to your sunshine.
+
+
+      #sunshine #love #bestfriend #sendthistosomeone #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'my favorite kind of light ☀️
+
+
+      send this to your sunshine.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: you are my sunshine 🤍
+    description: 'my favorite kind of light ☀️
+
+
+      Send this to your sunshine.
+
+
+      #sunshine #love #bestfriend #sendthistosomeone #tinynotes
+
+
+      #shorts'

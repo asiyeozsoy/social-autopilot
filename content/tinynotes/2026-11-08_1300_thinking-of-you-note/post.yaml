@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-08T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'again. and again. 💭
+
+
+      Send this to who you''re thinking about.
+
+
+      #thinkingofyou #missyou #love #sendthistosomeone #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'again. and again. 💭
+
+
+      send this to who you''re thinking about.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: thinking about you. 🤍
+    description: 'again. and again. 💭
+
+
+      Send this to who you''re thinking about.
+
+
+      #thinkingofyou #missyou #love #sendthistosomeone #tinynotes
+
+
+      #shorts'

@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-06T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'no reason. just because 🤍
+
+
+      Send this to the one you love.
+
+
+      #iloveyou #love #couple #sendthistosomeone #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'no reason. just because 🤍
+
+
+      send this to the one you love.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: hey. I love you. 🤍
+    description: 'no reason. just because 🤍
+
+
+      Send this to the one you love.
+
+
+      #iloveyou #love #couple #sendthistosomeone #tinynotes
+
+
+      #shorts'

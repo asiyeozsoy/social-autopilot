@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-16T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'the house is too quiet 🏠
+
+
+      Send this to the one who''s away.
+
+
+      #missyou #longdistance #home #sendthistosomeone #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'the house is too quiet 🏠
+
+
+      send this to the one who''s away.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: come home soon. 🤍
+    description: 'the house is too quiet 🏠
+
+
+      Send this to the one who''s away.
+
+
+      #missyou #longdistance #home #sendthistosomeone #tinynotes
+
+
+      #shorts'

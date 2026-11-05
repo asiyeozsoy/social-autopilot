@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-12T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'literally every time ☀️
+
+
+      Send this to your bad-day person.
+
+
+      #bestfriend #grateful #love #sendthistosomeone #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'literally every time ☀️
+
+
+      send this to your bad-day person.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: you make bad days better. 🤍
+    description: 'literally every time ☀️
+
+
+      Send this to your bad-day person.
+
+
+      #bestfriend #grateful #love #sendthistosomeone #tinynotes
+
+
+      #shorts'

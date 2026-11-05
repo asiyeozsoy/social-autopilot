@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-09T13:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'out of everyone. you. 🤍
+
+
+      Tag your favorite person.
+
+
+      #favoriteperson #bestfriend #love #sendthistosomeone #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'out of everyone. you. 🤍
+
+
+      tag your favorite person.
+
+
+      #sendthistosomeone #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: you're my favorite person. 🤍
+    description: 'out of everyone. you. 🤍
+
+
+      Tag your favorite person.
+
+
+      #favoriteperson #bestfriend #love #sendthistosomeone #tinynotes
+
+
+      #shorts'
