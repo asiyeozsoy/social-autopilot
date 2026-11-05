@@ -1,4 +1,4 @@
-"""Minimal handwritten note video (TinyNotes): a short line writes itself on paper,
+"""Minimal handwritten note video (TinyNotes): a short line appears word by word on paper,
 a little doodle draws itself, the camera keeps drifting (no frozen ending).
 
 python tools/design/handnote.py out.mp4 "hey.\\nI love you." [heart|sun|smile] [seed]
@@ -10,7 +10,7 @@ import tempfile
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import paper as P  # noqa: E402
@@ -50,16 +50,16 @@ def layout(text):
     lh = int(size * 1.15 * SS)
     total_h = lh * len(lines)
     y0 = (H * SS - total_h) // 2 - 120 * SS
-    glyphs = []  # (x, y, char, width)
+    words = []  # (x, y, word)
+    space = tmp.textlength(" ", font=f)
     for i, ln in enumerate(lines):
         w = tmp.textlength(ln, font=f)
         x = (W * SS - w) / 2 + (i % 2) * 24 * SS - 12 * SS
         y = y0 + i * lh
-        for ch in ln:
-            cw = tmp.textlength(ch, font=f)
-            glyphs.append((x, y, ch, cw))
-            x += cw
-    return f, glyphs, y0 + total_h
+        for wd in ln.split():
+            words.append((x, y, wd))
+            x += tmp.textlength(wd, font=f) + space
+    return f, words, y0 + total_h
 
 
 def doodle_points(kind, cx, cy, s):
@@ -85,10 +85,10 @@ def doodle_points(kind, cx, cy, s):
 
 def render(out, text, doodle="heart", seed=1):
     bg = background(seed)
-    f, glyphs, text_bottom = layout(text)
-    n = len(glyphs)
-    t_write0, per = 0.5, min(0.11, 2.6 / max(1, n))
-    t_doodle0 = t_write0 + per * n + 0.3
+    f, words, text_bottom = layout(text)
+    n = len(words)
+    t_write0, per, fade = 0.3, 0.42, 0.18
+    t_doodle0 = t_write0 + per * n + 0.15
     strokes = doodle_points(doodle, W / 2 + 40, text_bottom / SS + 150, 7.5)
     total_pts = sum(len(s) for s in strokes)
     wm = Image.open(ROOT / "brand/tinynotes_wm_maroon.png").convert("RGBA")
@@ -98,27 +98,26 @@ def render(out, text, doodle="heart", seed=1):
     proc = subprocess.Popen(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
                              "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast",
                              "-crf", "18", "-pix_fmt", "yuv420p", str(tmp / "v.mp4")], stdin=subprocess.PIPE)
-    ink = Image.new("L", (W * SS, H * SS), 0)
-    di = ImageDraw.Draw(ink)
-    done = 0
+    word_masks = []
+    for x, y, wd in words:
+        m = Image.new("L", (W * SS, H * SS), 0)
+        ImageDraw.Draw(m).text((x, y), wd, font=f, fill=255)
+        word_masks.append(m.resize((W, H), Image.LANCZOS))
     for i in range(int(DUR * FPS)):
         t = i / FPS
-        # write glyphs progressively; the current glyph is revealed left to right
-        k = (t - t_write0) / per
-        while done < n and k >= done + 1:
-            x, y, ch, cw = glyphs[done]
-            di.text((x, y), ch, font=f, fill=255)
-            done += 1
-        layer = ink.copy()
-        if done < n and k > done:
-            x, y, ch, cw = glyphs[done]
-            g = Image.new("L", layer.size, 0)
-            ImageDraw.Draw(g).text((x, y), ch, font=f, fill=255)
-            frac = k - done
-            mask = Image.new("L", layer.size, 0)
-            ImageDraw.Draw(mask).rectangle((0, 0, x + cw * frac, H * SS), fill=255)
-            layer.paste(g, (0, 0), mask)
-        small = layer.resize((W, H), Image.LANCZOS)
+        # words appear one by one: a quick ink fade with a small settle into place
+        layer = Image.new("L", (W, H), 0)
+        for j, m in enumerate(word_masks):
+            a = (t - (t_write0 + j * per)) / fade
+            if a <= 0:
+                continue
+            a = min(1.0, a)
+            dy = int((1 - a) * 14)
+            mm = m.point(lambda v, a=a: int(v * a))
+            if dy:
+                mm = mm.transform(mm.size, Image.AFFINE, (1, 0, 0, 0, 1, -dy))
+            layer = ImageChops.lighter(layer, mm)
+        small = layer
         fr = bg.copy()
         fr.paste(Image.new("RGB", (W, H), INK), (0, 0), small)
         # doodle
