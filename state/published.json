@@ -111,6 +111,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/hqM5nxF8bso"
   },
+  "factyeap/2026-11-05_1030_cat06-yeti::facebook": {
+    "at": "2026-11-05T09:33:20+00:00",
+    "attempts": 1,
+    "remote_id": "1241765631557986",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1241765631557986"
+  },
+  "factyeap/2026-11-05_1030_cat06-yeti::instagram": {
+    "at": "2026-11-05T09:33:05+00:00",
+    "attempts": 1,
+    "remote_id": "17936001000144387",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfWt7hWygXu/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
