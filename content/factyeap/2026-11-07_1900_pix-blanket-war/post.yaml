@@ -1,0 +1,40 @@
+brand: factyeap
+publish_at: '2026-11-07T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'too hot. too cold. blanket thief. 🥵🥶🐻
+
+
+      Send this to your blanket thief 😂
+
+
+      #bearfamily #couplegoals #marriedlife #relatable #factyeap'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'every. single. night. 🥶
+
+
+      send this to your blanket thief
+
+
+      #couple #marriedlife #relatable #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: The Blanket Thief 🥶🐻
+    description: 'too hot. too cold. blanket thief. 🥵🥶🐻
+
+
+      Send this to your blanket thief 😂
+
+
+      #bearfamily #couplegoals #marriedlife #relatable #factyeap
+
+
+      #shorts'
