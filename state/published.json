@@ -181,6 +181,20 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfZ1g_kP1CV/"
   },
+  "factyeap/2026-11-06_1900_fact003-guests::facebook": {
+    "at": "2026-11-06T18:08:09+00:00",
+    "attempts": 1,
+    "remote_id": "633502523179601_122256299876854899",
+    "status": "published",
+    "url": "https://www.facebook.com/633502523179601_122256299876854899"
+  },
+  "factyeap/2026-11-06_1900_fact003-guests::instagram": {
+    "at": "2026-11-06T18:08:03+00:00",
+    "attempts": 1,
+    "remote_id": "18119555669053001",
+    "status": "published",
+    "url": "https://www.instagram.com/p/DfaNsk8lSm0/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -390,6 +404,11 @@
     "remote_id": "18109828379205468",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfZkGFaiduf/"
+  },
+  "tinynotes/2026-11-06_1300_hey-i-love-you-note::youtube": {
+    "at": "2026-11-06T18:07:49+00:00",
+    "reason": "too late",
+    "status": "skipped"
   },
   "tinynotes/2026-11-06_1500_weekend::facebook": {
     "at": "2026-11-06T14:06:25+00:00",
