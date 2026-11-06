@@ -125,7 +125,7 @@ def run(cmd):
     subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", *cmd], check=True)
 
 
-def finish(src, out, brand, hook, note=None, sign=None, hook_secs=3.0, hold=3.0, beats=None, freeze=0.0, live_note=False, wm_top=False):
+def finish(src, out, brand, hook, note=None, sign=None, hook_secs=3.0, hold=3.0, beats=None, freeze=0.0, live_note=False, wm_top=False, no_wm=False):
     """beats: [(start, end, text)] captions shown in sequence (replaces hook); freeze: hold last frame N s."""
     tmp = Path(tempfile.mkdtemp())
     dur, has_audio = probe(src)
@@ -135,7 +135,7 @@ def finish(src, out, brand, hook, note=None, sign=None, hook_secs=3.0, hold=3.0,
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p",
          "-c:a", "aac", "-ac", "2", "-ar", "48000", *([] if has_audio else ["-shortest"]), str(base)])
     hook_layer(hook).save(tmp / "hook.png")
-    watermark(brand, wm_top).save(tmp / "wm.png")
+    (Image.new("RGBA", (W, H), (0, 0, 0, 0)) if no_wm else watermark(brand, wm_top)).save(tmp / "wm.png")
     parts = [base]
     if note and not live_note:
         run(["-sseof", "-0.1", "-i", str(base), "-frames:v", "1", "-update", "1", str(tmp / "last.png")])
@@ -215,6 +215,7 @@ if __name__ == "__main__":
     p.add_argument("--freeze", type=float, default=0.0)
     p.add_argument("--landscape", action="store_true", help="1920x1080 output")
     p.add_argument("--live-note", action="store_true", help="show the note over the last seconds without pausing")
+    p.add_argument("--no-wm", action="store_true", help="no logo overlay (logo already in the picture)")
     p.add_argument("--wm-top", action="store_true", help="logo at the top (when something important sits low)")
     p.add_argument("--paper", action="store_true", help="torn-paper caption strips with handwriting")
     a = p.parse_args()
@@ -228,4 +229,4 @@ if __name__ == "__main__":
             rng, text = b.split(":", 1)
             s0, s1 = rng.split("-")
             beats.append((float(s0), float(s1), text))
-    finish(a.src, a.out, a.brand, a.hook, a.note, a.sign, beats=beats, freeze=a.freeze, live_note=a.live_note, wm_top=a.wm_top)
+    finish(a.src, a.out, a.brand, a.hook, a.note, a.sign, beats=beats, freeze=a.freeze, live_note=a.live_note, wm_top=a.wm_top, no_wm=a.no_wm)

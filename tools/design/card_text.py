@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[2]
 W, H = 1080, 1920
 INK = np.array([34, 34, 48], float)
 RED = (190, 46, 54)
+STAMP = False  # brand logo printed in the card's bottom-right corner (set by --stamp)
 
 
 def marker(size):
@@ -147,7 +148,7 @@ def text_canvas(text, cw, ch):
         size -= 4
     f = marker(size)
     lh = size * 1.12
-    y = (ch - lh * len(lines)) / 2 - size * 0.08
+    y = (ch - lh * len(lines)) / 2 - size * 0.08 - (ch * 0.05 if STAMP else 0)
     words = []
     for i, ln in enumerate(lines):
         x = (cw - tmp.textlength(ln, font=f)) / 2 - (size * 0.3 if heart and i == len(lines) - 1 else 0)
@@ -178,6 +179,7 @@ def main():
     p.add_argument("--flip", action="store_true")
     p.add_argument("--zoom", type=float, default=1.0)
     p.add_argument("--fps", type=float)
+    p.add_argument("--stamp", help="brand logo PNG to print small in the card's bottom-right corner")
     a = p.parse_args()
     fps = a.fps or probe(a.src)
     slides = []
@@ -202,7 +204,20 @@ def main():
     ch = int(np.linalg.norm(med[3] - med[0]) * 1.5)
     inset = 0.09
     src_rect = np.float32([[0, 0], [cw, 0], [cw, ch], [0, ch]])
+    global STAMP
+    STAMP = bool(a.stamp)
     word_sets = [text_canvas(t, cw, ch) for _, _, t in slides]
+    stamp, stamp_col = None, None
+    if a.stamp:
+        logo = Image.open(a.stamp).convert("RGBA")
+        lw = int(cw * 0.16)
+        logo = logo.resize((lw, int(logo.height * lw / logo.width)), Image.LANCZOS)
+        la = np.asarray(logo.split()[3]).astype(float) / 255
+        rgb = np.asarray(logo.convert("RGB")).astype(float)
+        stamp_col = (rgb * la[..., None]).sum((0, 1)) / max(1, la.sum())
+        stamp = np.zeros((ch, cw))
+        x0, y0 = cw - lw - int(cw * 0.015), ch - logo.height - int(ch * 0.02)
+        stamp[y0:y0 + logo.height, x0:x0 + lw] = la * 0.9
 
     enc = subprocess.Popen(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
                             "-s", f"{W}x{H}", "-r", f"{fps}", "-i", "-", "-c:v", "libx264", "-preset", "veryfast",
@@ -227,13 +242,16 @@ def main():
                     else:
                         red = np.maximum(red, wm * w_a * out_f)
         frame = fr.astype(float)
-        if alpha.max() > 0 or red.max() > 0:
+        if alpha.max() > 0 or red.max() > 0 or stamp is not None:
             q = quads[i]
             c = q.mean(0)
             qi = (c + (q - c) * (1 - inset)).astype(np.float32)
             Hm = cv2.getPerspectiveTransform(src_rect, qi)
             shade = np.clip(cv2.GaussianBlur(frame.mean(2), (0, 0), 6) / 240.0, 0.55, 1.05)[..., None]
-            for amap, col in ((alpha, INK), (red, np.array(RED, float))):
+            layers = [(alpha, INK), (red, np.array(RED, float))]
+            if stamp is not None:
+                layers.append((stamp, stamp_col))
+            for amap, col in layers:
                 if amap.max() <= 0:
                     continue
                 al = cv2.warpPerspective(amap.astype(np.float32), Hm, (W, H), flags=cv2.INTER_LINEAR)
