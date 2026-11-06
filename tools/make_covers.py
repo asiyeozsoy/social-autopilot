@@ -35,7 +35,8 @@ def main(brands):
             if when < now:
                 continue
             video = folder / ig["media"][0]
-            t = max(0.0, duration(video) - 0.9)
+            # catalogue shorts end on a "follow for more" card, so use an early frame there
+            t = 1.2 if "_cat" in video.parent.name else max(0.0, duration(video) - 0.9)
             subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-ss", f"{t:.2f}", "-i", str(video),
                             "-frames:v", "1", "-q:v", "3", str(folder / "cover.jpg")], check=True)
             made += 1
