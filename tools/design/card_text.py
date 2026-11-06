@@ -140,7 +140,7 @@ def text_canvas(text, cw, ch):
     text = text.rstrip()[:-2].rstrip() if heart else text
     lines = text.split("\n")
     tmp = ImageDraw.Draw(Image.new("L", (8, 8)))
-    size = int(ch * 0.74 / max(1, len(lines)) / 1.12)
+    size = int(ch * (0.66 if STAMP else 0.74) / max(1, len(lines)) / 1.12)
     while size > 20:
         f = marker(size)
         if max(tmp.textlength(ln, font=f) for ln in lines) <= cw * (0.72 if heart else 0.84):
