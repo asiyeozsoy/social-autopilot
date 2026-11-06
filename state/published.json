@@ -167,6 +167,20 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfZStL9ujin/"
   },
+  "factyeap/2026-11-06_1530_cat10-sharks::facebook": {
+    "at": "2026-11-06T14:37:32+00:00",
+    "attempts": 1,
+    "remote_id": "1447214664196309",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1447214664196309"
+  },
+  "factyeap/2026-11-06_1530_cat10-sharks::instagram": {
+    "at": "2026-11-06T14:37:21+00:00",
+    "attempts": 1,
+    "remote_id": "18128833495913631",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfZ1g_kP1CV/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
