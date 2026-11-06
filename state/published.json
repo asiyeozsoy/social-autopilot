@@ -322,5 +322,12 @@
     "at": "2026-11-06T01:30:30+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-06_0830_fb-wish-heart::facebook": {
+    "at": "2026-11-06T07:31:32+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122106525735530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122106525735530762"
   }
 }
