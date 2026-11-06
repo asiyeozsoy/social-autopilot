@@ -1,0 +1,37 @@
+brand: tinynotes
+publish_at: '2026-11-08T22:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'good night. I''m proud of you today. 🌙🤍
+
+
+      Send this as your good night text.
+
+
+      #goodnight #proudofyou #cutebunny #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'good night. I''m proud of you today. 🌙🤍
+
+
+      #fyp #goodnight #proudofyou #cutebunny'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Good Night, I'm Proud of You 🌙🐰
+    description: 'good night. I''m proud of you today. 🌙🤍
+
+
+      Send this as your good night text.
+
+
+      #goodnight #proudofyou #cutebunny #tinynotes
+
+
+      #shorts'

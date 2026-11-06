@@ -1,0 +1,37 @@
+brand: tinynotes
+publish_at: '2026-11-09T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'you can share my umbrella ☔🤍
+
+
+      Send this to someone going through a rainy day.
+
+
+      #sendthistosomeone #rainyday #cutebunny #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'you can share my umbrella ☔🤍
+
+
+      #fyp #sendthistosomeone #rainyday #cutebunny'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: You Can Share My Umbrella ☔🐰
+    description: 'you can share my umbrella ☔🤍
+
+
+      Send this to someone going through a rainy day.
+
+
+      #sendthistosomeone #rainyday #cutebunny #tinynotes
+
+
+      #shorts'

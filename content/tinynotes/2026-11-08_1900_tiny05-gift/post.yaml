@@ -1,0 +1,37 @@
+brand: tinynotes
+publish_at: '2026-11-08T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'I got you something 🎁🤍
+
+
+      Send this to someone who deserves a little surprise today.
+
+
+      #sendthistosomeone #gift #cutebunny #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'I got you something 🎁🤍
+
+
+      #fyp #sendthistosomeone #gift #cutebunny'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I Got You Something 🎁🐰
+    description: 'I got you something 🎁🤍
+
+
+      Send this to someone who deserves a little surprise today.
+
+
+      #sendthistosomeone #gift #cutebunny #tinynotes
+
+
+      #shorts'
