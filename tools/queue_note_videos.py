@@ -42,3 +42,8 @@ def main(spec_file, hhmm="1800"):
 
 if __name__ == "__main__":
     main(sys.argv[1], *(sys.argv[2:3]))
+
+
+# every queued note gets its finished-note frame as the Reels cover
+import subprocess as _sp  # noqa: E402
+_sp.run([sys.executable, str(Path(__file__).resolve().parent / "make_covers.py"), "tinynotes"], check=False)

@@ -47,6 +47,7 @@ class PlatformPost:
     caption: str = ""
     title: str = ""
     description: str = ""
+    cover: Path | None = None  # cover.jpg next to post.yaml: the Reels cover / grid thumbnail
 
 
 @dataclass
@@ -101,11 +102,12 @@ def load_post(folder: Path, root: Path) -> Post:
             caption=str(p.get("caption", "")).strip(),
             title=str(p.get("title", "")).strip(),
             description=str(p.get("description", "")).strip(),
+            cover=(folder / "cover.jpg") if (folder / "cover.jpg").exists() else None,
         )
     # Facebook mirrors Instagram unless a post says otherwise
     if "facebook" not in post.platforms and "instagram" in post.platforms:
         ig = post.platforms["instagram"]
-        post.platforms["facebook"] = PlatformPost("facebook", ig.kind, ig.media, ig.caption)
+        post.platforms["facebook"] = PlatformPost("facebook", ig.kind, ig.media, ig.caption, cover=ig.cover)
     return post
 
 

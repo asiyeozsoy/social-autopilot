@@ -64,7 +64,8 @@ def publish(post, pp, content_root):
             children.append(child)
         cid = _container(ig_id, token, media_type="CAROUSEL", children=",".join(children), caption=pp.caption)
     else:  # reel
-        cid = _container(ig_id, token, media_type="REELS", video_url=urls[0], caption=pp.caption, share_to_feed="true")
+        extra = {"cover_url": public_url(pp.cover, content_root)} if pp.cover else {}
+        cid = _container(ig_id, token, media_type="REELS", video_url=urls[0], caption=pp.caption, share_to_feed="true", **extra)
     _wait(cid, token)
 
     API = api_base(token)
