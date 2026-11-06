@@ -6,6 +6,9 @@ on:
       apply:
         description: "write the links from tools/fb_links.json"
         default: "no"
+      thumb:
+        description: "brand:media_id of an Instagram reel whose thumbnail to fetch"
+        default: ""
 
 jobs:
   info:
@@ -25,4 +28,14 @@ jobs:
           FACTYEAP_IG_TOKEN: ${{ secrets.FACTYEAP_IG_TOKEN }}
           TINYNOTES_IG_USER_ID: ${{ secrets.TINYNOTES_IG_USER_ID || '17841453440786843' }}
           TINYNOTES_IG_TOKEN: ${{ secrets.TINYNOTES_IG_TOKEN }}
-        run: python tools/fb_page_info.py ${{ inputs.apply == 'yes' && '--apply' || '' }}
+        run: |
+          if [ -n "${{ inputs.thumb }}" ]; then
+            IFS=: read b m <<< "${{ inputs.thumb }}"; python tools/ig_thumb.py "$b" "$m" thumb.jpg
+          else
+            python tools/fb_page_info.py ${{ inputs.apply == 'yes' && '--apply' || '' }}
+          fi
+      - if: inputs.thumb != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: thumb
+          path: thumb.jpg
