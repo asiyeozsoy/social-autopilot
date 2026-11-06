@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-06T19:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'will you give me a hug? 🥺🤍
+
+
+      Send this to someone who needs one today.
+
+
+      #sendthistosomeone #hug #cutebunny #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'will you give me a hug? 🥺
+
+
+      send this to someone who needs one
+
+
+      #sendthistosomeone #hug #cute #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Will You Give Me a Hug? 🥺🐰
+    description: 'will you give me a hug? 🥺🤍
+
+
+      Send this to someone who needs one today.
+
+
+      #sendthistosomeone #hug #cutebunny #tinynotes
+
+
+      #shorts'
