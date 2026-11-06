@@ -458,5 +458,19 @@
     "remote_id": "18468746953190416",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfaRLgeDxfG/"
+  },
+  "tinynotes/2026-11-06_2100_long-distance-video::facebook": {
+    "at": "2026-11-06T20:01:53+00:00",
+    "attempts": 1,
+    "remote_id": "1414569607457891",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1414569607457891"
+  },
+  "tinynotes/2026-11-06_2100_long-distance-video::instagram": {
+    "at": "2026-11-06T20:01:45+00:00",
+    "attempts": 1,
+    "remote_id": "18079541384738132",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfaarAhjwW-/"
   }
 }
