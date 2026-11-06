@@ -1,0 +1,40 @@
+brand: tinynotes
+publish_at: '2026-11-07T19:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'I''ve been waiting for you all day 🥺🤍
+
+
+      Send this to the one you can''t wait to see.
+
+
+      #sendthistosomeone #missingyou #cutebunny #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'I''ve been waiting for you all day 🥺
+
+
+      send this to the one you can''t wait to see
+
+
+      #sendthistosomeone #missingyou #cute #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I've Been Waiting For You All Day 🥺🐰
+    description: 'I''ve been waiting for you all day 🥺🤍
+
+
+      Send this to the one you can''t wait to see.
+
+
+      #sendthistosomeone #missingyou #cutebunny #tinynotes
+
+
+      #shorts'
