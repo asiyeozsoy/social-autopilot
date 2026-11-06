@@ -153,6 +153,20 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfX6QkVtb3N/"
   },
+  "factyeap/2026-11-06_1030_cat09-butterflies::facebook": {
+    "at": "2026-11-06T09:33:11+00:00",
+    "attempts": 1,
+    "remote_id": "2307177953380003",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2307177953380003"
+  },
+  "factyeap/2026-11-06_1030_cat09-butterflies::instagram": {
+    "at": "2026-11-06T09:33:00+00:00",
+    "attempts": 1,
+    "remote_id": "17917077597535986",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfZStL9ujin/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
