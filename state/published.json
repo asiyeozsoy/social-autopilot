@@ -195,6 +195,27 @@
     "status": "published",
     "url": "https://www.instagram.com/p/DfaNsk8lSm0/"
   },
+  "factyeap/2026-11-06_2030_bear-no-cuddles::facebook": {
+    "at": "2026-11-06T19:31:06+00:00",
+    "attempts": 1,
+    "remote_id": "1169576218970223",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1169576218970223"
+  },
+  "factyeap/2026-11-06_2030_bear-no-cuddles::instagram": {
+    "at": "2026-11-06T19:30:53+00:00",
+    "attempts": 1,
+    "remote_id": "18106556507458465",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfaXIXvRZrk/"
+  },
+  "factyeap/2026-11-06_2030_bear-no-cuddles::youtube": {
+    "at": "2026-11-06T19:30:55+00:00",
+    "attempts": 1,
+    "remote_id": "RRNnwq1kJnQ",
+    "status": "published",
+    "url": "https://youtube.com/shorts/RRNnwq1kJnQ"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
