@@ -1,0 +1,37 @@
+brand: tinynotes
+publish_at: '2026-11-09T17:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'hey you. I''m so proud of you 🤍🐰
+
+
+      Send this to someone you''re proud of.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'hey you. I''m so proud of you 🤍🐰
+
+
+      #fyp #sendthistosomeone #thisisyoursign #cutebunny'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Hey You, I'm So Proud Of You 🐰🤍
+    description: 'hey you. I''m so proud of you 🤍🐰
+
+
+      Send this to someone you''re proud of.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes
+
+
+      #shorts'

@@ -1,0 +1,37 @@
+brand: tinynotes
+publish_at: '2026-11-10T17:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'if nobody told you today... you matter. a lot 🤍🐰
+
+
+      Send this to someone who needs to hear it.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'if nobody told you today... you matter. a lot 🤍🐰
+
+
+      #fyp #sendthistosomeone #thisisyoursign #cutebunny'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: If Nobody Told You Today... 🐰🤍
+    description: 'if nobody told you today... you matter. a lot 🤍🐰
+
+
+      Send this to someone who needs to hear it.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes
+
+
+      #shorts'
