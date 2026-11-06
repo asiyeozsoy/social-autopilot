@@ -343,5 +343,19 @@
     "remote_id": "1465888266604099_122106525735530762",
     "status": "published",
     "url": "https://www.facebook.com/1465888266604099_122106525735530762"
+  },
+  "tinynotes/2026-11-06_1100_sister-video::facebook": {
+    "at": "2026-11-06T10:04:05+00:00",
+    "attempts": 1,
+    "remote_id": "1880450173135213",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1880450173135213"
+  },
+  "tinynotes/2026-11-06_1100_sister-video::instagram": {
+    "at": "2026-11-06T10:03:56+00:00",
+    "attempts": 1,
+    "remote_id": "18344357527260250",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfZWQHxCiE-/"
   }
 }
