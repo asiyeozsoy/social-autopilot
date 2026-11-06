@@ -50,19 +50,47 @@ def frames(src, flip, zoom):
         yield np.frombuffer(buf, np.uint8).reshape(H, W, 3)
 
 
+def _ransac_line(pts, tol=1.5, iters=300, seed=0):
+    """Fit a line a*x + b*y = c to pts robustly; returns (point, direction)."""
+    rng = np.random.default_rng(seed)
+    pts = np.asarray(pts, float)
+    best = None
+    for _ in range(iters):
+        i, j = rng.choice(len(pts), 2, replace=False)
+        d = pts[j] - pts[i]
+        n = np.linalg.norm(d)
+        if n < 1e-6:
+            continue
+        nrm = np.array([-d[1], d[0]]) / n
+        inl = np.abs((pts - pts[i]) @ nrm) < tol
+        if best is None or inl.sum() > best.sum():
+            best = inl
+    q = pts[best]
+    c = q.mean(0)
+    _, _, vt = np.linalg.svd(q - c)
+    return c, vt[0]
+
+
+def _intersect(l1, l2):
+    (p1, d1), (p2, d2) = l1, l2
+    A = np.array([d1, -d2]).T
+    t = np.linalg.solve(A, p2 - p1)
+    return p1 + t[0] * d1
+
+
 def find_card(fr):
-    """Corners (tl, tr, br, bl) of the biggest white, low-saturation quad near the centre."""
-    s = 4
+    """Corners (tl, tr, br, bl) of the white card. Each side is fitted as a straight line with
+    RANSAC, so paws, body and floor touching the card cannot pull the corners around."""
+    s = 2
     small = cv2.resize(fr, (W // s, H // s), interpolation=cv2.INTER_AREA)
     hsv = cv2.cvtColor(small, cv2.COLOR_RGB2HSV)
-    m = ((hsv[..., 2] > 170) & (hsv[..., 1] < 45)).astype(np.uint8) * 255
-    m = cv2.morphologyEx(m, cv2.MORPH_CLOSE, np.ones((5, 5), np.uint8))
-    m = cv2.morphologyEx(m, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
+    m = ((hsv[..., 2] > 175) & (hsv[..., 1] < 40)).astype(np.uint8)
+    m = cv2.morphologyEx(m, cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
     n, lab, stats, cent = cv2.connectedComponentsWithStats(m)
     best, score = None, 0
     for i in range(1, n):
         area = stats[i, cv2.CC_STAT_AREA]
-        cx, cy = cent[i]
+        cx = cent[i][0]
         if area < 0.04 * m.size:
             continue
         sc = area / (1 + abs(cx - m.shape[1] / 2) / m.shape[1] * 4)
@@ -70,31 +98,38 @@ def find_card(fr):
             best, score = i, sc
     if best is None:
         return None
-    cnt, _ = cv2.findContours((lab == best).astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
-    hull = cv2.convexHull(max(cnt, key=cv2.contourArea))
-    eps = 0.02 * cv2.arcLength(hull, True)
-    quad = None
-    for _ in range(30):
-        ap = cv2.approxPolyDP(hull, eps, True)
-        if len(ap) == 4:
-            quad = ap.reshape(4, 2).astype(float)
-            break
-        eps *= 1.15 if len(ap) > 4 else 0.85
-    if quad is None:
-        quad = cv2.boxPoints(cv2.minAreaRect(hull)).astype(float)
-    quad *= s
-    c = quad.mean(0)
-    ang = np.arctan2(quad[:, 1] - c[1], quad[:, 0] - c[0])
-    q = quad[np.argsort(ang)]  # tl, tr, br, bl (y down)
-    return q
+    comp = lab == best
+    x0, y0, bw, bh = stats[best, :4]
+    cols = np.arange(x0 + int(bw * 0.12), x0 + int(bw * 0.88))
+    rows = np.arange(y0 + int(bh * 0.08), y0 + int(bh * 0.92))
+    colany = comp[:, cols].any(0)
+    top = [(c, np.argmax(comp[:, c])) for c, ok in zip(cols, colany) if ok]
+    bot = [(c, comp.shape[0] - 1 - np.argmax(comp[::-1, c])) for c, ok in zip(cols, colany) if ok]
+    rowany = comp[rows].any(1)
+    left = [(np.argmax(comp[r]), r) for r, ok in zip(rows, rowany) if ok]
+    right = [(comp.shape[1] - 1 - np.argmax(comp[r, ::-1]), r) for r, ok in zip(rows, rowany) if ok]
+    if min(len(top), len(bot), len(left), len(right)) < 20:
+        return None
+    L = [_ransac_line(v) for v in (top, right, bot, left)]
+    q = np.array([_intersect(L[3], L[0]), _intersect(L[0], L[1]), _intersect(L[1], L[2]), _intersect(L[2], L[3])])
+    return (q + 0.5) * s
 
 
-def smooth(quads, win=7):
-    q = np.array(quads)
-    out = q.copy()
-    for i in range(len(q)):
-        a, b = max(0, i - win // 2), min(len(q), i + win // 2 + 1)
-        out[i] = np.median(q[a:b], axis=0) * 0.5 + q[a:b].mean(0) * 0.5
+def smooth(quads, sigma=2.0, jump=10.0):
+    q = np.array(quads, float)
+    n = len(q)
+    # replace single-frame outliers by the local median
+    for i in range(n):
+        a, b = max(0, i - 3), min(n, i + 4)
+        med = np.median(q[a:b], axis=0)
+        bad = np.linalg.norm(q[i] - med, axis=1) > jump
+        q[i][bad] = med[bad]
+    k = np.arange(-int(3 * sigma), int(3 * sigma) + 1)
+    g = np.exp(-k ** 2 / (2 * sigma ** 2))
+    out = np.empty_like(q)
+    for i in range(n):
+        idx = np.clip(i + k, 0, n - 1)
+        out[i] = (q[idx] * g[:, None, None]).sum(0) / g.sum()
     return out
 
 
