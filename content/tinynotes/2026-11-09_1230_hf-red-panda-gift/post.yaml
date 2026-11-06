@@ -1,0 +1,46 @@
+brand: tinynotes
+publish_at: '2026-11-09T12:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'SURPRISE! IT''S ME 🎁
+
+      The best gift is someone who shows up.
+
+
+      Tag your favorite person 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'SURPRISE! IT''S ME 🎁
+
+      The best gift is someone who shows up.
+
+
+      Tag your favorite person 🤍
+
+
+      #sendthistosomeone #cute #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: SURPRISE! IT'S ME 🎁
+    description: 'SURPRISE! IT''S ME 🎁
+
+      The best gift is someone who shows up.
+
+
+      Tag your favorite person 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes
+
+
+      #shorts'

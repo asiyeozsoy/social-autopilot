@@ -1,0 +1,46 @@
+brand: tinynotes
+publish_at: '2026-11-07T12:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'EMOTIONAL SUPPORT CHICK 🐥🛎️
+
+      Ring if you need a hug.
+
+
+      Send this to someone who needs one today 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'EMOTIONAL SUPPORT CHICK 🐥🛎️
+
+      Ring if you need a hug.
+
+
+      Send this to someone who needs one today 🤍
+
+
+      #sendthistosomeone #cute #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: EMOTIONAL SUPPORT CHICK 🐥🛎️
+    description: 'EMOTIONAL SUPPORT CHICK 🐥🛎️
+
+      Ring if you need a hug.
+
+
+      Send this to someone who needs one today 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes
+
+
+      #shorts'

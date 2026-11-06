@@ -1,0 +1,46 @@
+brand: tinynotes
+publish_at: '2026-11-08T20:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'I SAVED YOU A SEAT ☕🦊
+
+      Come sit with me for a while.
+
+
+      Send this to the one you''d share a coffee with 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'I SAVED YOU A SEAT ☕🦊
+
+      Come sit with me for a while.
+
+
+      Send this to the one you''d share a coffee with 🤍
+
+
+      #sendthistosomeone #cute #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I SAVED YOU A SEAT ☕🦊
+    description: 'I SAVED YOU A SEAT ☕🦊
+
+      Come sit with me for a while.
+
+
+      Send this to the one you''d share a coffee with 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes
+
+
+      #shorts'

@@ -1,0 +1,46 @@
+brand: tinynotes
+publish_at: '2026-11-07T20:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'LITTLE LOVE DELIVERY 💌🦔
+
+      Special delivery, just for you.
+
+
+      Send it to someone special 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'LITTLE LOVE DELIVERY 💌🦔
+
+      Special delivery, just for you.
+
+
+      Send it to someone special 🤍
+
+
+      #sendthistosomeone #cute #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: LITTLE LOVE DELIVERY 💌🦔
+    description: 'LITTLE LOVE DELIVERY 💌🦔
+
+      Special delivery, just for you.
+
+
+      Send it to someone special 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes
+
+
+      #shorts'

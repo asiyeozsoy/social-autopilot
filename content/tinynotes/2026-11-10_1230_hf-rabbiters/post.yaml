@@ -1,0 +1,46 @@
+brand: tinynotes
+publish_at: '2026-11-10T12:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'FLOWERS FOR YOU 💐🐰
+
+      Because you deserve them.
+
+
+      Send this to someone you appreciate 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'FLOWERS FOR YOU 💐🐰
+
+      Because you deserve them.
+
+
+      Send this to someone you appreciate 🤍
+
+
+      #sendthistosomeone #cute #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: FLOWERS FOR YOU 💐🐰
+    description: 'FLOWERS FOR YOU 💐🐰
+
+      Because you deserve them.
+
+
+      Send this to someone you appreciate 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes
+
+
+      #shorts'

@@ -1,0 +1,46 @@
+brand: tinynotes
+publish_at: '2026-11-10T20:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'I LOVE YOU SO MUCH 💗🐱
+
+      That''s it. That''s the message.
+
+
+      Send this to your person 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'I LOVE YOU SO MUCH 💗🐱
+
+      That''s it. That''s the message.
+
+
+      Send this to your person 🤍
+
+
+      #sendthistosomeone #cute #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I LOVE YOU SO MUCH 💗🐱
+    description: 'I LOVE YOU SO MUCH 💗🐱
+
+      That''s it. That''s the message.
+
+
+      Send this to your person 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes
+
+
+      #shorts'

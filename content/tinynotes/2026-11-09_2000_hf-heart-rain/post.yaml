@@ -1,0 +1,46 @@
+brand: tinynotes
+publish_at: '2026-11-09T20:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'A LITTLE LOVE FOR YOU 💗🧸
+
+      For the one who makes your heart do this.
+
+
+      Send this to your person 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'A LITTLE LOVE FOR YOU 💗🧸
+
+      For the one who makes your heart do this.
+
+
+      Send this to your person 🤍
+
+
+      #sendthistosomeone #cute #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: A LITTLE LOVE FOR YOU 💗🧸
+    description: 'A LITTLE LOVE FOR YOU 💗🧸
+
+      For the one who makes your heart do this.
+
+
+      Send this to your person 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes
+
+
+      #shorts'

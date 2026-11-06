@@ -1,0 +1,46 @@
+brand: tinynotes
+publish_at: '2026-11-08T12:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'THESE ARE FOR YOU 🌸
+
+      No reason. Just because.
+
+
+      Send this to someone who deserves flowers today 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'THESE ARE FOR YOU 🌸
+
+      No reason. Just because.
+
+
+      Send this to someone who deserves flowers today 🤍
+
+
+      #sendthistosomeone #cute #love #fyp'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: THESE ARE FOR YOU 🌸
+    description: 'THESE ARE FOR YOU 🌸
+
+      No reason. Just because.
+
+
+      Send this to someone who deserves flowers today 🤍
+
+
+      #sendthistosomeone #cute #love #tinynotes
+
+
+      #shorts'
