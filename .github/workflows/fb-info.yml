@@ -1,0 +1,28 @@
+name: Facebook page info
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "write the links from tools/fb_links.json"
+        default: "no"
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+          META_SYSTEM_TOKEN: ${{ secrets.META_SYSTEM_TOKEN }}
+          FACTYEAP_FB_PAGE_ID: ${{ secrets.FACTYEAP_FB_PAGE_ID || '633502523179601' }}
+          TINYNOTES_FB_PAGE_ID: ${{ secrets.TINYNOTES_FB_PAGE_ID || '1465888266604099' }}
+          FACTYEAP_IG_USER_ID: ${{ secrets.FACTYEAP_IG_USER_ID || '17841474070047497' }}
+          FACTYEAP_IG_TOKEN: ${{ secrets.FACTYEAP_IG_TOKEN }}
+          TINYNOTES_IG_USER_ID: ${{ secrets.TINYNOTES_IG_USER_ID || '17841453440786843' }}
+          TINYNOTES_IG_TOKEN: ${{ secrets.TINYNOTES_IG_TOKEN }}
+        run: python tools/fb_page_info.py ${{ inputs.apply == 'yes' && '--apply' || '' }}
