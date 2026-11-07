@@ -244,6 +244,27 @@
     "status": "published",
     "url": "https://www.instagram.com/p/DfcCMWUF7YK/"
   },
+  "factyeap/2026-11-07_1230_hf-who-stole-my-spot::facebook": {
+    "at": "2026-11-07T11:38:17+00:00",
+    "attempts": 1,
+    "remote_id": "29155236377439607",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/29155236377439607"
+  },
+  "factyeap/2026-11-07_1230_hf-who-stole-my-spot::instagram": {
+    "at": "2026-11-07T11:38:06+00:00",
+    "attempts": 1,
+    "remote_id": "18027729161871229",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfcF04FB-oe/"
+  },
+  "factyeap/2026-11-07_1230_hf-who-stole-my-spot::youtube": {
+    "at": "2026-11-07T11:38:08+00:00",
+    "attempts": 1,
+    "remote_id": "8qtzvd77vSE",
+    "status": "published",
+    "url": "https://youtube.com/shorts/8qtzvd77vSE"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -550,5 +571,19 @@
     "remote_id": "18373131196214299",
     "status": "published",
     "url": "https://www.instagram.com/p/DfcCVQ2Fywo/"
+  },
+  "tinynotes/2026-11-07_1230_hf-emotional-support-chick::facebook": {
+    "at": "2026-11-07T11:38:57+00:00",
+    "attempts": 1,
+    "remote_id": "1803519470770825",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1803519470770825"
+  },
+  "tinynotes/2026-11-07_1230_hf-emotional-support-chick::instagram": {
+    "at": "2026-11-07T11:38:50+00:00",
+    "attempts": 1,
+    "remote_id": "18109254817979555",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfcF6tKIeTP/"
   }
 }
