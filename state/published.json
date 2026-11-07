@@ -501,5 +501,12 @@
     "at": "2026-11-07T03:03:51+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-07_0830_fb-quran-94-5::facebook": {
+    "at": "2026-11-07T07:34:46+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122107475229530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122107475229530762"
   }
 }
