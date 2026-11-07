@@ -619,6 +619,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfcJb2GFWaB/"
   },
+  "tinynotes/2026-11-07_1300_my-sunshine-note::youtube": {
+    "at": "2026-11-07T18:03:50+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-07_1700_sign01-rest::facebook": {
     "at": "2026-11-07T16:02:40+00:00",
     "attempts": 1,
@@ -646,5 +651,19 @@
     "remote_id": "18131354905860062",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfcrDl2iqD0/"
+  },
+  "tinynotes/2026-11-07_1900_tiny04-waiting::facebook": {
+    "at": "2026-11-07T18:04:48+00:00",
+    "attempts": 1,
+    "remote_id": "1002403582356844",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1002403582356844"
+  },
+  "tinynotes/2026-11-07_1900_tiny04-waiting::instagram": {
+    "at": "2026-11-07T18:04:36+00:00",
+    "attempts": 1,
+    "remote_id": "18084018614352610",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfcyCq2DULO/"
   }
 }
