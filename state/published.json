@@ -279,6 +279,27 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfcZnv-s-sH/"
   },
+  "factyeap/2026-11-07_2000_hf-last-pancake::facebook": {
+    "at": "2026-11-07T19:06:34+00:00",
+    "attempts": 1,
+    "remote_id": "1883418452943327",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1883418452943327"
+  },
+  "factyeap/2026-11-07_2000_hf-last-pancake::instagram": {
+    "at": "2026-11-07T19:06:20+00:00",
+    "attempts": 1,
+    "remote_id": "17890755915475465",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dfc5GzsCaNb/"
+  },
+  "factyeap/2026-11-07_2000_hf-last-pancake::youtube": {
+    "at": "2026-11-07T19:06:22+00:00",
+    "attempts": 1,
+    "remote_id": "0sH76P7J5ko",
+    "status": "published",
+    "url": "https://youtube.com/shorts/0sH76P7J5ko"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -665,5 +686,19 @@
     "remote_id": "18084018614352610",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfcyCq2DULO/"
+  },
+  "tinynotes/2026-11-07_2000_hf-little-love-delivery::facebook": {
+    "at": "2026-11-07T19:07:27+00:00",
+    "attempts": 1,
+    "remote_id": "1149975700758539",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1149975700758539"
+  },
+  "tinynotes/2026-11-07_2000_hf-little-love-delivery::instagram": {
+    "at": "2026-11-07T19:07:15+00:00",
+    "attempts": 1,
+    "remote_id": "18141385192726206",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dfc5OZbmc0s/"
   }
 }
