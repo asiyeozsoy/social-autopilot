@@ -265,6 +265,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/8qtzvd77vSE"
   },
+  "factyeap/2026-11-07_1530_cat12-ai-future::facebook": {
+    "at": "2026-11-07T14:31:36+00:00",
+    "attempts": 1,
+    "remote_id": "1103694272264354",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1103694272264354"
+  },
+  "factyeap/2026-11-07_1530_cat12-ai-future::instagram": {
+    "at": "2026-11-07T14:31:24+00:00",
+    "attempts": 1,
+    "remote_id": "18641917273059529",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfcZnv-s-sH/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
