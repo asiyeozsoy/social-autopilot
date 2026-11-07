@@ -478,6 +478,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfaarAhjwW-/"
   },
+  "tinynotes/2026-11-06_2100_long-distance-video::youtube": {
+    "at": "2026-11-07T02:03:45+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-06_2200_tiny06-goodnight::facebook": {
     "at": "2026-11-06T21:02:48+00:00",
     "attempts": 1,
