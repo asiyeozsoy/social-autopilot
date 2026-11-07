@@ -700,5 +700,19 @@
     "remote_id": "18141385192726206",
     "status": "published",
     "url": "https://www.instagram.com/reel/Dfc5OZbmc0s/"
+  },
+  "tinynotes/2026-11-07_2100_chaos-friend-video::facebook": {
+    "at": "2026-11-07T20:09:01+00:00",
+    "attempts": 1,
+    "remote_id": "1063149310069914",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1063149310069914"
+  },
+  "tinynotes/2026-11-07_2100_chaos-friend-video::instagram": {
+    "at": "2026-11-07T20:08:47+00:00",
+    "attempts": 1,
+    "remote_id": "18147631228584120",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfdAP-1jz4P/"
   }
 }
