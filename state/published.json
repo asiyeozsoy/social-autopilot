@@ -613,5 +613,19 @@
     "remote_id": "18109320221299763",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfcJb2GFWaB/"
+  },
+  "tinynotes/2026-11-07_1700_sign01-rest::facebook": {
+    "at": "2026-11-07T16:02:40+00:00",
+    "attempts": 1,
+    "remote_id": "1825922595414927",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1825922595414927"
+  },
+  "tinynotes/2026-11-07_1700_sign01-rest::instagram": {
+    "at": "2026-11-07T16:02:29+00:00",
+    "attempts": 1,
+    "remote_id": "18347474806254510",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfckElcidh4/"
   }
 }
