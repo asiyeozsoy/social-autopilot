@@ -659,6 +659,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfckElcidh4/"
   },
+  "tinynotes/2026-11-07_1700_sign01-rest::youtube": {
+    "at": "2026-11-07T22:09:08+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-07_1800_saturday-slow-video::facebook": {
     "at": "2026-11-07T17:03:43+00:00",
     "attempts": 1,
