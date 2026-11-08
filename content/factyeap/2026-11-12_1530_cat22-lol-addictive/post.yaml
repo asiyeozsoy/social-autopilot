@@ -1,0 +1,28 @@
+brand: factyeap
+publish_at: '2026-11-12T15:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'Why is League of Legends so addictive?🎮💬
+
+
+      Strategy, endless combos, and that unbeatable victory feeling!
+
+
+      Follow @factyeap for a new fact every day 🦉
+
+
+      #factyeap #facts #leagueoflegends #addictive #GamerFacts #LoLAddiction #FunFactGaming #league #didyouknow'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'Why is League of Legends so addictive?🎮💬
+
+
+      Strategy, endless combos, and that unbeatable victory feeling!
+
+
+      #factyeap #facts #leagueoflegends #addictive #GamerFacts #didyouknow #fyp'
