@@ -809,5 +809,19 @@
     "remote_id": "18108999443364644",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfeqSwGAn8U/"
+  },
+  "tinynotes/2026-11-08_1300_thinking-of-you-note::facebook": {
+    "at": "2026-11-08T12:06:22+00:00",
+    "attempts": 1,
+    "remote_id": "1677697070395687",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1677697070395687"
+  },
+  "tinynotes/2026-11-08_1300_thinking-of-you-note::instagram": {
+    "at": "2026-11-08T12:06:12+00:00",
+    "attempts": 1,
+    "remote_id": "17968737165197507",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dfet1iaCEGs/"
   }
 }
