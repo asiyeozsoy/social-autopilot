@@ -810,6 +810,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfefxcOjwXK/"
   },
+  "tinynotes/2026-11-08_1100_sunday-self-video::youtube": {
+    "at": "2026-11-08T16:09:34+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-08_1230_hf-flowers-for-you::facebook": {
     "at": "2026-11-08T11:35:28+00:00",
     "attempts": 1,
@@ -851,5 +856,19 @@
     "remote_id": "18126405082913217",
     "status": "published",
     "url": "https://www.instagram.com/p/Dfe72S9DFxo/"
+  },
+  "tinynotes/2026-11-08_1700_sign02-perfect::facebook": {
+    "at": "2026-11-08T16:10:19+00:00",
+    "attempts": 1,
+    "remote_id": "1964331031194915",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1964331031194915"
+  },
+  "tinynotes/2026-11-08_1700_sign02-perfect::instagram": {
+    "at": "2026-11-08T16:10:11+00:00",
+    "attempts": 1,
+    "remote_id": "18117595445329993",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DffJw6xmZdD/"
   }
 }
