@@ -314,6 +314,27 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfecLBFslu2/"
   },
+  "factyeap/2026-11-08_1230_hf-moms-secret-snack::facebook": {
+    "at": "2026-11-08T11:34:33+00:00",
+    "attempts": 1,
+    "remote_id": "1157205893405394",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1157205893405394"
+  },
+  "factyeap/2026-11-08_1230_hf-moms-secret-snack::instagram": {
+    "at": "2026-11-08T11:34:24+00:00",
+    "attempts": 1,
+    "remote_id": "18080422802410381",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfeqMObqcR7/"
+  },
+  "factyeap/2026-11-08_1230_hf-moms-secret-snack::youtube": {
+    "at": "2026-11-08T11:34:27+00:00",
+    "attempts": 1,
+    "remote_id": "AtI5hLdSmJk",
+    "status": "published",
+    "url": "https://youtube.com/shorts/AtI5hLdSmJk"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -774,5 +795,19 @@
     "remote_id": "17880529740632791",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfefxcOjwXK/"
+  },
+  "tinynotes/2026-11-08_1230_hf-flowers-for-you::facebook": {
+    "at": "2026-11-08T11:35:28+00:00",
+    "attempts": 1,
+    "remote_id": "1450130640656139",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1450130640656139"
+  },
+  "tinynotes/2026-11-08_1230_hf-flowers-for-you::instagram": {
+    "at": "2026-11-08T11:35:21+00:00",
+    "attempts": 1,
+    "remote_id": "18108999443364644",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfeqSwGAn8U/"
   }
 }
