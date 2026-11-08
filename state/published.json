@@ -300,6 +300,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/0sH76P7J5ko"
   },
+  "factyeap/2026-11-08_1030_cat13-squirrels::facebook": {
+    "at": "2026-11-08T09:32:19+00:00",
+    "attempts": 1,
+    "remote_id": "2215425606008963",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2215425606008963"
+  },
+  "factyeap/2026-11-08_1030_cat13-squirrels::instagram": {
+    "at": "2026-11-08T09:32:09+00:00",
+    "attempts": 1,
+    "remote_id": "18101380442640852",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfecLBFslu2/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
