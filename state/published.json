@@ -697,6 +697,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfcyCq2DULO/"
   },
+  "tinynotes/2026-11-07_1900_tiny04-waiting::youtube": {
+    "at": "2026-11-08T00:09:17+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-07_2000_hf-little-love-delivery::facebook": {
     "at": "2026-11-07T19:07:27+00:00",
     "attempts": 1,
