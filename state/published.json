@@ -739,5 +739,12 @@
     "at": "2026-11-08T02:09:57+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-08_0830_fb-gm-macedonian::facebook": {
+    "at": "2026-11-08T07:30:55+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122108194221530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122108194221530762"
   }
 }
