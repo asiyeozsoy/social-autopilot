@@ -1,0 +1,37 @@
+brand: factyeap
+publish_at: '2026-11-14T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'dad rule #1: no cuddles. ...okay, one 🐻🤍
+
+
+      Tag the dad who pretends he doesn''t like hugs.
+
+
+      #bearfamily #relatable #funny #thisisyoursign #factyeap'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'dad rule #1: no cuddles. ...okay, one 🐻🤍
+
+
+      #fyp #relatable #funny #bearfamily'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'Dad Rule #1: No Cuddles 🐻🤍'
+    description: 'dad rule #1: no cuddles. ...okay, one 🐻🤍
+
+
+      Tag the dad who pretends he doesn''t like hugs.
+
+
+      #bearfamily #relatable #funny #thisisyoursign #factyeap
+
+
+      #shorts'
