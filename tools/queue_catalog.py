@@ -124,11 +124,19 @@ def main():
     ap.add_argument("videos")
     ap.add_argument("--from", dest="lo", type=int, default=1)
     ap.add_argument("--to", dest="hi", type=int, default=999)
+    ap.add_argument("--start", help="YYYY-MM-DD: schedule this range from that day instead of the original plan")
+    ap.add_argument("--times", default="15:30", help="comma-separated daily slots used with --start")
     a = ap.parse_args()
     yt = json.loads((ROOT / "plans" / "catalog_factyeap.json").read_text())["youtube"]
     picks = [(int(r[0]), r[1]) for r in csv.reader((ROOT / "tools" / "catalog_picks.tsv").open(), delimiter="\t")
              if r[1] not in SKIP]
     sched = slots(len(picks))
+    if a.start:  # re-plan only the selected range, e.g. one a day
+        times = a.times.split(",")
+        sel = [n for n, (i, _) in enumerate(picks) if a.lo <= i <= a.hi]
+        day0 = dt.date.fromisoformat(a.start)
+        for k, n in enumerate(sel):
+            sched[n] = (day0 + dt.timedelta(days=k // len(times)), times[k % len(times)])
     for n, (i, slug) in enumerate(picks):
         if not a.lo <= i <= a.hi:
             continue
