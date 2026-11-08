@@ -370,6 +370,27 @@
     "status": "published",
     "url": "https://youtube.com/shorts/tMAlxMf9Jxg"
   },
+  "factyeap/2026-11-08_2000_hf-dads-personal-trainer::facebook": {
+    "at": "2026-11-08T19:04:37+00:00",
+    "attempts": 1,
+    "remote_id": "3414574412182819",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/3414574412182819"
+  },
+  "factyeap/2026-11-08_2000_hf-dads-personal-trainer::instagram": {
+    "at": "2026-11-08T19:04:24+00:00",
+    "attempts": 1,
+    "remote_id": "18336526222263797",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dffdsznviaz/"
+  },
+  "factyeap/2026-11-08_2000_hf-dads-personal-trainer::youtube": {
+    "at": "2026-11-08T19:04:25+00:00",
+    "attempts": 1,
+    "remote_id": "lGVIk_zuZtk",
+    "status": "published",
+    "url": "https://youtube.com/shorts/lGVIk_zuZtk"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -915,5 +936,19 @@
     "remote_id": "18414752965091220",
     "status": "published",
     "url": "https://www.instagram.com/reel/DffWlU2GUUD/"
+  },
+  "tinynotes/2026-11-08_2000_hf-saved-you-a-seat::facebook": {
+    "at": "2026-11-08T19:06:14+00:00",
+    "attempts": 1,
+    "remote_id": "1994796434818922",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1994796434818922"
+  },
+  "tinynotes/2026-11-08_2000_hf-saved-you-a-seat::instagram": {
+    "at": "2026-11-08T19:06:03+00:00",
+    "attempts": 1,
+    "remote_id": "17999041626046566",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dffd4dDmpIj/"
   }
 }
