@@ -984,5 +984,12 @@
     "at": "2026-11-09T02:08:51+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-09_0830_fb-small-steps::facebook": {
+    "at": "2026-11-09T07:30:30+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122108660061530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122108660061530762"
   }
 }
