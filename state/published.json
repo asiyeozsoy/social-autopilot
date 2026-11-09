@@ -942,6 +942,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DffWlU2GUUD/"
   },
+  "tinynotes/2026-11-08_1900_tiny05-gift::youtube": {
+    "at": "2026-11-09T00:07:33+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-08_2000_hf-saved-you-a-seat::facebook": {
     "at": "2026-11-08T19:06:14+00:00",
     "attempts": 1,
