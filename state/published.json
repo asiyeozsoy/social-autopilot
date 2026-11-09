@@ -1005,5 +1005,19 @@
     "remote_id": "1465888266604099_122108660061530762",
     "status": "published",
     "url": "https://www.facebook.com/1465888266604099_122108660061530762"
+  },
+  "tinynotes/2026-11-09_1230_hf-red-panda-gift::facebook": {
+    "at": "2026-11-09T11:32:45+00:00",
+    "attempts": 1,
+    "remote_id": "1155086570302112",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1155086570302112"
+  },
+  "tinynotes/2026-11-09_1230_hf-red-panda-gift::instagram": {
+    "at": "2026-11-09T11:32:35+00:00",
+    "attempts": 1,
+    "remote_id": "18180048595439764",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfhOx9ClbMw/"
   }
 }
