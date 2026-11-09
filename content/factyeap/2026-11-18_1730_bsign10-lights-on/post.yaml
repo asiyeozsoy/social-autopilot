@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-18T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'who left the lights on? (it was me) 💡🐻
+
+
+      Tag the one who always leaves the lights on.
+
+
+      #bearfamily #relatable #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: who left the lights on? (it was me) 💡🐻
+    description: 'who left the lights on? (it was me) 💡🐻
+
+
+      Tag the one who always leaves the lights on.
+
+
+      #bearfamily #relatable #funny #factyeap
+
+
+      #shorts'

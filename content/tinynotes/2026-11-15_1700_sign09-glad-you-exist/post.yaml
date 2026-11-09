@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-15T17:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'I''m not good with words, but I''m really glad you exist 🤍🐰
+
+
+      Send this to someone you''re glad exists.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I'm not good with words, but I'm really glad you exist 🤍🐰
+    description: 'I''m not good with words, but I''m really glad you exist 🤍🐰
+
+
+      Send this to someone you''re glad exists.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes
+
+
+      #shorts'

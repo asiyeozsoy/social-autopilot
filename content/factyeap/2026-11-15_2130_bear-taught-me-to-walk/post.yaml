@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-15T21:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'he taught me how to walk. now I walk with him 🍂🐻
+
+
+      Send this to your dad.
+
+
+      #dad #family #parents #bearfamily #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: He Taught Me How To Walk 🍂🐻
+    description: 'he taught me how to walk. now I walk with him 🍂🐻
+
+
+      Send this to your dad.
+
+
+      #dad #family #parents #bearfamily #factyeap
+
+
+      #shorts'

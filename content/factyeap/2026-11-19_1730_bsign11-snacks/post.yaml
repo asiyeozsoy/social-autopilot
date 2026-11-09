@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-19T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'parenting tip #1: hide the good snacks 🍪🐻
+
+
+      Tag a parent who needs this tip.
+
+
+      #bearfamily #relatable #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'parenting tip #1: hide the good snacks 🍪🐻'
+    description: 'parenting tip #1: hide the good snacks 🍪🐻
+
+
+      Tag a parent who needs this tip.
+
+
+      #bearfamily #relatable #funny #factyeap
+
+
+      #shorts'

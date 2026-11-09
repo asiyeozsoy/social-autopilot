@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-16T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'my diet starts tomorrow (again) 🍩🐻
+
+
+      Tag the friend whose diet also starts tomorrow.
+
+
+      #bearfamily #relatable #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: my diet starts tomorrow (again) 🍩🐻
+    description: 'my diet starts tomorrow (again) 🍩🐻
+
+
+      Tag the friend whose diet also starts tomorrow.
+
+
+      #bearfamily #relatable #funny #factyeap
+
+
+      #shorts'

@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-13T17:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'you''re stuck with me 🤍🐰
+
+
+      Send this to your best friend.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: you're stuck with me 🤍🐰
+    description: 'you''re stuck with me 🤍🐰
+
+
+      Send this to your best friend.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes
+
+
+      #shorts'

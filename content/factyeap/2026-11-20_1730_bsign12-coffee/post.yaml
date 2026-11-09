@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-20T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'I''m not grumpy. I just haven''t had coffee ☕🐻
+
+
+      Tag someone who''s a different person before coffee.
+
+
+      #bearfamily #relatable #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I'm not grumpy. I just haven't had coffee ☕🐻
+    description: 'I''m not grumpy. I just haven''t had coffee ☕🐻
+
+
+      Tag someone who''s a different person before coffee.
+
+
+      #bearfamily #relatable #funny #factyeap
+
+
+      #shorts'

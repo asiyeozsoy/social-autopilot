@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-15T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'me after one workout: I need a nap 😴🐻
+
+
+      Tag your gym buddy.
+
+
+      #bearfamily #relatable #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'me after one workout: I need a nap 😴🐻'
+    description: 'me after one workout: I need a nap 😴🐻
+
+
+      Tag your gym buddy.
+
+
+      #bearfamily #relatable #funny #factyeap
+
+
+      #shorts'

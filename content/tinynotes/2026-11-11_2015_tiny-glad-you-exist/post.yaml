@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-11T20:15:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'a tiny reminder: someone is really glad you exist 🤍🐰
+
+
+      Send this to someone you''re glad exists.
+
+
+      #sendthistosomeone #kindness #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: A Tiny Reminder 🤍🐰
+    description: 'a tiny reminder: someone is really glad you exist 🤍🐰
+
+
+      Send this to someone you''re glad exists.
+
+
+      #sendthistosomeone #kindness #cutebunny #tinynotes
+
+
+      #shorts'

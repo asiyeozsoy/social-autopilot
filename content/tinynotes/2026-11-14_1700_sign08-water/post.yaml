@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-14T17:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'this is your sign to drink some water 💧🐰
+
+
+      Send this to someone who forgets to drink water.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: this is your sign to drink some water 💧🐰
+    description: 'this is your sign to drink some water 💧🐰
+
+
+      Send this to someone who forgets to drink water.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes
+
+
+      #shorts'

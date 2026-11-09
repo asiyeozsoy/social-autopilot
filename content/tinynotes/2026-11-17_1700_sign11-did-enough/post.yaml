@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-17T17:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'you did enough today. now rest 🌙🐰
+
+
+      Send this to someone who needs permission to rest.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: you did enough today. now rest 🌙🐰
+    description: 'you did enough today. now rest 🌙🐰
+
+
+      Send this to someone who needs permission to rest.
+
+
+      #sendthistosomeone #thisisyoursign #cutebunny #tinynotes
+
+
+      #shorts'
