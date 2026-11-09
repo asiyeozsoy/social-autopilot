@@ -34,6 +34,8 @@ jobs:
           mkdir -p .github/yt-key
           openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -out /tmp/k.pem 2>/dev/null
           openssl pkey -in /tmp/k.pem -pubout -out .github/yt-key/$BRAND.pub
+          # consent link for the channel owner (the client id is public by design: it is part of every Google sign-in URL)
+          python -c "import os,urllib.parse as u;from autopilot.ytstore import REDIRECT,SCOPES;print('https://accounts.google.com/o/oauth2/v2/auth?'+u.urlencode({'client_id':os.environ['YOUTUBE_CLIENT_ID'],'redirect_uri':REDIRECT,'response_type':'code','scope':SCOPES,'access_type':'offline','prompt':'consent select_account'}))" | base64 -w0 > .github/yt-key/$BRAND.url.b64
           git add .github/yt-key && git commit -qm "YouTube connect: public key for $BRAND" && git push -q
           for i in $(seq 1 120); do
             sleep 10
@@ -41,10 +43,10 @@ jobs:
             if [ -f .github/yt-key/$BRAND.enc ]; then
               export YT_CODE=$(base64 -d .github/yt-key/$BRAND.enc | openssl pkeyutl -decrypt -inkey /tmp/k.pem)
               rc=0; python -m autopilot.ytstore "$BRAND" || rc=1
-              git rm -q .github/yt-key/$BRAND.enc .github/yt-key/$BRAND.pub
+              git rm -q .github/yt-key/$BRAND.enc .github/yt-key/$BRAND.pub .github/yt-key/$BRAND.url.b64
               git add state
               git commit -qm "Connect YouTube: $BRAND" && (git push -q || (git pull -q --rebase && git push -q))
               exit $rc
             fi
           done
-          echo "::error::no code received"; git rm -q .github/yt-key/$BRAND.pub; git commit -qm "YouTube connect: timeout" && git push -q; exit 1
+          echo "::error::no code received"; git rm -q .github/yt-key/$BRAND.pub .github/yt-key/$BRAND.url.b64; git commit -qm "YouTube connect: timeout" && git push -q; exit 1
