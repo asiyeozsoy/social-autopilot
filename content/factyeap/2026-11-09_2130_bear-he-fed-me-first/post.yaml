@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-09T21:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'he fed me first. now it''s my turn 🤍🐻
+
+
+      Send this to your dad. Or call him today.
+
+
+      #dad #family #parents #bearfamily #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: He Fed Me First. Now It's My Turn 🤍🐻
+    description: 'he fed me first. now it''s my turn 🤍🐻
+
+
+      Send this to your dad. Or call him today.
+
+
+      #dad #family #parents #bearfamily #factyeap
+
+
+      #shorts'
