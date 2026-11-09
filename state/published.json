@@ -440,6 +440,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/eRXnyK7SZjY"
   },
+  "factyeap/2026-11-09_1900_fact005-one-percent::facebook": {
+    "at": "2026-11-09T18:00:24+00:00",
+    "attempts": 1,
+    "remote_id": "633502523179601_122256946982854899",
+    "status": "published",
+    "url": "https://www.facebook.com/633502523179601_122256946982854899"
+  },
+  "factyeap/2026-11-09_1900_fact005-one-percent::instagram": {
+    "at": "2026-11-09T18:00:19+00:00",
+    "attempts": 1,
+    "remote_id": "18249645205312574",
+    "status": "published",
+    "url": "https://www.instagram.com/p/Dfh7NKXGvX5/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -1074,6 +1088,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfhSUPWDq6a/"
   },
+  "tinynotes/2026-11-09_1300_favorite-person-note::youtube": {
+    "at": "2026-11-09T18:00:10+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-09_1700_sign03-proud::facebook": {
     "at": "2026-11-09T16:08:07+00:00",
     "attempts": 1,
@@ -1101,5 +1120,19 @@
     "remote_id": "17999959875051714",
     "status": "published",
     "url": "https://www.instagram.com/reel/Dfh1X0bjGi9/"
+  },
+  "tinynotes/2026-11-09_1900_tiny07-umbrella::facebook": {
+    "at": "2026-11-09T18:01:09+00:00",
+    "attempts": 1,
+    "remote_id": "1151514560715085",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1151514560715085"
+  },
+  "tinynotes/2026-11-09_1900_tiny07-umbrella::instagram": {
+    "at": "2026-11-09T18:01:01+00:00",
+    "attempts": 1,
+    "remote_id": "17997781473105767",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dfh7PPnDvI1/"
   }
 }
