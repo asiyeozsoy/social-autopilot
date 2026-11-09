@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-20T22:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'before you sleep: you are loved 🌙🤍
+
+
+      Send this to someone before they sleep.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'before you sleep: you are loved 🌙🤍'
+    description: 'before you sleep: you are loved 🌙🤍
+
+
+      Send this to someone before they sleep.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes
+
+
+      #shorts'

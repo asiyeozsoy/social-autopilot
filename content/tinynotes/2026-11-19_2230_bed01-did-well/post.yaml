@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-19T22:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'good night. you did so well today 🌙🤍
+
+
+      Send this as your good night text.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: good night. you did so well today 🌙🤍
+    description: 'good night. you did so well today 🌙🤍
+
+
+      Send this as your good night text.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes
+
+
+      #shorts'

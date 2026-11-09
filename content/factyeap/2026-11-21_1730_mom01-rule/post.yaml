@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-21T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'mom rule #1: you eat first. no discussion 🍲🐻
+
+
+      Tag the mom who always feeds everyone.
+
+
+      #mom #bearfamily #relatable #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'mom rule #1: you eat first. no discussion 🍲🐻'
+    description: 'mom rule #1: you eat first. no discussion 🍲🐻
+
+
+      Tag the mom who always feeds everyone.
+
+
+      #mom #bearfamily #relatable #funny #factyeap
+
+
+      #shorts'

@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-20T17:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'send this to your person 🤍🐰🐰
+
+
+      You know who to send this to.
+
+
+      #couplegoals #sendthistosomeone #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: send this to your person 🤍🐰🐰
+    description: 'send this to your person 🤍🐰🐰
+
+
+      You know who to send this to.
+
+
+      #couplegoals #sendthistosomeone #cutebunny #tinynotes
+
+
+      #shorts'

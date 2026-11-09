@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-25T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'mom''s superpower: finding things you ''lost'' 🔎🐻
+
+
+      Tag the mom who finds everything.
+
+
+      #mom #bearfamily #relatable #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'mom''s superpower: finding things you ''lost'' 🔎🐻'
+    description: 'mom''s superpower: finding things you ''lost'' 🔎🐻
+
+
+      Tag the mom who finds everything.
+
+
+      #mom #bearfamily #relatable #funny #factyeap
+
+
+      #shorts'

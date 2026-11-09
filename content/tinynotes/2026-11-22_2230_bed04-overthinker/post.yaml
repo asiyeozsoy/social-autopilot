@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-22T22:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'dear overthinker, rest now. it can wait 🌙🤍
+
+
+      Send this to an overthinker you love.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: dear overthinker, rest now. it can wait 🌙🤍
+    description: 'dear overthinker, rest now. it can wait 🌙🤍
+
+
+      Send this to an overthinker you love.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes
+
+
+      #shorts'

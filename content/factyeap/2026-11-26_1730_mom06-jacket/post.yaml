@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-26T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'wear a jacket. it''s cold. (love, mom) 🧥🐻
+
+
+      Send this to the one who never wears a jacket.
+
+
+      #mom #bearfamily #relatable #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: wear a jacket. it's cold. (love, mom) 🧥🐻
+    description: 'wear a jacket. it''s cold. (love, mom) 🧥🐻
+
+
+      Send this to the one who never wears a jacket.
+
+
+      #mom #bearfamily #relatable #funny #factyeap
+
+
+      #shorts'

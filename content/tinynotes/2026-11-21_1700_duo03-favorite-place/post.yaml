@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-21T17:00:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'you + me = my favorite place 🤍🐰🐰
+
+
+      Send this to your favorite place.
+
+
+      #couplegoals #sendthistosomeone #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: you + me = my favorite place 🤍🐰🐰
+    description: 'you + me = my favorite place 🤍🐰🐰
+
+
+      Send this to your favorite place.
+
+
+      #couplegoals #sendthistosomeone #cutebunny #tinynotes
+
+
+      #shorts'

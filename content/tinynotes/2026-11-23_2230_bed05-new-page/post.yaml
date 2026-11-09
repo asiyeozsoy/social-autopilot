@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-23T22:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'sleep tight. tomorrow is a new page 🌙🤍
+
+
+      Send this to someone who had a hard day.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: sleep tight. tomorrow is a new page 🌙🤍
+    description: 'sleep tight. tomorrow is a new page 🌙🤍
+
+
+      Send this to someone who had a hard day.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes
+
+
+      #shorts'

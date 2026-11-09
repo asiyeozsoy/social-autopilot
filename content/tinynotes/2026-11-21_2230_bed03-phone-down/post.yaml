@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-21T22:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'this is your sign to put the phone down and sleep 📵🌙
+
+
+      Send this to the one still scrolling at 2am.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: this is your sign to put the phone down and sleep 📵🌙
+    description: 'this is your sign to put the phone down and sleep 📵🌙
+
+
+      Send this to the one still scrolling at 2am.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes
+
+
+      #shorts'

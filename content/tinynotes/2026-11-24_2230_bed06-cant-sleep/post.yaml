@@ -1,0 +1,29 @@
+brand: tinynotes
+publish_at: '2026-11-24T22:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'if you can''t sleep, I''m thinking of you too 🌙🤍
+
+
+      Send this to the one you''re thinking about.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: if you can't sleep, I'm thinking of you too 🌙🤍
+    description: 'if you can''t sleep, I''m thinking of you too 🌙🤍
+
+
+      Send this to the one you''re thinking about.
+
+
+      #goodnight #sendthistosomeone #cutebunny #tinynotes
+
+
+      #shorts'

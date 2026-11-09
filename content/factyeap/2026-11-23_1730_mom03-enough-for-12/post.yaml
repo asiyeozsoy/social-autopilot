@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-23T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'who''s hungry? (I made enough for 12) 🍝🐻
+
+
+      Tag the mom who cooks for an army.
+
+
+      #mom #bearfamily #relatable #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: who's hungry? (I made enough for 12) 🍝🐻
+    description: 'who''s hungry? (I made enough for 12) 🍝🐻
+
+
+      Tag the mom who cooks for an army.
+
+
+      #mom #bearfamily #relatable #funny #factyeap
+
+
+      #shorts'

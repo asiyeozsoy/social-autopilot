@@ -79,13 +79,16 @@ def _intersect(l1, l2):
     return p1 + t[0] * d1
 
 
+VMIN, SMAX = 175, 40  # card = bright and low-saturation; warm night scenes need looser limits (--vmin/--smax)
+
+
 def find_card(fr):
     """Corners (tl, tr, br, bl) of the white card. Each side is fitted as a straight line with
     RANSAC, so paws, body and floor touching the card cannot pull the corners around."""
     s = 2
     small = cv2.resize(fr, (W // s, H // s), interpolation=cv2.INTER_AREA)
     hsv = cv2.cvtColor(small, cv2.COLOR_RGB2HSV)
-    m = ((hsv[..., 2] > 175) & (hsv[..., 1] < 40)).astype(np.uint8)
+    m = ((hsv[..., 2] > VMIN) & (hsv[..., 1] < SMAX)).astype(np.uint8)
     m = cv2.morphologyEx(m, cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
     n, lab, stats, cent = cv2.connectedComponentsWithStats(m)
     best, score = None, 0
@@ -179,8 +182,12 @@ def main():
     p.add_argument("--flip", action="store_true")
     p.add_argument("--zoom", type=float, default=1.0)
     p.add_argument("--fps", type=float)
+    p.add_argument("--vmin", type=int, default=175)
+    p.add_argument("--smax", type=int, default=40)
     p.add_argument("--stamp", help="brand logo PNG to print small in the card's bottom-right corner")
     a = p.parse_args()
+    global VMIN, SMAX
+    VMIN, SMAX = a.vmin, a.smax
     fps = a.fps or probe(a.src)
     slides = []
     for s in a.slides:

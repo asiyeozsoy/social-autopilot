@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-22T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'I''m not yelling. I''m just a mom 🐻📢
+
+
+      Tag a mom who''ll relate.
+
+
+      #mom #bearfamily #relatable #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I'm not yelling. I'm just a mom 🐻📢
+    description: 'I''m not yelling. I''m just a mom 🐻📢
+
+
+      Tag a mom who''ll relate.
+
+
+      #mom #bearfamily #relatable #funny #factyeap
+
+
+      #shorts'

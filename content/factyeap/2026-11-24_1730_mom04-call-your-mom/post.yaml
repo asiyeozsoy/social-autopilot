@@ -1,0 +1,29 @@
+brand: factyeap
+publish_at: '2026-11-24T17:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'call your mom. she misses you 🤍🐻
+
+
+      Send this to someone who should call their mom today.
+
+
+      #mom #bearfamily #relatable #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: call your mom. she misses you 🤍🐻
+    description: 'call your mom. she misses you 🤍🐻
+
+
+      Send this to someone who should call their mom today.
+
+
+      #mom #bearfamily #relatable #funny #factyeap
+
+
+      #shorts'
