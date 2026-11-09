@@ -1169,5 +1169,19 @@
     "remote_id": "18154879570534486",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfiCmoNjsw_/"
+  },
+  "tinynotes/2026-11-09_2100_sorry-today-video::facebook": {
+    "at": "2026-11-09T20:06:21+00:00",
+    "attempts": 1,
+    "remote_id": "1151992677331542",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1151992677331542"
+  },
+  "tinynotes/2026-11-09_2100_sorry-today-video::instagram": {
+    "at": "2026-11-09T20:06:12+00:00",
+    "attempts": 1,
+    "remote_id": "18118739924054506",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfiJkC2D1lA/"
   }
 }
