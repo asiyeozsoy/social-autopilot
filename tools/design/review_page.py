@@ -22,7 +22,7 @@ now = dt.datetime.now(dt.timezone(dt.timedelta(hours=1)))
 items = []
 for post in CONTENT.glob("*/*/post.yaml"):
     folder = post.parent
-    if not any(p in folder.name for p in PATTERNS) or not (folder / "video.mp4").exists():
+    if not any(p in folder.name for p in PATTERNS) or not ((folder / "video.mp4").exists() or (folder / "post.jpg").exists()):
         continue
     data = yaml.safe_load(post.read_text())
     when = dt.datetime.fromisoformat(str(data["publish_at"]))
@@ -43,9 +43,11 @@ for when, brand, folder, caption in items:
     slug = re.sub(r"^\d{4}-\d\d-\d\d_\d{4}_", "", folder.name)
     first = html.escape(caption.split("\n\n")[0])
     rest = html.escape("\n\n".join(caption.split("\n\n")[1:]))
+    media = (f'<video src="{rel}/video.mp4"{poster} controls playsinline preload="none"></video>' if (folder / "video.mp4").exists()
+             else f'<img src="{rel}/post.jpg" alt="" loading="lazy" style="width:100%;border-radius:12px;display:block">')
     cards.append(f"""<article class="{brand}">
   <div class="meta"><span class="time">{when:%H:%M}</span><span class="brand">{LABEL.get(brand, brand)}</span><span class="slug">{slug}</span></div>
-  <video src="{rel}/video.mp4"{poster} controls playsinline preload="none"></video>
+  {media}
   <p class="hook">{first}</p>
   <details><summary>Açıklamanın tamamı</summary><pre>{rest}</pre></details>
 </article>""")
