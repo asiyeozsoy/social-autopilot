@@ -391,6 +391,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/lGVIk_zuZtk"
   },
+  "factyeap/2026-11-09_1030_cat15-aztec-chocolate::facebook": {
+    "at": "2026-11-09T09:31:44+00:00",
+    "attempts": 1,
+    "remote_id": "1040364835773917",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1040364835773917"
+  },
+  "factyeap/2026-11-09_1030_cat15-aztec-chocolate::instagram": {
+    "at": "2026-11-09T09:31:34+00:00",
+    "attempts": 1,
+    "remote_id": "17926260741443714",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfhA59bBEa7/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
