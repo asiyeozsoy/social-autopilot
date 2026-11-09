@@ -475,6 +475,27 @@
     "status": "published",
     "url": "https://youtube.com/shorts/LjITlEyFFQM"
   },
+  "factyeap/2026-11-09_2130_bear-he-fed-me-first::facebook": {
+    "at": "2026-11-09T20:37:21+00:00",
+    "attempts": 1,
+    "remote_id": "2732888960439708",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2732888960439708"
+  },
+  "factyeap/2026-11-09_2130_bear-he-fed-me-first::instagram": {
+    "at": "2026-11-09T20:37:09+00:00",
+    "attempts": 1,
+    "remote_id": "18075160124749864",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfiNGGoo3_9/"
+  },
+  "factyeap/2026-11-09_2130_bear-he-fed-me-first::youtube": {
+    "at": "2026-11-09T20:37:11+00:00",
+    "attempts": 1,
+    "remote_id": "eHxXS0e44Hg",
+    "status": "published",
+    "url": "https://youtube.com/shorts/eHxXS0e44Hg"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
