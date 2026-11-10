@@ -510,6 +510,20 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfjlwF7uvEM/"
   },
+  "factyeap/2026-11-10_1530_cat18-first-jobs::facebook": {
+    "at": "2026-11-10T14:38:12+00:00",
+    "attempts": 1,
+    "remote_id": "29673070075633973",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/29673070075633973"
+  },
+  "factyeap/2026-11-10_1530_cat18-first-jobs::instagram": {
+    "at": "2026-11-10T14:38:02+00:00",
+    "attempts": 1,
+    "remote_id": "18109140329574889",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfkIxEtuLc2/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
