@@ -496,6 +496,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/eHxXS0e44Hg"
   },
+  "factyeap/2026-11-10_1030_cat17-bee-math::facebook": {
+    "at": "2026-11-10T09:32:01+00:00",
+    "attempts": 1,
+    "remote_id": "2997771550600792",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2997771550600792"
+  },
+  "factyeap/2026-11-10_1030_cat17-bee-math::instagram": {
+    "at": "2026-11-10T09:31:49+00:00",
+    "attempts": 1,
+    "remote_id": "18133693084869972",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfjlwF7uvEM/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
