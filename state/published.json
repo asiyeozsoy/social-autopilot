@@ -1420,6 +1420,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfkTNy-DZs5/"
   },
+  "tinynotes/2026-11-10_1700_sign04-matter::youtube": {
+    "at": "2026-11-10T22:06:11+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-10_1900_qa01-young-asks-old-answers::facebook": {
     "at": "2026-11-10T18:03:03+00:00",
     "attempts": 1,
