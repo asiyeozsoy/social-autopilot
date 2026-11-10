@@ -559,6 +559,27 @@
     "status": "published",
     "url": "https://youtu.be/lpVs6268fqw"
   },
+  "factyeap/2026-11-10_2000_bear-personal-heater::facebook": {
+    "at": "2026-11-10T19:03:57+00:00",
+    "attempts": 1,
+    "remote_id": "1794156028472308",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1794156028472308"
+  },
+  "factyeap/2026-11-10_2000_bear-personal-heater::instagram": {
+    "at": "2026-11-10T19:03:47+00:00",
+    "attempts": 1,
+    "remote_id": "18100897133423550",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfknN4xRLP9/"
+  },
+  "factyeap/2026-11-10_2000_bear-personal-heater::youtube": {
+    "at": "2026-11-10T19:03:48+00:00",
+    "attempts": 1,
+    "remote_id": "o4UNyx7KKkg",
+    "status": "published",
+    "url": "https://youtube.com/shorts/o4UNyx7KKkg"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -1412,5 +1433,19 @@
     "remote_id": "18188660251419138",
     "status": "published",
     "url": "https://www.instagram.com/p/DfkgQz2jbF-/"
+  },
+  "tinynotes/2026-11-10_2000_hf-kitten-love-hearts::facebook": {
+    "at": "2026-11-10T19:04:33+00:00",
+    "attempts": 1,
+    "remote_id": "1521087336519895",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1521087336519895"
+  },
+  "tinynotes/2026-11-10_2000_hf-kitten-love-hearts::instagram": {
+    "at": "2026-11-10T19:04:25+00:00",
+    "attempts": 1,
+    "remote_id": "18639950392041644",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfknT7BDS1T/"
   }
 }
