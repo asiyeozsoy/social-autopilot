@@ -1236,5 +1236,19 @@
     "remote_id": "1465888266604099_122109278025530762",
     "status": "published",
     "url": "https://www.facebook.com/1465888266604099_122109278025530762"
+  },
+  "tinynotes/2026-11-10_1000_doodle01-growing::facebook": {
+    "at": "2026-11-10T09:01:04+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122109306759530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122109306759530762"
+  },
+  "tinynotes/2026-11-10_1000_doodle01-growing::instagram": {
+    "at": "2026-11-10T09:00:58+00:00",
+    "attempts": 1,
+    "remote_id": "18112862456628444",
+    "status": "published",
+    "url": "https://www.instagram.com/p/DfjiRGaG5-m/"
   }
 }
