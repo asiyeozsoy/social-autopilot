@@ -545,6 +545,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/48ycq3GejO4"
   },
+  "factyeap/2026-11-10_1900_baba-ducklings-wide::facebook": {
+    "at": "2026-11-10T18:01:30+00:00",
+    "attempts": 1,
+    "remote_id": "1319684866916272",
+    "status": "published",
+    "url": "https://www.facebook.com/633502523179601/videos/1319684866916272"
+  },
+  "factyeap/2026-11-10_1900_baba-ducklings-wide::youtube": {
+    "at": "2026-11-10T18:01:31+00:00",
+    "attempts": 1,
+    "remote_id": "lpVs6268fqw",
+    "status": "published",
+    "url": "https://youtu.be/lpVs6268fqw"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -1352,6 +1366,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/Dfj3X8-lBn0/"
   },
+  "tinynotes/2026-11-10_1300_still-choose-you-note::youtube": {
+    "at": "2026-11-10T18:01:23+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-10_1500_bestie::facebook": {
     "at": "2026-11-10T14:06:27+00:00",
     "attempts": 1,
@@ -1379,5 +1398,19 @@
     "remote_id": "17927523549199554",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfkTNy-DZs5/"
+  },
+  "tinynotes/2026-11-10_1900_qa01-young-asks-old-answers::facebook": {
+    "at": "2026-11-10T18:03:03+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122109500721530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122109500721530762"
+  },
+  "tinynotes/2026-11-10_1900_qa01-young-asks-old-answers::instagram": {
+    "at": "2026-11-10T18:02:48+00:00",
+    "attempts": 1,
+    "remote_id": "18188660251419138",
+    "status": "published",
+    "url": "https://www.instagram.com/p/DfkgQz2jbF-/"
   }
 }
