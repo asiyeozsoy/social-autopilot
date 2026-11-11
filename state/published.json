@@ -1476,5 +1476,12 @@
     "at": "2026-11-11T02:09:06+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-11_0830_fb-gm-portuguese::facebook": {
+    "at": "2026-11-11T07:30:38+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122109712713530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122109712713530762"
   }
 }
