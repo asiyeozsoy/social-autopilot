@@ -580,6 +580,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/o4UNyx7KKkg"
   },
+  "factyeap/2026-11-11_1030_cat19-happiness::facebook": {
+    "at": "2026-11-11T09:32:01+00:00",
+    "attempts": 1,
+    "remote_id": "1929682688012795",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1929682688012795"
+  },
+  "factyeap/2026-11-11_1030_cat19-happiness::instagram": {
+    "at": "2026-11-11T09:31:49+00:00",
+    "attempts": 1,
+    "remote_id": "18110311943570059",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfmKi_BF1Kd/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
