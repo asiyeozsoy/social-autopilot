@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths: ["content/**"]
   workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * *"   # daily refresh of the TikTok hand-off page
 
 permissions:
   contents: read
@@ -32,6 +34,8 @@ jobs:
         run: pip install -r requirements.txt && python -m autopilot.main --check
       - name: Make JPEG copies (Instagram/TikTok accept JPEG only)
         run: pip install pillow && python tools/make_jpegs.py content
+      - name: TikTok hand-off page (vertical copies of landscape videos)
+        run: sudo apt-get install -y -qq ffmpeg >/dev/null && python tools/tiktok_feed.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
