@@ -650,6 +650,27 @@
     "status": "published",
     "url": "https://youtube.com/shorts/CBMi6oXbI18"
   },
+  "factyeap/2026-11-11_2030_bear-life-with-her::facebook": {
+    "at": "2026-11-11T19:32:22+00:00",
+    "attempts": 1,
+    "remote_id": "2033690737314867",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2033690737314867"
+  },
+  "factyeap/2026-11-11_2030_bear-life-with-her::instagram": {
+    "at": "2026-11-11T19:32:09+00:00",
+    "attempts": 1,
+    "remote_id": "18051347507811983",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfnPQNUhZsX/"
+  },
+  "factyeap/2026-11-11_2030_bear-life-with-her::youtube": {
+    "at": "2026-11-11T19:32:12+00:00",
+    "attempts": 1,
+    "remote_id": "Cxl-EpKGdqQ",
+    "status": "published",
+    "url": "https://youtube.com/shorts/Cxl-EpKGdqQ"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
