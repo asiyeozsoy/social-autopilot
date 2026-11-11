@@ -629,6 +629,27 @@
     "status": "published",
     "url": "https://youtube.com/shorts/vy--YAgim34"
   },
+  "factyeap/2026-11-11_1900_fact006-shower-argument::facebook": {
+    "at": "2026-11-11T18:10:23+00:00",
+    "attempts": 1,
+    "remote_id": "1922877892425743",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1922877892425743"
+  },
+  "factyeap/2026-11-11_1900_fact006-shower-argument::instagram": {
+    "at": "2026-11-11T18:10:11+00:00",
+    "attempts": 1,
+    "remote_id": "18102090212344168",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfnF33WxqOv/"
+  },
+  "factyeap/2026-11-11_1900_fact006-shower-argument::youtube": {
+    "at": "2026-11-11T18:10:13+00:00",
+    "attempts": 1,
+    "remote_id": "CBMi6oXbI18",
+    "status": "published",
+    "url": "https://youtube.com/shorts/CBMi6oXbI18"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -1560,6 +1581,11 @@
     "remote_id": "18116969123113549",
     "status": "published",
     "url": "https://www.instagram.com/reel/Dfmb9njkjrV/"
+  },
+  "tinynotes/2026-11-11_1300_miss-you-already-note::youtube": {
+    "at": "2026-11-11T18:09:32+00:00",
+    "reason": "too late",
+    "status": "skipped"
   },
   "tinynotes/2026-11-11_1700_sign05-call-mom::facebook": {
     "at": "2026-11-11T16:06:28+00:00",
