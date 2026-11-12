@@ -720,6 +720,27 @@
     "status": "published",
     "url": "https://youtube.com/shorts/Py0ao7rsXyM"
   },
+  "factyeap/2026-11-12_2130_bear-tied-my-shoes::facebook": {
+    "at": "2026-11-12T20:40:02+00:00",
+    "attempts": 1,
+    "remote_id": "2338900436948289",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2338900436948289"
+  },
+  "factyeap/2026-11-12_2130_bear-tied-my-shoes::instagram": {
+    "at": "2026-11-12T20:39:45+00:00",
+    "attempts": 1,
+    "remote_id": "18133869811753629",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dfp7x0astxu/"
+  },
+  "factyeap/2026-11-12_2130_bear-tied-my-shoes::youtube": {
+    "at": "2026-11-12T20:39:48+00:00",
+    "attempts": 1,
+    "remote_id": "fAZH9acsUtc",
+    "status": "published",
+    "url": "https://youtube.com/shorts/fAZH9acsUtc"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
