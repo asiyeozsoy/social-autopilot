@@ -685,6 +685,20 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfowEgluM_g/"
   },
+  "factyeap/2026-11-12_1530_cat22-lol-addictive::facebook": {
+    "at": "2026-11-12T14:33:24+00:00",
+    "attempts": 1,
+    "remote_id": "1801211714535688",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1801211714535688"
+  },
+  "factyeap/2026-11-12_1530_cat22-lol-addictive::instagram": {
+    "at": "2026-11-12T14:33:04+00:00",
+    "attempts": 1,
+    "remote_id": "18133981726805691",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfpRx0qBILT/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
