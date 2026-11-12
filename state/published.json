@@ -1683,5 +1683,12 @@
     "at": "2026-11-12T02:04:39+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-12_0830_fb-kinder-today::facebook": {
+    "at": "2026-11-12T07:36:10+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122110141407530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122110141407530762"
   }
 }
