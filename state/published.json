@@ -1732,5 +1732,19 @@
     "remote_id": "17933634900162772",
     "status": "published",
     "url": "https://www.instagram.com/reel/Dfozog4ldA_/"
+  },
+  "tinynotes/2026-11-12_1300_bad-days-better-note::facebook": {
+    "at": "2026-11-12T12:01:28+00:00",
+    "attempts": 1,
+    "remote_id": "29370840835882209",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/29370840835882209"
+  },
+  "tinynotes/2026-11-12_1300_bad-days-better-note::instagram": {
+    "at": "2026-11-12T12:01:20+00:00",
+    "attempts": 1,
+    "remote_id": "17981269953129764",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfpAeFimWIL/"
   }
 }
