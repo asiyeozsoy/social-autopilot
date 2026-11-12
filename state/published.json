@@ -1718,5 +1718,19 @@
     "remote_id": "18133732898488012",
     "status": "published",
     "url": "https://www.instagram.com/p/Dfosfrrl7kw/"
+  },
+  "tinynotes/2026-11-12_1100_new-job-video::facebook": {
+    "at": "2026-11-12T10:09:25+00:00",
+    "attempts": 1,
+    "remote_id": "2504857956667599",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2504857956667599"
+  },
+  "tinynotes/2026-11-12_1100_new-job-video::instagram": {
+    "at": "2026-11-12T10:09:17+00:00",
+    "attempts": 1,
+    "remote_id": "17933634900162772",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dfozog4ldA_/"
   }
 }
