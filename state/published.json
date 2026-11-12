@@ -1841,6 +1841,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfpcP5kjWp2/"
   },
+  "tinynotes/2026-11-12_1700_sign06-bad-day::youtube": {
+    "at": "2026-11-12T22:00:10+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-12_1930_tiny-life-with-her::facebook": {
     "at": "2026-11-12T18:38:03+00:00",
     "attempts": 1,
