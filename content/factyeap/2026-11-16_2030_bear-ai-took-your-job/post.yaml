@@ -1,0 +1,33 @@
+brand: factyeap
+publish_at: '2026-11-16T20:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'first day back after vacation... 🐻☕
+
+      POV: AI finally took your job 🤖
+
+
+      Tag the coworker who needs to see this 😂
+
+
+      #ai #officehumor #mondaymood #funny #factyeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: 'POV: AI Finally Took Your Job 🤖🐻'
+    description: 'first day back after vacation... 🐻☕
+
+      POV: AI finally took your job 🤖
+
+
+      Tag the coworker who needs to see this 😂
+
+
+      #ai #officehumor #mondaymood #funny #factyeap
+
+
+      #shorts'
