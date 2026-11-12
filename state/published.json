@@ -1747,6 +1747,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/Dfozog4ldA_/"
   },
+  "tinynotes/2026-11-12_1100_new-job-video::youtube": {
+    "at": "2026-11-12T16:03:32+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-12_1300_bad-days-better-note::facebook": {
     "at": "2026-11-12T12:01:28+00:00",
     "attempts": 1,
@@ -1774,5 +1779,19 @@
     "remote_id": "17977630197150117",
     "status": "published",
     "url": "https://www.instagram.com/p/DfpOSvaDcRg/"
+  },
+  "tinynotes/2026-11-12_1700_sign06-bad-day::facebook": {
+    "at": "2026-11-12T16:04:28+00:00",
+    "attempts": 1,
+    "remote_id": "1538222215021899",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1538222215021899"
+  },
+  "tinynotes/2026-11-12_1700_sign06-bad-day::instagram": {
+    "at": "2026-11-12T16:04:19+00:00",
+    "attempts": 1,
+    "remote_id": "17918417871513053",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfpcP5kjWp2/"
   }
 }
