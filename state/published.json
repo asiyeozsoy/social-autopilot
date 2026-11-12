@@ -1787,6 +1787,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfpAeFimWIL/"
   },
+  "tinynotes/2026-11-12_1300_bad-days-better-note::youtube": {
+    "at": "2026-11-12T18:06:59+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-12_1500_bigday::facebook": {
     "at": "2026-11-12T14:01:56+00:00",
     "attempts": 1,
