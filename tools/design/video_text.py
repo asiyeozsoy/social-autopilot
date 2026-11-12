@@ -21,12 +21,23 @@ def main():
     ap.add_argument("--line", action="append", default=[])
     ap.add_argument("--text-y", type=int, default=190)
     a = ap.parse_args()
-    starts, texts = [], []
+    starts, ends, layers = [], [], []
+    plain = []
     for ln in a.line:
         t, txt = ln.split(":", 1)
-        starts.append(float(t))
-        texts.append(txt)
-    layers = [np.asarray(l).astype(np.float32) / 255 for l in text_layer(texts, a.text_y)]
+        if "@" in t or "-" in t.lstrip("-"):  # "start-end@y:text" = its own window and height
+            span, _, y = t.partition("@")
+            t0, _, t1 = span.lstrip("-").partition("-")
+            t0 = -float(t0) if span.startswith("-") else float(t0)
+            starts.append(t0)
+            ends.append(float(t1) if t1 else 1e9)
+            layers.append(np.asarray(text_layer([txt], int(y) if y else a.text_y)[0]).astype(np.float32) / 255)
+        else:
+            plain.append((float(t), txt))
+    for (t0, _), lay in zip(plain, text_layer([p[1] for p in plain], a.text_y)):
+        starts.append(t0)
+        ends.append(1e9)
+        layers.append(np.asarray(lay).astype(np.float32) / 255)
     fps_s = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate",
                             "-of", "csv=p=0", a.src], capture_output=True, text=True).stdout.strip()
     num, den = fps_s.split("/")
@@ -44,8 +55,8 @@ def main():
             break
         fr = np.frombuffer(buf, np.uint8).reshape(H, W, 3).astype(np.float32)
         t = i / fps
-        for s, lay in zip(starts, layers):
-            k = min(1.0, (t - s) / 0.8)
+        for s, e, lay in zip(starts, ends, layers):
+            k = min(1.0, (t - s) / 0.8, (e - t) / 0.5)
             if k <= 0:
                 continue
             al = lay[..., 3:4] * k
