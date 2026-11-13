@@ -804,6 +804,27 @@
     "status": "published",
     "url": "https://www.instagram.com/p/DfsO0chD1EM/"
   },
+  "factyeap/2026-11-13_2100_bear-every-fight::facebook": {
+    "at": "2026-11-13T20:06:23+00:00",
+    "attempts": 1,
+    "remote_id": "1449820253201581",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1449820253201581"
+  },
+  "factyeap/2026-11-13_2100_bear-every-fight::instagram": {
+    "at": "2026-11-13T20:06:09+00:00",
+    "attempts": 1,
+    "remote_id": "18052917437816250",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfscugqKU6p/"
+  },
+  "factyeap/2026-11-13_2100_bear-every-fight::youtube": {
+    "at": "2026-11-13T20:06:11+00:00",
+    "attempts": 1,
+    "remote_id": "mLrc3yLrCnA",
+    "status": "published",
+    "url": "https://youtube.com/shorts/mLrc3yLrCnA"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -2028,5 +2049,19 @@
     "remote_id": "17977223682146033",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfsSUMagAHx/"
+  },
+  "tinynotes/2026-11-13_2100_kindness-day-video::facebook": {
+    "at": "2026-11-13T20:07:19+00:00",
+    "attempts": 1,
+    "remote_id": "1846070703188686",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1846070703188686"
+  },
+  "tinynotes/2026-11-13_2100_kindness-day-video::instagram": {
+    "at": "2026-11-13T20:07:08+00:00",
+    "attempts": 1,
+    "remote_id": "18126453178909271",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dfsc1p9Ctw3/"
   }
 }
