@@ -1,6 +1,6 @@
 """Put the same handwritten fade-in lines used by still_anim.py on top of a real video clip.
 
-python tools/design/video_text.py in.mp4 out.mp4 --line "-1:she tied my shoes" --line "4.3:now I tie hers." [--text-y 190]
+python tools/design/video_text.py in.mp4 out.mp4 --brand tinynotes --line "-1:she tied my shoes" --line "4.3:now I tie hers." [--text-y 190]
 """
 import argparse
 import subprocess
@@ -20,6 +20,7 @@ def main():
     ap.add_argument("out")
     ap.add_argument("--line", action="append", default=[])
     ap.add_argument("--text-y", type=int, default=190)
+    ap.add_argument("--brand", required=True, choices=["tinynotes", "factyeap"], help="logo stamped bottom-right (always on)")
     a = ap.parse_args()
     starts, ends, layers = [], [], []
     plain = []
@@ -38,6 +39,13 @@ def main():
         starts.append(t0)
         ends.append(1e9)
         layers.append(np.asarray(lay).astype(np.float32) / 255)
+    root = Path(__file__).resolve().parents[2]
+    logo = Image.open(root / f"brand/{a.brand}_wm_white.png").convert("RGBA")
+    lw = 150
+    logo = logo.resize((lw, int(logo.height * lw / logo.width)), Image.LANCZOS)
+    lg = np.asarray(logo).astype(np.float32) / 255
+    lx, ly = W - lw - 48, H - logo.height - 70
+    la = lg[..., 3:4] * 0.8
     fps_s = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate",
                             "-of", "csv=p=0", a.src], capture_output=True, text=True).stdout.strip()
     num, den = fps_s.split("/")
@@ -54,6 +62,8 @@ def main():
         if len(buf) < W * H * 3:
             break
         fr = np.frombuffer(buf, np.uint8).reshape(H, W, 3).astype(np.float32)
+        patch = fr[ly:ly + logo.height, lx:lx + lw]
+        fr[ly:ly + logo.height, lx:lx + lw] = patch * (1 - la) + lg[..., :3] * 255 * la
         t = i / fps
         for s, e, lay in zip(starts, ends, layers):
             k = min(1.0, (t - s) / 0.8, (e - t) / 0.5)
