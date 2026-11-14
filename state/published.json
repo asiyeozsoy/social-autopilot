@@ -825,6 +825,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/mLrc3yLrCnA"
   },
+  "factyeap/2026-11-14_1030_cat25-small-joys::facebook": {
+    "at": "2026-11-14T09:33:00+00:00",
+    "attempts": 1,
+    "remote_id": "2076193619725682",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2076193619725682"
+  },
+  "factyeap/2026-11-14_1030_cat25-small-joys::instagram": {
+    "at": "2026-11-14T09:32:50+00:00",
+    "attempts": 1,
+    "remote_id": "17969231862233442",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dft5BV7syNt/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
