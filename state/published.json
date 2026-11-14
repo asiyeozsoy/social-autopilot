@@ -2083,5 +2083,12 @@
     "at": "2026-11-14T02:09:04+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-14_0830_fb-gm-italian::facebook": {
+    "at": "2026-11-14T07:30:32+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122110935627530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122110935627530762"
   }
 }
