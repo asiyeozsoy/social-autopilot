@@ -2161,6 +2161,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/Dft8lV7jaqY/"
   },
+  "tinynotes/2026-11-14_1100_introvert-friend-video::youtube": {
+    "at": "2026-11-14T16:03:57+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-14_1200_pick-a-number-person::facebook": {
     "at": "2026-11-14T11:07:36+00:00",
     "attempts": 1,
@@ -2200,5 +2205,19 @@
     "attempts": 3,
     "error": "PublishError: instagram publish failed (403): {'message': 'Application request limit reached', 'type': 'OAuthException', 'is_transient': False, 'code': 4, 'error_subcode': 2207051, 'error_user_title': 'action is blocked', 'error_user_msg': 'We restrict certain activity to protect our community. Tell us if you think we made a mistake.', 'fbtrace_id': 'Aea6f9ReMKTTw1jwsCcHiHP'}",
     "status": "failed"
+  },
+  "tinynotes/2026-11-14_1700_sign08-water::facebook": {
+    "at": "2026-11-14T16:04:51+00:00",
+    "attempts": 1,
+    "remote_id": "2578659952630561",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2578659952630561"
+  },
+  "tinynotes/2026-11-14_1700_sign08-water::instagram": {
+    "at": "2026-11-14T16:04:41+00:00",
+    "attempts": 1,
+    "remote_id": "18122066828065736",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dful4r1jfNL/"
   }
 }
