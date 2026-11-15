@@ -958,6 +958,27 @@
     "status": "published",
     "url": "https://youtube.com/shorts/-KdRMA6xDI8"
   },
+  "factyeap/2026-11-15_1900_fact008-sunday-evening::facebook": {
+    "at": "2026-11-15T18:02:04+00:00",
+    "attempts": 1,
+    "remote_id": "1930261957955071",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1930261957955071"
+  },
+  "factyeap/2026-11-15_1900_fact008-sunday-evening::instagram": {
+    "at": "2026-11-15T18:01:48+00:00",
+    "attempts": 1,
+    "remote_id": "17918735169498918",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfxYFlKB5On/"
+  },
+  "factyeap/2026-11-15_1900_fact008-sunday-evening::youtube": {
+    "at": "2026-11-15T18:01:50+00:00",
+    "attempts": 1,
+    "remote_id": "iT3VND-MdW4",
+    "status": "published",
+    "url": "https://youtube.com/shorts/iT3VND-MdW4"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -2392,6 +2413,11 @@
     "remote_id": "18078786599461796",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfwvNUAEhF1/"
+  },
+  "tinynotes/2026-11-15_1300_proud-of-you-note::youtube": {
+    "at": "2026-11-15T18:00:27+00:00",
+    "reason": "too late",
+    "status": "skipped"
   },
   "tinynotes/2026-11-15_1700_sign09-glad-you-exist::facebook": {
     "at": "2026-11-15T16:07:54+00:00",
