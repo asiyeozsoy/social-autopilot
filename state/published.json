@@ -2309,5 +2309,12 @@
     "at": "2026-11-15T02:09:33+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-15_0830_fb-allowed-rest::facebook": {
+    "at": "2026-11-15T07:30:59+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122111343243530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122111343243530762"
   }
 }
