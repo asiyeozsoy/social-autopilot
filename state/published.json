@@ -2316,5 +2316,18 @@
     "remote_id": "1465888266604099_122111343243530762",
     "status": "published",
     "url": "https://www.facebook.com/1465888266604099_122111343243530762"
+  },
+  "tinynotes/2026-11-15_1000_doodle06-trying-again::facebook": {
+    "at": "2026-11-15T09:01:28+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122111381955530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122111381955530762"
+  },
+  "tinynotes/2026-11-15_1000_doodle06-trying-again::instagram": {
+    "at": "2026-11-15T09:01:22+00:00",
+    "attempts": 1,
+    "error": "PublishError: instagram publish failed (403): {'message': 'Application request limit reached', 'code': 4, 'type': 'OAuthException', 'error_subcode': 2207051, 'is_transient': False, 'error_user_msg': 'We restrict certain activity to protect our community. Tell us if you think we made a mistake.', 'error_user_title': 'action is blocked', 'fbtrace_id': 'AQp4cM9iv_TjgHrhbCvnngj'}",
+    "status": "failed"
   }
 }
