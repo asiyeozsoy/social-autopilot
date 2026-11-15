@@ -979,6 +979,27 @@
     "status": "published",
     "url": "https://youtube.com/shorts/iT3VND-MdW4"
   },
+  "factyeap/2026-11-15_2130_bear-taught-me-to-walk::facebook": {
+    "at": "2026-11-15T20:35:00+00:00",
+    "attempts": 1,
+    "remote_id": "1720057699834193",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1720057699834193"
+  },
+  "factyeap/2026-11-15_2130_bear-taught-me-to-walk::instagram": {
+    "at": "2026-11-15T20:34:49+00:00",
+    "attempts": 1,
+    "remote_id": "18117548948157581",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfxpnB4MXQ2/"
+  },
+  "factyeap/2026-11-15_2130_bear-taught-me-to-walk::youtube": {
+    "at": "2026-11-15T20:34:51+00:00",
+    "attempts": 1,
+    "remote_id": "Y5RKLlG4lTM",
+    "status": "published",
+    "url": "https://youtube.com/shorts/Y5RKLlG4lTM"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
