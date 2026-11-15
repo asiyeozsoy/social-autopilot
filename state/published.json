@@ -2406,5 +2406,19 @@
     "remote_id": "18041085863897175",
     "status": "published",
     "url": "https://www.instagram.com/reel/DfxLBpyD6PA/"
+  },
+  "tinynotes/2026-11-15_1800_sunday-reset-video::facebook": {
+    "at": "2026-11-15T17:10:24+00:00",
+    "attempts": 1,
+    "remote_id": "1689014266207956",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1689014266207956"
+  },
+  "tinynotes/2026-11-15_1800_sunday-reset-video::instagram": {
+    "at": "2026-11-15T17:10:10+00:00",
+    "attempts": 1,
+    "remote_id": "18137241473507634",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfxSMGtj8Js/"
   }
 }
