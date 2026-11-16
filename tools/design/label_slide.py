@@ -11,7 +11,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parents[2]
 W, H = 1080, 1350
-YELLOW = (250, 214, 92)
+YELLOW = (247, 146, 40)  # warm orange: reads on light and dark art
 
 
 def font(size, wght=700):
@@ -23,8 +23,31 @@ def font(size, wght=700):
     return f
 
 
+def _trim(im):
+    """Cut away a plain paper border some generations come with."""
+    import numpy as np
+    a = np.asarray(im.convert("L")).astype(int)
+    h, w = a.shape
+    def edge(line):
+        return line.mean() > 225 and line.std() < 18
+    t = 0
+    while t < h // 8 and edge(a[t]):
+        t += 1
+    b = h - 1
+    while b > h * 7 // 8 and edge(a[b]):
+        b -= 1
+    l = 0
+    while l < w // 8 and edge(a[:, l]):
+        l += 1
+    r = w - 1
+    while r > w * 7 // 8 and edge(a[:, r]):
+        r -= 1
+    pad = 12 if (t or l or b < h - 1 or r < w - 1) else 0
+    return im.crop((l + pad, t + pad, r - pad, b - pad)) if pad else im
+
+
 def fit(src):
-    im = Image.open(src).convert("RGB")
+    im = _trim(Image.open(src).convert("RGB"))
     s = max(W / im.width, H / im.height)
     im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
     x, y = (im.width - W) // 2, (im.height - H) // 2
@@ -37,7 +60,7 @@ def _shadowed(base, draw_fn):
     draw_fn(ImageDraw.Draw(layer))
     alpha = layer.split()[3]
     halo = Image.new("RGBA", base.size, (20, 14, 10, 0))
-    halo.putalpha(alpha.filter(ImageFilter.MaxFilter(7)).filter(ImageFilter.GaussianBlur(5)).point(lambda v: int(v * 0.55)))
+    halo.putalpha(alpha.filter(ImageFilter.MaxFilter(9)).filter(ImageFilter.GaussianBlur(4)).point(lambda v: int(v * 0.75)))
     base.alpha_composite(halo)
     base.alpha_composite(layer)
 
@@ -85,7 +108,7 @@ def label_slide(src, out, labels, brand="tinynotes", size=78):
     im.convert("RGB").save(out, quality=94)
 
 
-def title_slide(src, out, lines, y=150, brand="tinynotes", size=104, color=(255, 255, 255)):
+def title_slide(src, out, lines, y=150, brand="tinynotes", size=104, color=YELLOW):
     im = fit(src).convert("RGBA")
     f = font(size)
 
