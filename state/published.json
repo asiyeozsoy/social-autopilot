@@ -2571,6 +2571,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfzF9lPAUA7/"
   },
+  "tinynotes/2026-11-16_1100_monday-start-video::youtube": {
+    "at": "2026-11-16T16:07:10+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-16_1300_come-home-soon-note::facebook": {
     "at": "2026-11-16T12:03:12+00:00",
     "attempts": 1,
@@ -2597,5 +2602,19 @@
     "attempts": 3,
     "error": "PublishError: instagram publish failed (403): {'message': 'Application request limit reached', 'code': 4, 'type': 'OAuthException', 'error_subcode': 2207051, 'is_transient': False, 'error_user_msg': 'We restrict certain activity to protect our community. Tell us if you think we made a mistake.', 'error_user_title': 'action is blocked', 'fbtrace_id': 'ABsksK64uKUKPD0QY6JDgYE'}",
     "status": "failed"
+  },
+  "tinynotes/2026-11-16_1700_sign10-missing-you::facebook": {
+    "at": "2026-11-16T16:08:00+00:00",
+    "attempts": 1,
+    "remote_id": "1165293982505638",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1165293982505638"
+  },
+  "tinynotes/2026-11-16_1700_sign10-missing-you::instagram": {
+    "at": "2026-11-16T16:07:51+00:00",
+    "attempts": 1,
+    "remote_id": "17958161568339554",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Dfzv2JdDxzA/"
   }
 }
