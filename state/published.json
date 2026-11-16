@@ -1063,6 +1063,27 @@
     "status": "published",
     "url": "https://www.instagram.com/p/Dfz9yP_CXXb/"
   },
+  "factyeap/2026-11-16_2030_bear-ai-took-your-job::facebook": {
+    "at": "2026-11-16T19:32:15+00:00",
+    "attempts": 1,
+    "remote_id": "1138038248617235",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1138038248617235"
+  },
+  "factyeap/2026-11-16_2030_bear-ai-took-your-job::instagram": {
+    "at": "2026-11-16T19:32:04+00:00",
+    "attempts": 1,
+    "remote_id": "18035896991888465",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df0HOb7OT97/"
+  },
+  "factyeap/2026-11-16_2030_bear-ai-took-your-job::youtube": {
+    "at": "2026-11-16T19:32:06+00:00",
+    "attempts": 1,
+    "remote_id": "fSSBzUAbzW4",
+    "status": "published",
+    "url": "https://youtube.com/shorts/fSSBzUAbzW4"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
