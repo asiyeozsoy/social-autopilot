@@ -1000,6 +1000,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/Y5RKLlG4lTM"
   },
+  "factyeap/2026-11-16_1030_cat29-space-signals::facebook": {
+    "at": "2026-11-16T09:39:57+00:00",
+    "attempts": 1,
+    "remote_id": "4443936765845241",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/4443936765845241"
+  },
+  "factyeap/2026-11-16_1030_cat29-space-signals::instagram": {
+    "at": "2026-11-16T09:39:41+00:00",
+    "attempts": 1,
+    "remote_id": "18082945235385612",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfzDYe5h-xc/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
