@@ -1028,6 +1028,27 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DfzlQNwTmVS/"
   },
+  "factyeap/2026-11-16_1730_bsign08-diet::facebook": {
+    "at": "2026-11-16T16:38:56+00:00",
+    "attempts": 1,
+    "remote_id": "1604711644311498",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1604711644311498"
+  },
+  "factyeap/2026-11-16_1730_bsign08-diet::instagram": {
+    "at": "2026-11-16T16:38:45+00:00",
+    "attempts": 1,
+    "remote_id": "18030009878703453",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DfzzYVgu0VV/"
+  },
+  "factyeap/2026-11-16_1730_bsign08-diet::youtube": {
+    "at": "2026-11-16T16:38:47+00:00",
+    "attempts": 1,
+    "remote_id": "Iziit0qk8dQ",
+    "status": "published",
+    "url": "https://youtube.com/shorts/Iziit0qk8dQ"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
