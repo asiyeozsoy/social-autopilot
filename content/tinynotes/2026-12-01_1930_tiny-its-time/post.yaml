@@ -1,0 +1,49 @@
+brand: tinynotes
+publish_at: '2026-12-01T19:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'it''s time… 🎄✨
+
+
+      to believe in little magic again.
+
+
+      welcome, December. tag who you''re decorating with 🎁
+
+
+      #christmas #december #christmastree #tinynotes #cute #bunny #illustration #softart'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: It's Time… 🎄
+    description: 'it''s time… 🎄✨
+
+
+      to believe in little magic again.
+
+
+      welcome, December. tag who you''re decorating with 🎁
+
+
+      #christmas #december #christmastree #tinynotes #cute #bunny #illustration #softart
+
+
+      #shorts'
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'it''s time… 🎄✨
+
+
+      to believe in little magic again.
+
+
+      welcome, December. tag who you''re decorating with 🎁
+
+
+      #christmas #december #christmastree #tinynotes #cute #bunny #illustration #softart'
