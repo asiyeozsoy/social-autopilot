@@ -1098,6 +1098,20 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/Df1oOx-Tc5H/"
   },
+  "factyeap/2026-11-17_1530_cat32-fanny-pack::facebook": {
+    "at": "2026-11-17T14:32:27+00:00",
+    "attempts": 1,
+    "remote_id": "1696112188695412",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1696112188695412"
+  },
+  "factyeap/2026-11-17_1530_cat32-fanny-pack::instagram": {
+    "at": "2026-11-17T14:32:16+00:00",
+    "attempts": 1,
+    "remote_id": "18003374565041119",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df2JqfZxCYe/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
