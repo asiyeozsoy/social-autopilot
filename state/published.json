@@ -2810,5 +2810,19 @@
     "remote_id": "18164004460505445",
     "status": "published",
     "url": "https://www.instagram.com/reel/Df2UZkEiv2X/"
+  },
+  "tinynotes/2026-11-17_1800_old-friend-video::facebook": {
+    "at": "2026-11-17T17:07:48+00:00",
+    "attempts": 1,
+    "remote_id": "1122867060726745",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1122867060726745"
+  },
+  "tinynotes/2026-11-17_1800_old-friend-video::instagram": {
+    "at": "2026-11-17T17:07:38+00:00",
+    "attempts": 1,
+    "remote_id": "17874273516647470",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df2bejKCLen/"
   }
 }
