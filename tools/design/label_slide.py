@@ -166,10 +166,19 @@ def text_slide(out, lines, brand="tinynotes", size=88, heart=True):
         d.text(((W - tw) / 2, yy), ln, font=f, fill=LEAF)
         yy += size * 1.25
     if heart:
-        cx, cy, r = W / 2, yy + 70, 26
+        # classic flat heart (parametric curve), drawn 4x then scaled down for smooth edges
+        side = 100  # final heart box in px
+        cx, cy = W / 2, yy + 80
         col = (214, 112, 70)
-        d.ellipse((cx - r * 1.9, cy - r, cx - r * 0.1, cy + r * 0.8), fill=col)
-        d.ellipse((cx + r * 0.1, cy - r, cx + r * 1.9, cy + r * 0.8), fill=col)
-        d.polygon([(cx - r * 1.85, cy - r * 0.05), (cx + r * 1.85, cy - r * 0.05), (cx, cy + r * 2.0)], fill=col)
+        hl = Image.new("L", (400, 400), 0)
+        pts = []
+        for i in range(360):
+            t = math.radians(i)
+            x = 16 * math.sin(t) ** 3
+            y = 13 * math.cos(t) - 5 * math.cos(2 * t) - 2 * math.cos(3 * t) - math.cos(4 * t)
+            pts.append((200 + x * 11.5, 190 - y * 11.5))
+        ImageDraw.Draw(hl).polygon(pts, fill=255)
+        hl = hl.resize((side, side), Image.LANCZOS)
+        im.paste(Image.new("RGBA", hl.size, col + (255,)), (int(cx - side / 2), int(cy - side / 2)), hl)
     _logo(im, brand)
     im.convert("RGB").save(out, quality=94)
