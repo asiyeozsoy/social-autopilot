@@ -1084,6 +1084,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/fSSBzUAbzW4"
   },
+  "factyeap/2026-11-17_1030_cat31-pencil-history::facebook": {
+    "at": "2026-11-17T09:40:13+00:00",
+    "attempts": 1,
+    "remote_id": "1192345186796998",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1192345186796998"
+  },
+  "factyeap/2026-11-17_1030_cat31-pencil-history::instagram": {
+    "at": "2026-11-17T09:40:03+00:00",
+    "attempts": 1,
+    "remote_id": "18135990148683693",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df1oOx-Tc5H/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
