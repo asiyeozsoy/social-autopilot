@@ -2747,5 +2747,19 @@
     "attempts": 3,
     "error": "PublishError: instagram publish failed (403): {'message': 'Application request limit reached', 'code': 4, 'type': 'OAuthException', 'error_subcode': 2207051, 'is_transient': False, 'error_user_msg': 'We restrict certain activity to protect our community. Tell us if you think we made a mistake.', 'error_user_title': 'action is blocked', 'fbtrace_id': 'A-pSHd_n_dl68j6naxEfh3E'}",
     "status": "failed"
+  },
+  "tinynotes/2026-11-17_1300_happy-place-note::facebook": {
+    "at": "2026-11-17T12:01:02+00:00",
+    "attempts": 1,
+    "remote_id": "1886200022401593",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1886200022401593"
+  },
+  "tinynotes/2026-11-17_1300_happy-place-note::instagram": {
+    "at": "2026-11-17T12:00:53+00:00",
+    "attempts": 1,
+    "remote_id": "18128165497904594",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df14ZZVHXx_/"
   }
 }
