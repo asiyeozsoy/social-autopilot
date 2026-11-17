@@ -1133,6 +1133,27 @@
     "status": "published",
     "url": "https://youtube.com/shorts/QT0XtfDdZHY"
   },
+  "factyeap/2026-11-17_2030_bear-cub-problems::facebook": {
+    "at": "2026-11-17T19:40:23+00:00",
+    "attempts": 1,
+    "remote_id": "2230698044998226",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2230698044998226"
+  },
+  "factyeap/2026-11-17_2030_bear-cub-problems::instagram": {
+    "at": "2026-11-17T19:40:12+00:00",
+    "attempts": 1,
+    "remote_id": "17959995267271936",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df2s88MvUko/"
+  },
+  "factyeap/2026-11-17_2030_bear-cub-problems::youtube": {
+    "at": "2026-11-17T19:40:15+00:00",
+    "attempts": 1,
+    "remote_id": "-qW62_4Yqm0",
+    "status": "published",
+    "url": "https://youtube.com/shorts/-qW62_4Yqm0"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
