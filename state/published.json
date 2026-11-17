@@ -1112,6 +1112,27 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/Df2JqfZxCYe/"
   },
+  "factyeap/2026-11-17_1730_bsign09-dad-jokes::facebook": {
+    "at": "2026-11-17T16:36:50+00:00",
+    "attempts": 1,
+    "remote_id": "1497334489084007",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1497334489084007"
+  },
+  "factyeap/2026-11-17_1730_bsign09-dad-jokes::instagram": {
+    "at": "2026-11-17T16:36:39+00:00",
+    "attempts": 1,
+    "remote_id": "18646982578005573",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df2X76TMa0Y/"
+  },
+  "factyeap/2026-11-17_1730_bsign09-dad-jokes::youtube": {
+    "at": "2026-11-17T16:36:41+00:00",
+    "attempts": 1,
+    "remote_id": "QT0XtfDdZHY",
+    "status": "published",
+    "url": "https://youtube.com/shorts/QT0XtfDdZHY"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
