@@ -2775,5 +2775,19 @@
     "remote_id": "18128165497904594",
     "status": "published",
     "url": "https://www.instagram.com/reel/Df14ZZVHXx_/"
+  },
+  "tinynotes/2026-11-17_1700_sign11-did-enough::facebook": {
+    "at": "2026-11-17T16:05:56+00:00",
+    "attempts": 1,
+    "remote_id": "1147872431505554",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1147872431505554"
+  },
+  "tinynotes/2026-11-17_1700_sign11-did-enough::instagram": {
+    "at": "2026-11-17T16:05:47+00:00",
+    "attempts": 1,
+    "remote_id": "18164004460505445",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df2UZkEiv2X/"
   }
 }
