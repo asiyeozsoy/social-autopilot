@@ -2898,5 +2898,19 @@
     "at": "2026-11-18T02:02:59+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-18_1000_doodle09-notification::facebook": {
+    "at": "2026-11-18T09:04:52+00:00",
+    "attempts": 1,
+    "remote_id": "1465888266604099_122112659193530762",
+    "status": "published",
+    "url": "https://www.facebook.com/1465888266604099_122112659193530762"
+  },
+  "tinynotes/2026-11-18_1000_doodle09-notification::instagram": {
+    "at": "2026-11-18T09:04:47+00:00",
+    "attempts": 1,
+    "remote_id": "18099825506390317",
+    "status": "published",
+    "url": "https://www.instagram.com/p/Df4JEf6D765/"
   }
 }
