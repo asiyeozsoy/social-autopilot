@@ -1238,6 +1238,20 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/Df6x1-2MCW0/"
   },
+  "factyeap/2026-11-19_1530_cat36-english::facebook": {
+    "at": "2026-11-19T14:33:19+00:00",
+    "attempts": 1,
+    "remote_id": "1145606901278649",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1145606901278649"
+  },
+  "factyeap/2026-11-19_1530_cat36-english::instagram": {
+    "at": "2026-11-19T14:33:06+00:00",
+    "attempts": 1,
+    "remote_id": "18118397021022501",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df7TW_8zYOC/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
