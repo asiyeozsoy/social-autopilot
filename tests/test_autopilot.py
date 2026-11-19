@@ -282,3 +282,25 @@ def test_facebook_reel_flow(tmp_path, monkeypatch):
     assert vid == "v9"
     assert seen["upload"]["file_url"].endswith("/v.mp4") and seen["upload"]["Authorization"] == "OAuth pt"
     assert seen["finish"]["video_state"] == "PUBLISHED" and seen["finish"]["description"] == "cap"
+
+
+def test_instagram_no_double_post_when_already_live(monkeypatch):
+    """An earlier attempt that errored but actually went live must not be posted again."""
+    import datetime as dt
+    from types import SimpleNamespace
+    from autopilot.platforms import instagram
+
+    class R:
+        ok = True
+        def json(self):
+            return {"data": [{"id": "999", "caption": "hello  world\n#tag", "timestamp": "2026-11-16T09:08:00+0000",
+                              "permalink": "https://www.instagram.com/p/X/"}]}
+    calls = []
+    monkeypatch.setattr(instagram.requests, "get", lambda *a, **k: R())
+    monkeypatch.setattr(instagram.requests, "post", lambda *a, **k: calls.append(a) or (_ for _ in ()).throw(AssertionError("posted")))
+    monkeypatch.setenv("TINYNOTES_IG_USER_ID", "1")
+    monkeypatch.setenv("TINYNOTES_IG_TOKEN", "IGtoken")
+    post = SimpleNamespace(brand="tinynotes", publish_at=dt.datetime(2026, 11, 16, 9, 0, tzinfo=dt.timezone.utc))
+    pp = SimpleNamespace(kind="image", media=["a.jpg"], caption="hello world #tag", cover=None)
+    assert instagram.publish(post, pp, None) == ("999", "https://www.instagram.com/p/X/")
+    assert not calls

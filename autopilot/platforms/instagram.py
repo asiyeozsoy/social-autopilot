@@ -12,7 +12,9 @@ Media is pulled by Instagram from public URLs (see media.py).
 """
 from __future__ import annotations
 
+import datetime as dt
 import os
+import time
 
 import requests
 
@@ -49,9 +51,35 @@ def _wait(container_id, token):
          fail=lambda s: s.get("status_code") in ("ERROR", "EXPIRED"), what="instagram media processing")
 
 
+def _norm(text):
+    return " ".join((text or "").split())
+
+
+def _already_live(ig_id, token, caption, since):
+    """A post with this exact caption that went up after its slot opened (Instagram sometimes
+    publishes and still answers with an error, e.g. 'Application request limit reached')."""
+    try:
+        r = requests.get(f"{api_base(token)}/{ig_id}/media", params={"fields": "id,caption,timestamp,permalink", "limit": 25,
+                                                                      "access_token": token}, timeout=30)
+        if not r.ok:
+            return None
+        want = _norm(caption)
+        for m in r.json().get("data", []):
+            when = dt.datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+            if _norm(m.get("caption")) == want and when >= since - dt.timedelta(hours=1):
+                return m["id"], m.get("permalink", "")
+    except Exception:
+        return None
+    return None
+
+
 def publish(post, pp, content_root):
     ig_id = creds(post.brand, "IG_USER_ID")
     token = creds(post.brand, "IG_TOKEN")
+    # never post twice: if an earlier attempt actually went live, just record it
+    live = _already_live(ig_id, token, pp.caption, post.publish_at) if pp.caption else None
+    if live:
+        return live
     urls = [public_url(m, content_root) for m in pp.media]
 
     if pp.kind == "image":
@@ -69,8 +97,23 @@ def publish(post, pp, content_root):
     _wait(cid, token)
 
     API = api_base(token)
-    r = requests.post(f"{API}/{ig_id}/media_publish", data={"creation_id": cid, "access_token": token}, timeout=60)
-    media_id = check(r, "instagram publish")["id"]
+    try:
+        r = requests.post(f"{API}/{ig_id}/media_publish", data={"creation_id": cid, "access_token": token}, timeout=60)
+        media_id = check(r, "instagram publish")["id"]
+    except Exception:
+        # the error can come back even though the post went live: look before reporting a failure
+        for wait in (20, 60):
+            time.sleep(wait)
+            live = _already_live(ig_id, token, pp.caption, post.publish_at) if pp.caption else None
+            if live:
+                return live
+            try:
+                st = requests.get(f"{API}/{cid}", params={"fields": "status_code", "access_token": token}, timeout=30).json()
+                if st.get("status_code") == "PUBLISHED":
+                    return cid, ""
+            except Exception:
+                pass
+        raise
     r = requests.get(f"{API}/{media_id}", params={"fields": "permalink", "access_token": token}, timeout=30)
     link = r.json().get("permalink", "") if r.ok else ""
     return media_id, link
