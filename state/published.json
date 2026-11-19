@@ -1224,6 +1224,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/s6sdxgy9sL4"
   },
+  "factyeap/2026-11-19_1030_cat35-humanity-restarted::facebook": {
+    "at": "2026-11-19T09:40:26+00:00",
+    "attempts": 1,
+    "remote_id": "4772807293001856",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/4772807293001856"
+  },
+  "factyeap/2026-11-19_1030_cat35-humanity-restarted::instagram": {
+    "at": "2026-11-19T09:40:15+00:00",
+    "attempts": 1,
+    "remote_id": "17901228027393307",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df6x1-2MCW0/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
