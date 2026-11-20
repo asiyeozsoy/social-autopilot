@@ -14,16 +14,16 @@ q = sys.argv[1] if len(sys.argv) > 1 else "slow piano"
 
 
 def search(token, ig_id, label):
-    for params in ({"search_query": q}, {}):
-        r = requests.get(f"{G}/ig_audio", params={"audio_type": "music", "user_id": ig_id, "access_token": token, **params}, timeout=30)
-        what = f"'{q}'" if params else "trending"
+    for kind, params in (("music", {"search_query": q}), ("music", {}), ("original_sound", {"search_query": q}), ("original_sound", {})):
+        r = requests.get(f"{G}/ig_audio", params={"audio_type": kind, "user_id": ig_id, "access_token": token, **params}, timeout=30)
+        what = f"{kind} '{q}'" if params else f"{kind} trending"
         try:
             j = r.json()
         except Exception:
             j = {"raw": r.text[:200]}
         if r.ok:
             items = j.get("data", [])
-            print(f"  {label} {what}: OK {len(items)} tracks")
+            print(f"  {label} {what}: OK {len(items)} tracks raw={str(j)[:300]}")
             for it in items[:12]:
                 print("     ", {k: it.get(k) for k in ("id", "title", "artist_name", "display_artist", "duration_in_ms", "is_trending") if k in it} or it)
         else:
@@ -38,7 +38,7 @@ for brand in ("TINYNOTES", "FACTYEAP"):
     print(f"== {brand} ig={ig_id} page={page} ig_token_kind={'instagram-login' if ig_tok.startswith('IG') else ('facebook' if ig_tok else 'none')}")
     if ig_tok and not ig_tok.startswith("IG"):
         search(ig_tok, ig_id, "ig-token")
-    if sys_tok:
+    if sys_tok and False:
         r = requests.get(f"{G}/{page}", params={"fields": "access_token,instagram_business_account", "access_token": sys_tok}, timeout=30)
         j = r.json()
         print("  page link:", j.get("instagram_business_account"), "page token:", bool(j.get("access_token")), str(j.get("error", ""))[:200])
