@@ -1,0 +1,42 @@
+brand: tinynotes
+publish_at: '2026-12-02T19:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'some songs still take us home 🎧
+
+
+      which one is yours? tell me in the comments 🎶
+
+
+      #music #nostalgia #memories #tinynotes #cute #bunny #illustration #softart'
+    audio_id: '1367487581578605'
+    audio_title: Breathe Again - Magnetic Sirens
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'some songs still take us home 🎧
+
+
+      which one is yours? tell me in the comments 🎶
+
+
+      #music #nostalgia #memories #tinynotes #cute #bunny #illustration #softart'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Some Songs Still Take Us Home 🎧
+    description: 'some songs still take us home 🎧
+
+
+      which one is yours? tell me in the comments 🎶
+
+
+      #music #nostalgia #memories #tinynotes #cute #bunny #illustration #softart
+
+
+      #shorts'

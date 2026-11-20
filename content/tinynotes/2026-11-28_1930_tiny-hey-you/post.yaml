@@ -1,0 +1,51 @@
+brand: tinynotes
+publish_at: '2026-11-28T19:30:00+01:00'
+platforms:
+  instagram:
+    kind: reel
+    media:
+    - video.mp4
+    caption: 'hey! you… yes, YOU 👀💌
+
+
+      you''re my favourite person.
+
+
+      send this to yours 🤍
+
+
+      #bestfriend #love #favoriteperson #tinynotes #cute #bunny #illustration #softart'
+    audio_id: '2263439694405407'
+    audio_title: Golden Ascent - Afterlight
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'hey! you… yes, YOU 👀💌
+
+
+      you''re my favourite person.
+
+
+      send this to yours 🤍
+
+
+      #bestfriend #love #favoriteperson #tinynotes #cute #bunny #illustration #softart'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: Hey You… Yes, YOU 💌
+    description: 'hey! you… yes, YOU 👀💌
+
+
+      you''re my favourite person.
+
+
+      send this to yours 🤍
+
+
+      #bestfriend #love #favoriteperson #tinynotes #cute #bunny #illustration #softart
+
+
+      #shorts'
