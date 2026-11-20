@@ -3376,6 +3376,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/Df91aEKoCsD/"
   },
+  "tinynotes/2026-11-20_1500_friday-plans::youtube": {
+    "at": "2026-11-20T20:06:06+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-20_1700_duo02-your-person::facebook": {
     "at": "2026-11-20T16:01:40+00:00",
     "attempts": 1,
@@ -3403,5 +3408,19 @@
     "remote_id": "18119902166110139",
     "status": "published",
     "url": "https://www.instagram.com/reel/Df-T4ycFAUG/"
+  },
+  "tinynotes/2026-11-20_2100_wife-video::facebook": {
+    "at": "2026-11-20T20:07:12+00:00",
+    "attempts": 1,
+    "remote_id": "2154697768478016",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2154697768478016"
+  },
+  "tinynotes/2026-11-20_2100_wife-video::instagram": {
+    "at": "2026-11-20T20:07:03+00:00",
+    "attempts": 1,
+    "remote_id": "18116839777843581",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df-eaZ6gYd2/"
   }
 }
