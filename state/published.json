@@ -3422,5 +3422,19 @@
     "remote_id": "18116839777843581",
     "status": "published",
     "url": "https://www.instagram.com/reel/Df-eaZ6gYd2/"
+  },
+  "tinynotes/2026-11-20_2230_bed02-loved::facebook": {
+    "at": "2026-11-20T21:38:05+00:00",
+    "attempts": 1,
+    "remote_id": "1026414359865903",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1026414359865903"
+  },
+  "tinynotes/2026-11-20_2230_bed02-loved::instagram": {
+    "at": "2026-11-20T21:37:55+00:00",
+    "attempts": 1,
+    "remote_id": "18353486527268360",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df-oz0akuR3/"
   }
 }
