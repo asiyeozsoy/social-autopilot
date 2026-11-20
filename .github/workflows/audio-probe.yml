@@ -26,3 +26,7 @@ jobs:
           TINYNOTES_IG_USER_ID: ${{ secrets.TINYNOTES_IG_USER_ID || '17841453440786843' }}
           TINYNOTES_IG_TOKEN: ${{ secrets.TINYNOTES_IG_TOKEN }}
         run: python tools/ig_audio_probe.py "${{ inputs.query }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: audio
+          path: plans/ig_audio_results.json
