@@ -3286,5 +3286,19 @@
     "remote_id": "18122376982992858",
     "status": "published",
     "url": "https://www.instagram.com/p/Df9Se7gn8cV/"
+  },
+  "tinynotes/2026-11-20_1100_new-mom-video::facebook": {
+    "at": "2026-11-20T10:06:22+00:00",
+    "attempts": 1,
+    "remote_id": "1163457393042609",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1163457393042609"
+  },
+  "tinynotes/2026-11-20_1100_new-mom-video::instagram": {
+    "at": "2026-11-20T10:06:09+00:00",
+    "attempts": 1,
+    "remote_id": "18112897373248306",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df9ZoA5iPs8/"
   }
 }
