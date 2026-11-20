@@ -1287,6 +1287,20 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/Df9WEl8tVz6/"
   },
+  "factyeap/2026-11-20_1530_cat38-everest-ocean::facebook": {
+    "at": "2026-11-20T14:39:57+00:00",
+    "attempts": 1,
+    "remote_id": "2678723512570851",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2678723512570851"
+  },
+  "factyeap/2026-11-20_1530_cat38-everest-ocean::instagram": {
+    "at": "2026-11-20T14:39:48+00:00",
+    "attempts": 1,
+    "remote_id": "18129221257919819",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df948vXJBIM/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
