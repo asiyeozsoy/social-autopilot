@@ -304,3 +304,44 @@ def test_instagram_no_double_post_when_already_live(monkeypatch):
     pp = SimpleNamespace(kind="image", media=["a.jpg"], caption="hello world #tag", cover=None)
     assert instagram.publish(post, pp, None) == ("999", "https://www.instagram.com/p/X/")
     assert not calls
+
+
+def test_instagram_reel_music_and_fallback(monkeypatch):
+    """A reel with audio_id asks for that library track; if Instagram refuses it, the reel still goes out."""
+    import datetime as dt
+    from types import SimpleNamespace
+    from autopilot.platforms import instagram
+
+    sent = []
+
+    class Resp:
+        def __init__(self, j, ok=True):
+            self._j, self.ok, self.status_code, self.headers, self.text = j, ok, 200 if ok else 400, {"content-type": "application/json"}, ""
+        def json(self):
+            return self._j
+
+    def post(url, data=None, **k):
+        sent.append(dict(data))
+        if "audio_configuration" in data:
+            return Resp({"error": {"message": "audio not available"}}, ok=False)
+        if url.endswith("/media_publish"):
+            return Resp({"id": "m1"})
+        return Resp({"id": "c1"})
+
+    def get(url, params=None, **k):
+        if url.endswith("/media"):
+            return Resp({"data": []})
+        if params and params.get("fields") == "status_code,status":
+            return Resp({"status_code": "FINISHED"})
+        return Resp({"permalink": "https://www.instagram.com/reel/Z/"})
+
+    monkeypatch.setattr(instagram.requests, "post", post)
+    monkeypatch.setattr(instagram.requests, "get", get)
+    monkeypatch.setattr(instagram, "public_url", lambda m, root: "https://x/" + str(m))
+    monkeypatch.setenv("TINYNOTES_IG_USER_ID", "1")
+    monkeypatch.setenv("TINYNOTES_IG_TOKEN", "EAAfacebooktoken")
+    post_ = SimpleNamespace(brand="tinynotes", publish_at=dt.datetime(2026, 11, 20, tzinfo=dt.timezone.utc))
+    pp = SimpleNamespace(kind="reel", media=["v.mp4"], caption="hi", cover=None, audio_id="2477944699150252")
+    assert instagram.publish(post_, pp, None) == ("m1", "https://www.instagram.com/reel/Z/")
+    assert '"audio_id": "2477944699150252"' in sent[0]["audio_configuration"]
+    assert "audio_configuration" not in sent[1]

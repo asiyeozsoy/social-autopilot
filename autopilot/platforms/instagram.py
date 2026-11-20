@@ -13,6 +13,7 @@ Media is pulled by Instagram from public URLs (see media.py).
 from __future__ import annotations
 
 import datetime as dt
+import json
 import os
 import time
 
@@ -93,7 +94,21 @@ def publish(post, pp, content_root):
         cid = _container(ig_id, token, media_type="CAROUSEL", children=",".join(children), caption=pp.caption)
     else:  # reel
         extra = {"cover_url": public_url(pp.cover, content_root)} if pp.cover else {}
-        cid = _container(ig_id, token, media_type="REELS", video_url=urls[0], caption=pp.caption, share_to_feed="true", **extra)
+        audio = getattr(pp, "audio_id", "")
+        cid = None
+        if audio and not token.startswith("IG"):  # music from Instagram's library (Facebook-login keys only)
+            try:
+                conf = json.dumps({"audio_id": audio, "audio_volume": 100, "video_volume": 0})
+                cid = _container(ig_id, token, media_type="REELS", video_url=urls[0], caption=pp.caption, share_to_feed="true",
+                                 audio_configuration=conf, **extra)
+                _wait(cid, token)
+            except NotConfigured:
+                raise
+            except Exception as e:  # never lose the post over the music: fall back to the video's own sound
+                print(f"  instagram music {audio} not accepted ({str(e)[:160]}); posting with the video's own sound")
+                cid = None
+        if cid is None:
+            cid = _container(ig_id, token, media_type="REELS", video_url=urls[0], caption=pp.caption, share_to_feed="true", **extra)
     _wait(cid, token)
 
     API = api_base(token)

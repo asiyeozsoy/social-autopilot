@@ -48,6 +48,7 @@ class PlatformPost:
     title: str = ""
     description: str = ""
     cover: Path | None = None  # cover.jpg next to post.yaml: the Reels cover / grid thumbnail
+    audio_id: str = ""  # Instagram reels: a track from Instagram's music library (replaces the video's own sound)
 
 
 @dataclass
@@ -103,6 +104,7 @@ def load_post(folder: Path, root: Path) -> Post:
             title=str(p.get("title", "")).strip(),
             description=str(p.get("description", "")).strip(),
             cover=(folder / "cover.jpg") if (folder / "cover.jpg").exists() else None,
+            audio_id=str(p.get("audio_id", "") or "").strip(),
         )
     # Facebook mirrors Instagram unless a post says otherwise
     if "facebook" not in post.platforms and "instagram" in post.platforms:
