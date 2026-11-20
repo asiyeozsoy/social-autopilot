@@ -1273,6 +1273,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/H20hAobog3k"
   },
+  "factyeap/2026-11-20_1030_cat37-loneliest-planet::facebook": {
+    "at": "2026-11-20T09:35:18+00:00",
+    "attempts": 1,
+    "remote_id": "3441233702714540",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/3441233702714540"
+  },
+  "factyeap/2026-11-20_1030_cat37-loneliest-planet::instagram": {
+    "at": "2026-11-20T09:35:01+00:00",
+    "attempts": 1,
+    "remote_id": "18115420052228864",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df9WEl8tVz6/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
