@@ -59,7 +59,7 @@ def main():
     ig = meta["platforms"]["instagram"]
     slides = [Image.open(post / m).convert("RGB") for m in ig["media"]]
     n = len(slides)
-    holds = [a.first] + [a.hold] * (n - 2) + [a.last] if n > 1 else [a.first + a.last]
+    holds = [a.first] + [a.hold] * (n - 2) + [a.last] if n > 1 else [a.first + a.last + 1.5]
     starts = np.cumsum([0] + holds[:-1])
     dur = float(sum(holds))
     pre = [frame_for(s) for s in slides]

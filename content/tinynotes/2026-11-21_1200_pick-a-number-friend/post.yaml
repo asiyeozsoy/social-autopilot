@@ -2,15 +2,9 @@ brand: tinynotes
 publish_at: '2026-11-21T12:00:00+01:00'
 platforms:
   instagram:
-    kind: carousel
+    kind: reel
     media:
-    - instagram_01.png
-    - instagram_02.png
-    - instagram_03.png
-    - instagram_04.png
-    - instagram_05.png
-    - instagram_06.png
-    - instagram_07.png
+    - video.mp4
     caption: 'for the friend who''s basically family 🫶
 
 
@@ -18,20 +12,31 @@ platforms:
 
 
       #sendthistosomeone #bestfriends #friendshipquotes #pickanumber #tinynotes'
+    audio_id: '134367083941949'
+    audio_title: Moments Emotional - Scott Dugdale
   tiktok:
-    kind: photo
+    kind: video
     media:
-    - tiktok_01.png
-    - tiktok_02.png
-    - tiktok_03.png
-    - tiktok_04.png
-    - tiktok_05.png
-    - tiktok_06.png
-    - tiktok_07.png
-    caption: 'your bestie is one of these
+    - video.mp4
+    caption: 'for the friend who''s basically family 🫶
 
 
-      comment the number + tag them 👇
+      Comment your number and tag the friend it belongs to.
 
 
-      #sendthistosomeone #bestie #friendship #fyp'
+      #sendthistosomeone #bestfriends #friendshipquotes #pickanumber #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: for the friend who's basically family 🫶
+    description: 'for the friend who''s basically family 🫶
+
+
+      Comment your number and tag the friend it belongs to.
+
+
+      #sendthistosomeone #bestfriends #friendshipquotes #pickanumber #tinynotes
+
+
+      #shorts'

@@ -2,9 +2,9 @@ brand: factyeap
 publish_at: '2026-11-23T19:00:00+01:00'
 platforms:
   instagram:
-    kind: image
+    kind: reel
     media:
-    - instagram.png
+    - video.mp4
     caption: '"I''m fine" (has a 40-minute story ready) 🙂
 
 
@@ -13,13 +13,28 @@ platforms:
 
       #factyeap #relatable #imfine #bestfriends #yeap'
   tiktok:
-    kind: photo
+    kind: video
     media:
-    - tiktok.png
-    caption: 'ask me again and i''ll tell you everything
+    - video.mp4
+    caption: '"I''m fine" (has a 40-minute story ready) 🙂
 
 
       Send this to the friend who always asks twice.
 
 
-      #factyeap #imfine #relatable #fyp'
+      #factyeap #relatable #imfine #bestfriends #yeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: '"I''m fine" (has a 40-minute story ready) 🙂'
+    description: '"I''m fine" (has a 40-minute story ready) 🙂
+
+
+      Send this to the friend who always asks twice.
+
+
+      #factyeap #relatable #imfine #bestfriends #yeap
+
+
+      #shorts'

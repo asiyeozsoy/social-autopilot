@@ -2,9 +2,9 @@ brand: tinynotes
 publish_at: '2026-11-20T15:00:00+01:00'
 platforms:
   instagram:
-    kind: image
+    kind: reel
     media:
-    - instagram.png
+    - video.mp4
     caption: 'friday plans vs friday reality 😅
 
 
@@ -12,14 +12,31 @@ platforms:
 
 
       #sendthistosomeone #fridaynight #friyay #bestfriendgoals #weekendmode'
+    audio_id: '2477944699150252'
+    audio_title: Peaceful Piano - Dr. Pheel
   tiktok:
-    kind: photo
+    kind: video
     media:
-    - tiktok.png
-    caption: 'the plan was to sleep early 😅
+    - video.mp4
+    caption: 'friday plans vs friday reality 😅
 
 
-      send this to your 1am snack partner
+      Tag the friend who ruins every early night (lovingly).
 
 
-      #sendthistosomeone #friyay #besties #weekend #fyp'
+      #sendthistosomeone #fridaynight #friyay #bestfriendgoals #weekendmode'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: friday plans vs friday reality 😅
+    description: 'friday plans vs friday reality 😅
+
+
+      Tag the friend who ruins every early night (lovingly).
+
+
+      #sendthistosomeone #fridaynight #friyay #bestfriendgoals #weekendmode
+
+
+      #shorts'

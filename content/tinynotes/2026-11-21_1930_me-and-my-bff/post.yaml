@@ -2,16 +2,9 @@ brand: tinynotes
 publish_at: '2026-11-21T19:30:00+01:00'
 platforms:
   instagram:
-    kind: carousel
+    kind: reel
     media:
-    - instagram_01.jpg
-    - instagram_02.jpg
-    - instagram_03.jpg
-    - instagram_04.jpg
-    - instagram_05.jpg
-    - instagram_06.jpg
-    - instagram_07.jpg
-    - instagram_08.jpg
+    - video.mp4
     caption: 'me & my best friend, explained 🤍
 
 
@@ -21,3 +14,35 @@ platforms:
 
 
       #bestfriend #bff #friendship #besties #tinynotes'
+    audio_id: '976299230340697'
+    audio_title: Someday (Instrumental) - Cy Curnin
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'me & my best friend, explained 🤍
+
+
+      not related by blood, chosen by the heart.
+
+      Send this to your person 💌
+
+
+      #bestfriend #bff #friendship #besties #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: me & my best friend, explained 🤍
+    description: 'me & my best friend, explained 🤍
+
+
+      not related by blood, chosen by the heart.
+
+      Send this to your person 💌
+
+
+      #bestfriend #bff #friendship #besties #tinynotes
+
+
+      #shorts'

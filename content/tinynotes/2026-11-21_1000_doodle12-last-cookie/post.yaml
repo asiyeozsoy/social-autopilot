@@ -2,9 +2,9 @@ brand: tinynotes
 publish_at: '2026-11-21T10:00:00+01:00'
 platforms:
   instagram:
-    kind: image
+    kind: reel
     media:
-    - post.jpg
+    - video.mp4
     caption: 'I saved you the last cookie 🍪🤍
 
 
@@ -12,3 +12,31 @@ platforms:
 
 
       #sendthistosomeone #gentlereminder #selfcare #cutebunny #tinynotes'
+    audio_id: '819173022431906'
+    audio_title: Summer's Autumn - Brian Withycombe
+  tiktok:
+    kind: video
+    media:
+    - video.mp4
+    caption: 'I saved you the last cookie 🍪🤍
+
+
+      Send this to the person you''d share your last cookie with.
+
+
+      #sendthistosomeone #gentlereminder #selfcare #cutebunny #tinynotes'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: I saved you the last cookie 🍪🤍
+    description: 'I saved you the last cookie 🍪🤍
+
+
+      Send this to the person you''d share your last cookie with.
+
+
+      #sendthistosomeone #gentlereminder #selfcare #cutebunny #tinynotes
+
+
+      #shorts'

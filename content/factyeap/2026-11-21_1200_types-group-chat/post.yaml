@@ -2,15 +2,9 @@ brand: factyeap
 publish_at: '2026-11-21T12:00:00+01:00'
 platforms:
   instagram:
-    kind: carousel
+    kind: reel
     media:
-    - instagram_01.png
-    - instagram_02.png
-    - instagram_03.png
-    - instagram_04.png
-    - instagram_05.png
-    - instagram_06.png
-    - instagram_07.png
+    - video.mp4
     caption: 'every group chat has all five 💬
 
 
@@ -19,19 +13,28 @@ platforms:
 
       #factyeap #groupchat #typesofpeople #bestfriends #yeap'
   tiktok:
-    kind: photo
+    kind: video
     media:
-    - tiktok_01.png
-    - tiktok_02.png
-    - tiktok_03.png
-    - tiktok_04.png
-    - tiktok_05.png
-    - tiktok_06.png
-    - tiktok_07.png
-    caption: 'which one are you in the group chat?
+    - video.mp4
+    caption: 'every group chat has all five 💬
 
 
-      comment your number + tag the ghost 👀
+      Comment your number. Tag the ghost in your chat.
 
 
-      #factyeap #groupchat #relatable #fyp'
+      #factyeap #groupchat #typesofpeople #bestfriends #yeap'
+  youtube:
+    kind: short
+    media:
+    - video.mp4
+    title: every group chat has all five 💬
+    description: 'every group chat has all five 💬
+
+
+      Comment your number. Tag the ghost in your chat.
+
+
+      #factyeap #groupchat #typesofpeople #bestfriends #yeap
+
+
+      #shorts'
