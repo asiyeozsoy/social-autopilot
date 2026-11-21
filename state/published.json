@@ -3560,6 +3560,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DgAFF-sjqAc/"
   },
+  "tinynotes/2026-11-21_1200_pick-a-number-friend::youtube": {
+    "at": "2026-11-21T17:09:06+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-21_1700_duo03-favorite-place::facebook": {
     "at": "2026-11-21T16:08:08+00:00",
     "attempts": 1,
@@ -3573,5 +3578,19 @@
     "remote_id": "18090093428705823",
     "status": "published",
     "url": "https://www.instagram.com/reel/DgAn1rUEb71/"
+  },
+  "tinynotes/2026-11-21_1800_coffee-date-video::facebook": {
+    "at": "2026-11-21T17:10:01+00:00",
+    "attempts": 1,
+    "remote_id": "1510422454317235",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1510422454317235"
+  },
+  "tinynotes/2026-11-21_1800_coffee-date-video::instagram": {
+    "at": "2026-11-21T17:09:51+00:00",
+    "attempts": 1,
+    "remote_id": "18117268568612446",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgAu6aOmRI1/"
   }
 }
