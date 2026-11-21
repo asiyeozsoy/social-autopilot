@@ -3606,5 +3606,19 @@
     "remote_id": "18136203986495580",
     "status": "published",
     "url": "https://www.instagram.com/reel/DgA4LwTiD7-/"
+  },
+  "tinynotes/2026-11-21_2100_hello-day-video::facebook": {
+    "at": "2026-11-21T20:03:40+00:00",
+    "attempts": 1,
+    "remote_id": "1866899611264820",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1866899611264820"
+  },
+  "tinynotes/2026-11-21_2100_hello-day-video::instagram": {
+    "at": "2026-11-21T20:03:30+00:00",
+    "attempts": 1,
+    "remote_id": "18134279110690471",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgBCyVaGs3y/"
   }
 }
