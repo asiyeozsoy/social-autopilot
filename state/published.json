@@ -3456,5 +3456,19 @@
     "at": "2026-11-21T03:39:19+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-21_1000_doodle12-last-cookie::facebook": {
+    "at": "2026-11-21T09:01:57+00:00",
+    "attempts": 1,
+    "remote_id": "1670366734452741",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1670366734452741"
+  },
+  "tinynotes/2026-11-21_1000_doodle12-last-cookie::instagram": {
+    "at": "2026-11-21T09:01:47+00:00",
+    "attempts": 1,
+    "remote_id": "18203717236391697",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df_3ClEkygQ/"
   }
 }
