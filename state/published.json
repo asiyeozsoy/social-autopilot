@@ -1343,6 +1343,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/8msmi-JiE8k"
   },
+  "factyeap/2026-11-21_1030_cat39-quietest-room::facebook": {
+    "at": "2026-11-21T09:32:49+00:00",
+    "attempts": 1,
+    "remote_id": "2129200107713351",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2129200107713351"
+  },
+  "factyeap/2026-11-21_1030_cat39-quietest-room::instagram": {
+    "at": "2026-11-21T09:32:38+00:00",
+    "attempts": 1,
+    "remote_id": "17898145998683178",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/Df_6mCRvL-W/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
