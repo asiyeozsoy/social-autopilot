@@ -1357,6 +1357,27 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/Df_6mCRvL-W/"
   },
+  "factyeap/2026-11-21_1200_types-group-chat::facebook": {
+    "at": "2026-11-21T11:03:44+00:00",
+    "attempts": 1,
+    "remote_id": "1784764559256696",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1784764559256696"
+  },
+  "factyeap/2026-11-21_1200_types-group-chat::instagram": {
+    "at": "2026-11-21T11:03:33+00:00",
+    "attempts": 1,
+    "remote_id": "18226824640353065",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgAE_xWuV7T/"
+  },
+  "factyeap/2026-11-21_1200_types-group-chat::youtube": {
+    "at": "2026-11-21T11:03:35+00:00",
+    "attempts": 1,
+    "remote_id": "uuTXlpGbW2Q",
+    "status": "published",
+    "url": "https://youtube.com/shorts/uuTXlpGbW2Q"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
@@ -3484,5 +3505,19 @@
     "remote_id": "18203717236391697",
     "status": "published",
     "url": "https://www.instagram.com/reel/Df_3ClEkygQ/"
+  },
+  "tinynotes/2026-11-21_1200_pick-a-number-friend::facebook": {
+    "at": "2026-11-21T11:04:30+00:00",
+    "attempts": 1,
+    "remote_id": "1046751298438272",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1046751298438272"
+  },
+  "tinynotes/2026-11-21_1200_pick-a-number-friend::instagram": {
+    "at": "2026-11-21T11:04:22+00:00",
+    "attempts": 1,
+    "remote_id": "18018059150974096",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgAFF-sjqAc/"
   }
 }
