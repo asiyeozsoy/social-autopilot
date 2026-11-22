@@ -1413,6 +1413,20 @@
     "status": "published",
     "url": "https://youtube.com/shorts/rBaqlGL4drM"
   },
+  "factyeap/2026-11-22_1030_cat41-chewing-gum::facebook": {
+    "at": "2026-11-22T09:38:48+00:00",
+    "attempts": 1,
+    "remote_id": "1604750831425476",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1604750831425476"
+  },
+  "factyeap/2026-11-22_1030_cat41-chewing-gum::instagram": {
+    "at": "2026-11-22T09:38:38+00:00",
+    "attempts": 1,
+    "remote_id": "18134513164791616",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgCgElnSwuG/"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
