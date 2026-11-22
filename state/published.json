@@ -3673,5 +3673,19 @@
     "at": "2026-11-22T03:35:56+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-22_1100_dog-person-video::facebook": {
+    "at": "2026-11-22T10:10:12+00:00",
+    "attempts": 1,
+    "remote_id": "1521889946424104",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1521889946424104"
+  },
+  "tinynotes/2026-11-22_1100_dog-person-video::instagram": {
+    "at": "2026-11-22T10:10:01+00:00",
+    "attempts": 1,
+    "remote_id": "18015143693993387",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgCjp0GEgd4/"
   }
 }
