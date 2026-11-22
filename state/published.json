@@ -3702,6 +3702,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DgCjp0GEgd4/"
   },
+  "tinynotes/2026-11-22_1100_dog-person-video::youtube": {
+    "at": "2026-11-22T16:03:09+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-22_1500_say-it-more::facebook": {
     "at": "2026-11-22T14:02:11+00:00",
     "attempts": 1,
@@ -3715,5 +3720,19 @@
     "remote_id": "18001735311383410",
     "status": "published",
     "url": "https://www.instagram.com/reel/DgC-Nk3iiKV/"
+  },
+  "tinynotes/2026-11-22_1700_duo04-fries::facebook": {
+    "at": "2026-11-22T16:04:56+00:00",
+    "attempts": 1,
+    "remote_id": "2322225085265131",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2322225085265131"
+  },
+  "tinynotes/2026-11-22_1700_duo04-fries::instagram": {
+    "at": "2026-11-22T16:04:47+00:00",
+    "attempts": 1,
+    "remote_id": "18380398366242553",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgDMQefAl10/"
   }
 }
