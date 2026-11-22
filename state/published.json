@@ -3763,6 +3763,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DgC-Nk3iiKV/"
   },
+  "tinynotes/2026-11-22_1500_say-it-more::youtube": {
+    "at": "2026-11-22T20:09:03+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-22_1700_duo04-fries::facebook": {
     "at": "2026-11-22T16:04:56+00:00",
     "attempts": 1,
@@ -3790,5 +3795,19 @@
     "remote_id": "18084696287347445",
     "status": "published",
     "url": "https://www.instagram.com/reel/DgDdxEulRkR/"
+  },
+  "tinynotes/2026-11-22_2100_moved-away-video::facebook": {
+    "at": "2026-11-22T20:09:56+00:00",
+    "attempts": 1,
+    "remote_id": "1769919944101207",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1769919944101207"
+  },
+  "tinynotes/2026-11-22_2100_moved-away-video::instagram": {
+    "at": "2026-11-22T20:09:48+00:00",
+    "attempts": 1,
+    "remote_id": "17984740395131526",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgDoTCtjzuX/"
   }
 }
