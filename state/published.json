@@ -1441,6 +1441,27 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DgDBv4oON3a/"
   },
+  "factyeap/2026-11-22_1730_mom02-not-yelling::facebook": {
+    "at": "2026-11-22T16:35:52+00:00",
+    "attempts": 1,
+    "remote_id": "1150668584416537",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1150668584416537"
+  },
+  "factyeap/2026-11-22_1730_mom02-not-yelling::instagram": {
+    "at": "2026-11-22T16:35:43+00:00",
+    "attempts": 1,
+    "remote_id": "17872129224662781",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgDPzhiyFU2/"
+  },
+  "factyeap/2026-11-22_1730_mom02-not-yelling::youtube": {
+    "at": "2026-11-22T16:35:45+00:00",
+    "attempts": 1,
+    "remote_id": "l_SwWilm0V8",
+    "status": "published",
+    "url": "https://youtube.com/shorts/l_SwWilm0V8"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
