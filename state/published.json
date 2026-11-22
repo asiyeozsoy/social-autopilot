@@ -3782,6 +3782,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DgDMQefAl10/"
   },
+  "tinynotes/2026-11-22_1700_duo04-fries::youtube": {
+    "at": "2026-11-22T22:01:10+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-22_1930_tiny-moon::facebook": {
     "at": "2026-11-22T18:37:51+00:00",
     "attempts": 1,
