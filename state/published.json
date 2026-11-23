@@ -3927,5 +3927,19 @@
     "remote_id": "18111585104257238",
     "status": "published",
     "url": "https://www.instagram.com/reel/DgGC4sEjSkR/"
+  },
+  "tinynotes/2026-11-23_2100_nurses-video::facebook": {
+    "at": "2026-11-23T20:02:41+00:00",
+    "attempts": 1,
+    "remote_id": "2126421687991177",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2126421687991177"
+  },
+  "tinynotes/2026-11-23_2100_nurses-video::instagram": {
+    "at": "2026-11-23T20:02:29+00:00",
+    "attempts": 1,
+    "remote_id": "18583034128077659",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgGMQ-5kiUS/"
   }
 }
