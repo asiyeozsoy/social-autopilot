@@ -1,2 +1,0 @@
-Acoustic grand piano samples from FluidR3_GM (Frank Wen), via github.com/gleitz/midi-js-soundfonts.
-FluidR3_GM is released under the MIT licence.

@@ -20,7 +20,6 @@ from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from still_anim import caveat  # noqa: E402
-from lofi import lofi  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 W, H, FPS = 1080, 1920, 30
@@ -246,13 +245,10 @@ def main():
     enc.wait()
     if cover is not None and spec.get("cover"):
         Image.fromarray(cover).save(spec["cover"], quality=92)
-    wav = out + ".wav"
-    lofi(wav, dur + 0.1, spec.get("music_seed", spec.get("seed", 3)))
-    subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-i", tmp, "-i", wav, "-map", "0:v", "-map", "1:a",
-                    "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-af", f"afade=t=in:d=0.8,afade=t=out:st={dur - 1.2}:d=1.2",
-                    "-shortest", "-movflags", "+faststart", out], check=True)
+    # no music: Asiye picks trending audio herself in the app
+    subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-i", tmp, "-map", "0:v", "-c:v", "copy", "-an",
+                    "-movflags", "+faststart", out], check=True)
     Path(tmp).unlink()
-    Path(wav).unlink()
     print("ok", out)
 
 
