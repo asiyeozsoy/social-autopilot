@@ -2,9 +2,9 @@ brand: tinynotes
 publish_at: '2026-11-24T15:00:00+01:00'
 platforms:
   instagram:
-    kind: reel
+    kind: image
     media:
-    - video.mp4
+    - instagram.png
     caption: 'for the strong friend who never asks for help 🍵
 
 
@@ -12,31 +12,14 @@ platforms:
 
 
       #sendthistosomeone #strongfriend #checkonyourfriends #restisproductive #selfkindness'
-    audio_id: '2263439694405407'
-    audio_title: Golden Ascent - Afterlight
   tiktok:
-    kind: video
+    kind: photo
     media:
-    - video.mp4
-    caption: 'for the strong friend who never asks for help 🍵
+    - tiktok.png
+    caption: 'your strong friend is tired too
 
 
-      Check on them with this instead of "how are you?"
+      send it to the one who always says "i''m fine"
 
 
-      #sendthistosomeone #strongfriend #checkonyourfriends #restisproductive #selfkindness'
-  youtube:
-    kind: short
-    media:
-    - video.mp4
-    title: for the strong friend who never asks for help 🍵
-    description: 'for the strong friend who never asks for help 🍵
-
-
-      Check on them with this instead of "how are you?"
-
-
-      #sendthistosomeone #strongfriend #checkonyourfriends #restisproductive #selfkindness
-
-
-      #shorts'
+      #sendthistosomeone #strongfriend #selfcare #tired #fyp'
