@@ -1483,6 +1483,27 @@
     "status": "published",
     "url": "https://youtube.com/shorts/WzCvjiOdZCg"
   },
+  "factyeap/2026-11-23_1730_mom03-enough-for-12::facebook": {
+    "at": "2026-11-23T16:37:58+00:00",
+    "attempts": 1,
+    "remote_id": "1609842260468596",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1609842260468596"
+  },
+  "factyeap/2026-11-23_1730_mom03-enough-for-12::instagram": {
+    "at": "2026-11-23T16:37:46+00:00",
+    "attempts": 1,
+    "remote_id": "18024364145936590",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgF01cZBzfZ/"
+  },
+  "factyeap/2026-11-23_1730_mom03-enough-for-12::youtube": {
+    "at": "2026-11-23T16:37:48+00:00",
+    "attempts": 1,
+    "remote_id": "DJ4LKRfUdpA",
+    "status": "published",
+    "url": "https://youtube.com/shorts/DJ4LKRfUdpA"
+  },
   "tinynotes/2026-11-02_0830_fb-gm-turkish::facebook": {
     "at": "2026-11-02T11:07:22+00:00",
     "attempts": 1,
