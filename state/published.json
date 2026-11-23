@@ -3843,5 +3843,19 @@
     "at": "2026-11-23T03:32:23+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-23_1700_duo05-home::facebook": {
+    "at": "2026-11-23T16:06:58+00:00",
+    "attempts": 1,
+    "remote_id": "2575772736164698",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2575772736164698"
+  },
+  "tinynotes/2026-11-23_1700_duo05-home::instagram": {
+    "at": "2026-11-23T16:06:50+00:00",
+    "attempts": 1,
+    "remote_id": "18127787515912048",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgFxS4AmQSr/"
   }
 }
