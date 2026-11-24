@@ -3980,5 +3980,19 @@
     "at": "2026-11-24T03:35:08+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-24_1100_forgive-yourself-video::facebook": {
+    "at": "2026-11-24T10:07:27+00:00",
+    "attempts": 1,
+    "remote_id": "29171592222541220",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/29171592222541220"
+  },
+  "tinynotes/2026-11-24_1100_forgive-yourself-video::instagram": {
+    "at": "2026-11-24T10:07:16+00:00",
+    "attempts": 1,
+    "remote_id": "17918696520556297",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgHs8FnjtCz/"
   }
 }
