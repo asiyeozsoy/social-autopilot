@@ -3995,6 +3995,11 @@
     "status": "published",
     "url": "https://www.instagram.com/reel/DgHs8FnjtCz/"
   },
+  "tinynotes/2026-11-24_1100_forgive-yourself-video::youtube": {
+    "at": "2026-11-24T16:09:09+00:00",
+    "reason": "too late",
+    "status": "skipped"
+  },
   "tinynotes/2026-11-24_1500_tired::facebook": {
     "at": "2026-11-24T14:09:00+00:00",
     "attempts": 1,
@@ -4008,5 +4013,19 @@
     "remote_id": "18193474045407283",
     "status": "published",
     "url": "https://www.instagram.com/p/DgIIpNdj37S/"
+  },
+  "tinynotes/2026-11-24_1700_duo06-grow-old::facebook": {
+    "at": "2026-11-24T16:10:51+00:00",
+    "attempts": 1,
+    "remote_id": "4185896445044372",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/4185896445044372"
+  },
+  "tinynotes/2026-11-24_1700_duo06-grow-old::instagram": {
+    "at": "2026-11-24T16:10:43+00:00",
+    "attempts": 1,
+    "remote_id": "17958237750277615",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgIWiGpDltE/"
   }
 }
