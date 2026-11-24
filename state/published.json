@@ -4041,5 +4041,19 @@
     "remote_id": "17931039084430650",
     "status": "published",
     "url": "https://www.instagram.com/reel/DgIm77IEtXh/"
+  },
+  "tinynotes/2026-11-24_2100_chosen-family-video::facebook": {
+    "at": "2026-11-24T20:05:57+00:00",
+    "attempts": 1,
+    "remote_id": "1787277569408029",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1787277569408029"
+  },
+  "tinynotes/2026-11-24_2100_chosen-family-video::instagram": {
+    "at": "2026-11-24T20:05:49+00:00",
+    "attempts": 1,
+    "remote_id": "18028568027931928",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgIxcUpgZVP/"
   }
 }
