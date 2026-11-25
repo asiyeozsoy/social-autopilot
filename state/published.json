@@ -4089,5 +4089,19 @@
     "at": "2026-11-25T03:38:52+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-25_1800_proud-of-you-video::facebook": {
+    "at": "2026-11-25T17:02:53+00:00",
+    "attempts": 1,
+    "remote_id": "29837346562536331",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/29837346562536331"
+  },
+  "tinynotes/2026-11-25_1800_proud-of-you-video::instagram": {
+    "at": "2026-11-25T17:02:36+00:00",
+    "attempts": 1,
+    "remote_id": "18122170949596269",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgLBRrdB9DW/"
   }
 }
