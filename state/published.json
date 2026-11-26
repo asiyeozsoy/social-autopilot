@@ -4167,5 +4167,19 @@
     "at": "2026-11-26T02:09:13+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-26_1100_thanksgiving-video::facebook": {
+    "at": "2026-11-26T10:02:12+00:00",
+    "attempts": 1,
+    "remote_id": "1136285969008556",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1136285969008556"
+  },
+  "tinynotes/2026-11-26_1100_thanksgiving-video::instagram": {
+    "at": "2026-11-26T10:02:03+00:00",
+    "attempts": 1,
+    "remote_id": "17961955983015529",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgM17y-B5or/"
   }
 }
