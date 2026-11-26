@@ -4186,5 +4186,19 @@
     "at": "2026-11-26T16:03:41+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-26_1930_tiny-big-blooms::facebook": {
+    "at": "2026-11-26T18:35:46+00:00",
+    "attempts": 1,
+    "remote_id": "4697117770604261",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/4697117770604261"
+  },
+  "tinynotes/2026-11-26_1930_tiny-big-blooms::instagram": {
+    "at": "2026-11-26T18:35:29+00:00",
+    "attempts": 1,
+    "remote_id": "17946399939383821",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgNwsVMhOoc/"
   }
 }
