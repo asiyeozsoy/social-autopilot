@@ -4224,5 +4224,19 @@
     "at": "2026-11-27T02:07:59+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-27_1100_not-on-sale-video::facebook": {
+    "at": "2026-11-27T10:10:46+00:00",
+    "attempts": 1,
+    "remote_id": "1823238798880949",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1823238798880949"
+  },
+  "tinynotes/2026-11-27_1100_not-on-sale-video::instagram": {
+    "at": "2026-11-27T10:10:35+00:00",
+    "attempts": 1,
+    "remote_id": "18172206559415437",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgPbs6hvRUU/"
   }
 }
