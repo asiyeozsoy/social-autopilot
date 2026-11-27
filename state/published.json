@@ -4243,5 +4243,19 @@
     "at": "2026-11-27T16:02:12+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-27_1930_tiny-long-distance-bff::facebook": {
+    "at": "2026-11-27T18:34:09+00:00",
+    "attempts": 1,
+    "remote_id": "2547721765712374",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/2547721765712374"
+  },
+  "tinynotes/2026-11-27_1930_tiny-long-distance-bff::instagram": {
+    "at": "2026-11-27T18:34:00+00:00",
+    "attempts": 1,
+    "remote_id": "18155442193552666",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgQVUYChJ5J/"
   }
 }
