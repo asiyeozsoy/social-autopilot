@@ -4281,5 +4281,19 @@
     "at": "2026-11-28T02:06:16+00:00",
     "reason": "too late",
     "status": "skipped"
+  },
+  "tinynotes/2026-11-28_1100_lazy-saturday-video::facebook": {
+    "at": "2026-11-28T10:08:26+00:00",
+    "attempts": 1,
+    "remote_id": "1010280882128805",
+    "status": "published",
+    "url": "https://www.facebook.com/reel/1010280882128805"
+  },
+  "tinynotes/2026-11-28_1100_lazy-saturday-video::instagram": {
+    "at": "2026-11-28T10:08:18+00:00",
+    "attempts": 1,
+    "remote_id": "18022033619954673",
+    "status": "published",
+    "url": "https://www.instagram.com/reel/DgSAPa7h47G/"
   }
 }
